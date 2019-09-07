@@ -1,0 +1,1263 @@
+<div class="background">
+    <input type="radio" class="attr sheetoptions pages page1" name="attr_pagenumber" title="Page1" value="1" checked="checked" />
+    <span class="sheet-attr" data-i18n="page-1" >Page 1</span>
+    <input type="radio" class="attr sheetoptions pages page2" name="attr_pagenumber" title="Page2" value="2"/>
+    <span class="sheet-attr" data-i18n="page-2" >Page 2</span>
+    <input type="radio" class="attr sheetoptions pages page3" name="attr_pagenumber" title="Page3" value="3"/>
+    <span class="sheet-attr" data-i18n="page-3" >Page 3</span>
+    
+    
+    <input type="radio" class="attr sheetoptions gametype vampiresheet 2nd" name="attr_sheettype" title="Vampire" value="vampire2" style="width: 148px;" checked="checked"/>
+    <span class="sheet-attr" style="margin-left: -152px;" data-i18n="vampire-the-requiem" >Vampire the Requiem</span>
+    <div class="background-image"></div>
+    <div class="diceroller">
+        <table>
+            <tbody>
+                <tr>
+                    <th class="sheet-bottom" data-i18n="dice-roller-u">DICE ROLLER</th>
+                </tr>
+                <tr>
+                    <td class="initiative">
+                        <button type="roll" name="roll_initiative" data-i18n="roll-initiative" value="/roll 1d10 + @{dexterity} + @{wits}">Roll Initiative</button>
+                    </td>
+                </tr>
+                <tr class="rollstyle">
+                    <td class="rollcontainer">
+                        <button type="roll" name="roll_check" value="@{roll_base}"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+    
+    
+    
+    <img class="header vampire" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/vampire.png">
+    
+    <br><span class="spacer"></span><br><span class="spacer"></span><br><span class="spacer"></span><br><span class="spacer"></span><br><span class="spacer"></span><br>
+    <span class="spacer"></span><br><span class="spacer"></span><br>
+    
+    <div class="3colrow">
+        <table>
+            <tbody>
+                <tr>
+                    <td data-i18n="name">Name:</td>
+                    <td>
+                        <input type="text" name="attr_character_name">
+                    </td>
+                    <td data-i18n="nature">Nature:</td>
+                    <td>
+                        <input type="text" name="attr_nature">
+                    </td>
+                    <td data-i18n="clan">Clan:</td>
+                    <td>
+                        <input type="text" name="attr_clan">
+                    </td>
+                </tr>
+                <tr>
+                    <td data-i18n="player">Player:</td>
+                    <td>
+                        <input type="text" name="attr_player">
+                    </td>
+                    <td data-i18n="demeanor">Demeanor:</td>
+                    <td>
+                        <input type="text" name="attr_demeanor">
+                    </td>
+                    <td data-i18n="sire">Sire:</td>
+                    <td>
+                        <input type="text" name="attr_sire">
+                    </td>
+                </tr>
+                <tr>
+                    <td data-i18n="chronicle">Chronicle:</td>
+                    <td>
+                        <input type="text" name="attr_chronicle">
+                    </td>
+                    <td data-i18n="concept">Concept:</td>
+                    <td>
+                        <input type="text" name="attr_concept">
+                    </td>
+                    <td data-i18n="generation">Generation:</td>
+                    <td>
+                        <input type="text" name="attr_generation">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="el_spacer"></div>
+    
+    <!-- ATTRIBUTE FIELDS -->
+    <div class="sheet-3colrow attributes">
+        <table class="attributes">
+            <tbody>
+                <tr>
+                    <th colspan="10" data-i18n="attributes-u">ATTRIBUTES</th>
+                </tr>
+                <tr>
+                    <td class="category"></td>
+                    <td rowspan="3" class="spacer"></td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Strength_flag" value="@{stength}" />
+                        <span class="sheet-attr" data-i18n="strength" >Stength</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Strength" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Strength" value="1" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Strength" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Strength" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Strength" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Strength" value="5" /><span></span>
+                    </td>
+                    <td rowspan="3" class="spacer"></td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Charisma_flag" value="@{charisma}" />
+                        <span class="sheet-attr" data-i18n="charisma" >Charisma</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Charisma" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Charisma" value="1" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Charisma" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Charisma" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Charisma" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Charisma" value="5" /><span></span>
+                    </td>
+                    <td rowspan="3" class="spacer"></td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Perception_flag" value="@{perception}" />
+                        <span class="sheet-attr" data-i18n="perception" >Perception</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Perception" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Perception" value="1" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Perception" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Perception" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Perception" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Perception" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category" ><td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Dexterity_flag" value="@{dexterity}" />
+                        <span class="sheet-attr" data-i18n="dexterity" >Dexterity</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Dexterity" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Dexterity" value="1" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Dexterity" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Dexterity" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Dexterity" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Dexterity" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Manipulation_flag" value="@{manipulation}" />
+                        <span class="sheet-attr" data-i18n="manipulation" >Manipulation</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Manipulation" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Manipulation" value="1" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Manipulation" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Manipulation" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Manipulation" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Manipulation" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Intelligence_flag" value="@{intelligence}" />
+                        <span class="sheet-attr" data-i18n="intelligence" >Intelligence</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Intelligence" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intelligence" value="1" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intelligence" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intelligence" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intelligence" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intelligence" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category" ></td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Stamina_flag" value="@{stamina}" />
+                        <span class="sheet-attr" data-i18n="stamina" >Stamina</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Stamina" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stamina" value="1" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stamina" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stamina" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stamina" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stamina" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Appearance_flag" value="@{appearance}" />
+                        <span class="sheet-attr" data-i18n="appearance" >Appearance</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Appearance" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Appearance" value="1" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Appearance" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Appearance" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Appearance" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Appearance" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Wits_flag" value="@{wits}" />
+                        <span class="sheet-attr" data-i18n="wits" >Wits</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Wits" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Wits" value="1" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Wits" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Wits" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Wits" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Wits" value="5" /><span></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="el_spacer"></div>
+    
+    
+    
+    <!-- SKILL FIELDS -->
+    <div class="sheet-3colrow attributes">
+        <table class="abilities">
+            <tbody>
+                <tr>
+                    <th colspan="10" data-i18n="ability-u">ABILITIES</th>
+                </tr>
+                <tr>
+                    <td class="subheader" colspan="4" >Talents</th>
+                    <td class="subheader" colspan="3" >Skills</th>
+                    <td class="subheader" colspan="3" >Knowledges</th>
+                </tr>
+                <tr>
+                    <td class="category" ></td>
+                    <td rowspan="10" class="spacer"></td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Alertness_flag" value="@{alertness}" />
+                        <span class="sheet-attr" data-i18n="alertness" >Alertness</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Alertness" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Alertness" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Alertness" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Alertness" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Alertness" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Alertness" value="5" /><span></span>
+                    </td>
+                    <td rowspan="10" class="spacer"></td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_AnimalKen_flag" value="@{animalKen}" />
+                        <span class="sheet-attr" data-i18n="animalken" >Animal Ken</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_AnimalKen" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_AnimalKen" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_AnimalKen" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_AnimalKen" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_AnimalKen" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_AnimalKen" value="5" /><span></span>
+                    </td>
+                    <td rowspan="10" class="spacer"></td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Academics_flag" value="@{academics}" />
+                        <span class="sheet-attr" data-i18n="academics" >Academics</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Academics" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Academics" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Academics" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Academics" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Academics" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Academics" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category" ><td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Athletics_flag" value="@{athletics}" />
+                        <span class="sheet-attr" data-i18n="athletics" >Athletics</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Athletics" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Athletics" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Athletics" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Athletics" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Athletics" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Athletics" value="5" /><span></span>
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Archery_flag" value="@{archery}" />
+                        <span class="sheet-attr" data-i18n="archery" >Archery</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Archery" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Archery" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Archery" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Archery" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Archery" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Archery" value="5" /><span></span>
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Enigmas_flag" value="@{enigmas}" />
+                        <span class="sheet-attr" data-i18n="enigmas" >Enigmas</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Enigmas" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Enigmas" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Enigmas" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Enigmas" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Enigmas" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Enigmas" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category"></td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Awareness_flag" value="@{awareness}" />
+                        <span class="sheet-attr" data-i18n="awareness" >Awareness</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Awareness" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Awareness" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Awareness" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Awareness" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Awareness" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Awareness" value="5" /><span></span>
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Commerce_flag" value="@{Commerce}" />
+                        <span class="sheet-attr" data-i18n="commerce" >Commerce</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Commerce" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Commerce" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Commerce" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Commerce" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Commerce" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Commerce" value="5" /><span></span>
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_HearthWisdom_flag" value="@{HearthWisdom}" />
+                        <span class="sheet-attr" data-i18n="hearthwisdom" >Hearth Wisdom</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_HearthWisdom" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_HearthWisdom" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_HearthWisdom" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_HearthWisdom" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_HearthWisdom" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_HearthWisdom" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category" ></td>
+                    <td>
+                       <input type="checkbox" class="sheet-attr" name="attr_Brawl_flag" value="@{Brawl}" />
+                        <span class="sheet-attr" data-i18n="brawl" >Brawl</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Brawl" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Brawl" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Brawl" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Brawl" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Brawl" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Brawl" value="5" /><span></span>
+                    </td>
+                     <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Crafts_flag" value="@{Crafts}" />
+                        <span class="sheet-attr" data-i18n="crafts" >Crafts</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Crafts" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Crafts" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Crafts" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Crafts" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Crafts" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Crafts" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Investigation_flag" value="@{Investigation}" />
+                        <span class="sheet-attr" data-i18n="investigation" >Investigation</span>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Investigation" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Investigation" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Investigation" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Investigation" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Investigation" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Investigation" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category" ></td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Empathy_flag" value="@{Empathy}" />
+                        <span class="sheet-attr" data-i18n="empathy" >Empathy</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Empathy" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Empathy" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Empathy" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Empathy" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Empathy" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Empathy" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Etiquette_flag" value="@{Etiquette}" />
+                        <span class="sheet-attr" data-i18n="etiquette" >Etiquette</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Etiquette" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Etiquette" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Etiquette" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Etiquette" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Etiquette" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Etiquette" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Law_flag" value="@{Law}" />
+                        <span class="sheet-attr" data-i18n="law" >Law</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Law" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Law" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Law" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Law" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Law" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Law" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category"></td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Expression_flag" value="@{Expression}" />
+                        <span class="sheet-attr" data-i18n="expression" >Expression</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Expression" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Expression" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Expression" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Expression" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Expression" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Expression" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Melee_flag" value="@{Melee}" />
+                        <span class="sheet-attr" data-i18n="melee" >Melee</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Melee" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Melee" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Melee" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Melee" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Melee" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Melee" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Medicine_flag" value="@{Medicine}" />
+                        <span class="sheet-attr" data-i18n="medicine" >Medicine</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Medicine" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Medicine" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Medicine" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Medicine" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Medicine" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Medicine" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category" ></td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Intimidation_flag" value="@{Intimidation}" />
+                        <span class="sheet-attr" data-i18n="intimidation" >Intimidation</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Intimidation" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intimidation" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intimidation" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intimidation" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intimidation" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intimidation" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Performance_flag" value="@{Performance}" />
+                        <span class="sheet-attr" data-i18n="performance" >Performance</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Performance" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Performance" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Performance" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Performance" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Performance" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Performance" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Occult_flag" value="@{Occult}" />
+                        <span class="sheet-attr" data-i18n="occult" >Occult</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Occult" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Occult" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Occult" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Occult" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Occult" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Occult" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category"></td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Leadership_flag" value="@{Leadership}" />
+                        <span class="sheet-attr" data-i18n="leadership" >Leadership</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Leadership" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Leadership" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Leadership" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Leadership" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Leadership" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Leadership" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Ride_flag" value="@{Ride}" />
+                        <span class="sheet-attr" data-i18n="ride" >Ride</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Ride" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Ride" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Ride" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Ride" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Ride" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Ride" value="5" /><span></span>
+                    </td>
+                     <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Politics_flag" value="@{Politics}" />
+                        <span class="sheet-attr" data-i18n="politics" >Politics</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Politics" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Politics" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Politics" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Politics" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Politics" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Politics" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category"></td>
+                     <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Legerdemain_flag" value="@{Legerdemain}" />
+                        <span class="sheet-attr" data-i18n="legerdemain" >Legerdemain</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Legerdemain" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Legerdemain" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Legerdemain" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Legerdemain" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Legerdemain" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Legerdemain" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Stealth_flag" value="@{Stealth}" />
+                        <span class="sheet-attr" data-i18n="stealth" >Stealth</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Stealth" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stealth" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stealth" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stealth" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stealth" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stealth" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Seneschal_flag" value="@{Seneschal}" />
+                        <span class="sheet-attr" data-i18n="seneschal" >Seneschal</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Seneschal" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Seneschal" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Seneschal" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Seneschal" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Seneschal" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Seneschal" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category"></td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Subterfuge_flag" value="@{Subterfuge}" />
+                        <span class="sheet-attr" data-i18n="subterfuge" >Subterfuge</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Subterfuge" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Subterfuge" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Subterfuge" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Subterfuge" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Subterfuge" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Subterfuge" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Survival_flag" value="@{Survival}" />
+                        <span class="sheet-attr" data-i18n="survival" >Survival</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Survival" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Survival" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Survival" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Survival" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Survival" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Survival" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Theology_flag" value="@{Theology}" />
+                        <span class="sheet-attr" data-i18n="theology" >Theology</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Theology" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Theology" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Theology" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Theology" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Theology" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Theology" value="5" /><span></span>
+                    </td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+     <!-- SKILL FIELDS -->
+    <div class="sheet-3colrow attributes">
+        <table class="abilities">
+            <tbody>
+                <tr>
+                    <th colspan="10" data-i18n="Others-u">ADVANTAGES</th>
+                </tr>
+                <tr>
+                    <td class="subheader" colspan="4" >Disciplines</th>
+                    <td class="subheader" colspan="3" >Backgrounds</th>
+                    <td class="subheader" colspan="3" >Virtues</th>
+                </tr>
+                <tr>
+                    <td class="category" ></td>
+                    <td rowspan="10" class="spacer"></td>
+                    <td>
+                        <input type="text" name="attr_discipline1_name" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_discipline1" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline1" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline1" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline1" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline1" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline1" value="5" /><span></span>
+                    </td>
+                    <td rowspan="10" class="spacer"></td>
+                    <td>
+                        <input type="text" name="attr_background1_name" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_background1" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background1" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background1" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background1" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background1" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background1" value="5" /><span></span>
+                    </td>
+                    <td rowspan="10" class="spacer"></td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Conscience_flag" value="@{Conscience}" />
+                        <span class="sheet-attr" data-i18n="conscience" >Conscience/Conviction</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Conscience" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Conscience" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Conscience" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Conscience" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Conscience" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Conscience" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category" ><td>
+                        <input type="text" name="attr_discipline2_name" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_discipline2" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline2" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline2" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline2" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline2" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline2" value="5" /><span></span>
+                    </td>
+                     <td>
+                        <input type="text" name="attr_background2_name" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_background2" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background2" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background2" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background2" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background2" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background2" value="5" /><span></span>
+                    </td>
+                    <td colspan=2></td>
+                </tr>
+                <tr>
+                    <td class="category" ><td>
+                        <input type="text" name="attr_discipline3_name" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_discipline3" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline3" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline3" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline3" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline3" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline3" value="5" /><span></span>
+                    </td>
+                     <td>
+                        <input type="text" name="attr_background3_name" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_background3" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background3" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background3" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background3" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background3" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background3" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Instinct_flag" value="@{Instinct}" />
+                        <span class="sheet-attr" data-i18n="instinct" >Self-Control/Instinct</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Instinct" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Instinct" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Instinct" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Instinct" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Instinct" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Instinct" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category"><td>
+                        <input type="text" name="attr_discipline4_name" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_discipline4" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline4" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline4" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline4" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline4" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline4" value="5" /><span></span>
+                    </td>
+                     <td>
+                        <input type="text" name="attr_background4_name" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_background4" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background4" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background4" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background4" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background4" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background4" value="5" /><span></span>
+                    </td>
+                    <td colspan=2></td>
+                </tr>
+                <tr>
+                    <td class="category"><td>
+                        <input type="text" name="attr_discipline5_name" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_discipline5" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline5" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline5" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline5" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline5" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_discipline5" value="5" /><span></span>
+                    </td>
+                     <td>
+                        <input type="text" name="attr_background5_name" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_background5" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background5" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background5" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background5" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background5" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_background5" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" class="sheet-attr" name="attr_Courage_flag" value="@{Courage}" />
+                        <span class="sheet-attr" data-i18n="courage" >Courage</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Courage" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Courage" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Courage" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Courage" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Courage" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Courage" value="5" /><span></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="el_spacer"></div>
+    
+    <div style="width: 100%; display: table;" class="othertraits">
+        <div style="display: table-row">
+        <div style="width: 300px; display: table-cell;"> 
+            <div class="sheet-3colrow attribute">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th colspan=2>Merits & Flaws</th>
+                        </tr>
+                        <tr>
+                            <td style="padding-top:20px"><span style="width:250px">Merit</span></td>
+                            <td style="padding-top:20px"><span style="width:30px">Cost</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" style="width:250px" name="attr_merit1_name" /></td>
+                            <td><input type="text" style="width:30px" name="attr_merit1cost_name" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" style="width:250px" name="attr_merit2_name" /></td>
+                            <td><input type="text" style="width:30px" name="attr_merit2cost_name" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" style="width:250px" name="attr_merit3_name" /></td>
+                            <td><input type="text" style="width:30px" name="attr_merit3cost_name" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" style="width:250px" name="attr_merit4_name" /></td>
+                            <td><input type="text" style="width:30px" name="attr_merit4cost_name" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" style="width:250px" name="attr_merit5_name" /></td>
+                            <td><input type="text" style="width:30px" name="attr_merit5cost_name" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" style="width:250px" name="attr_merit6_name" /></td>
+                            <td><input type="text" style="width:30px" name="attr_merit6cost_name" /></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top:20px"><span style="width:250px">Flaw</span></td>
+                            <td style="padding-top:20px"><span style="width:30px">Cost</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" style="width:250px" name="attr_flaw1_name" /></td>
+                            <td><input type="text" style="width:30px" name="attr_flaw1cost_name" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" style="width:250px" name="attr_flaw2_name" /></td>
+                            <td><input type="text" style="width:30px" name="attr_flaw2cost_name" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" style="width:250px" name="attr_flaw3_name" /></td>
+                            <td><input type="text" style="width:30px" name="attr_flaw3cost_name" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" style="width:250px" name="attr_flaw4_name" /></td>
+                            <td><input type="text" style="width:30px" name="attr_flaw4cost_name" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" style="width:250px" name="attr_flaw5_name" /></td>
+                            <td><input type="text" style="width:30px" name="attr_flaw5cost_name" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" style="width:250px" name="attr_flaw6_name" /></td>
+                            <td><input type="text" style="width:30px" name="attr_flaw6cost_name" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="display: table-cell; width: 300px;"> 
+            <div class="sheet-3colrow attribute">
+                <table style="padding-left:30px">
+                    <tbody>
+                        <tr>
+                            <th colspan=2>Humanity/Path</th>
+                        </tr>
+                        <tr>
+                            <td colspan=2>
+                                <input type="text" style="width:250px" name="attr_humanity_name" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2>
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Humanity" value="0" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Humanity" value="1" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Humanity" value="2" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Humanity" value="3" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Humanity" value="4" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Humanity" value="5" checked="checked"  /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Humanity" value="6" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Humanity" value="7" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Humanity" value="8" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Humanity" value="9" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Humanity" value="10" /><span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:100px"><span>Bearing</span></td>
+                            <td style="width:180px"><input type="text" name="attr_Bearing_name" /></td>
+                        </tr>
+                        <tr>
+                            <th style="padding-top:40px" colspan=2>Willpower</th>
+                        </tr>
+                        <tr>
+                            <td style="padding-left:30px" colspan=2>
+                                <input type="radio" class="sheet-normal" name="attr_Willpower" value="1" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Willpower" value="2" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Willpower" value="3" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Willpower" value="4" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Willpower" value="5" checked="checked"  /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Willpower" value="6" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Willpower" value="7" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Willpower" value="8" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Willpower" value="9" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Willpower" value="10" /><span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left:30px" colspan=2>
+                                <input type="checkbox" class="sheet-normal" name="attr_Willpower_check" value="1" /><span></span>
+                                <input type="checkbox" class="sheet-normal" name="attr_Willpower_check" value="2" /><span></span>
+                                <input type="checkbox" class="sheet-normal" name="attr_Willpower_check" value="3" /><span></span>
+                                <input type="checkbox" class="sheet-normal" name="attr_Willpower_check" value="4" /><span></span>
+                                <input type="checkbox" class="sheet-normal" name="attr_Willpower_check" value="5" /><span></span>
+                                <input type="checkbox" class="sheet-normal" name="attr_Willpower_check" value="6" /><span></span>
+                                <input type="checkbox" class="sheet-normal" name="attr_Willpower_check" value="7" /><span></span>
+                                <input type="checkbox" class="sheet-normal" name="attr_Willpower_check" value="8" /><span></span>
+                                <input type="checkbox" class="sheet-normal" name="attr_Willpower_check" value="9" /><span></span>
+                                <input type="checkbox" class="sheet-normal" name="attr_Willpower_check" value="10" /><span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="padding-top:40px" colspan=2>Blood Pool</th>
+                        </tr>
+                        <tr>
+                            <td style="padding-left:30px" colspan=2>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="1" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="2" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="3" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="4" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="5" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="6" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="7" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="8" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="9" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="10" /><span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left:30px" colspan=2>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="11" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="12" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="13" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="14" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="15" checked="checked"  /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="16" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="17" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="18" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="19" /><span></span>
+                                <input type="radio" class="sheet-normal" name="attr_Bloodpool" value="20" /><span></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="display: table-cell;"> 
+             <div class="sheet-3colrow attribute">
+                <table style="padding-left:30px">
+                    <tbody>
+                        <tr>
+                            <th colspan=3>Health</th>
+                        </tr>
+                        <tr>
+                            <td><span>Bruised</span></td>
+                            <td><span></span></td>
+                            <td>
+                                <select name="attr_Bruised" class="select"> <option></option> 
+                                    <option value="Bashing">-</option>
+                                    <option value="Leathal">/</option>
+                                    <option value="Aggravated">X</option> 
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>Hurt</span></td>
+                            <td><span>-1</span></td>
+                            <td>
+                                <select name="attr_Bruised" class="select"> <option></option> 
+                                    <option value="Bashing">-</option>
+                                    <option value="Leathal">/</option>
+                                    <option value="Aggravated">X</option> 
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>Injured</span></td>
+                            <td><span>-1</span></td>
+                            <td>
+                                <select name="attr_Bruised" class="select"> <option></option> 
+                                    <option value="Bashing">-</option>
+                                    <option value="Leathal">/</option>
+                                    <option value="Aggravated">X</option> 
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>Wounded</span></td>
+                            <td><span>-2</span></td>
+                            <td>
+                                <select name="attr_Bruised" class="select"> <option></option> 
+                                    <option value="Bashing">-</option>
+                                    <option value="Leathal">/</option>
+                                    <option value="Aggravated">X</option> 
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>Mauled</span></td>
+                            <td><span>-2</span></td>
+                            <td>
+                                <select name="attr_Bruised" class="select"> <option></option> 
+                                    <option value="Bashing">-</option>
+                                    <option value="Leathal">/</option>
+                                    <option value="Aggravated">X</option> 
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>Crippled</span></td>
+                            <td><span>-5</span></td>
+                            <td>
+                                <select name="attr_Bruised" class="select"> <option></option> 
+                                    <option value="Bashing">-</option>
+                                    <option value="Leathal">/</option>
+                                    <option value="Aggravated">X</option> 
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>Incapacitated</span></td>
+                            <td><span></span></td>
+                            <td>
+                                <select name="attr_Bruised" class="select"> <option></option> 
+                                    <option value="Bashing">-</option>
+                                    <option value="Leathal">/</option>
+                                    <option value="Aggravated">X</option> 
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="expandedsheet">
+    <div class="leftcolumn" style="width: 447px;">
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="10">OTHER TRAITS</th>
+                </tr>
+                <tr>
+                    <td class="category" ></td>
+                    <td rowspan="10" class="spacer"></td>
+                    <td>
+                        <input type="text" name="attr_othertraits1_name" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_othertraits1" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_othertraits1" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_othertraits1" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_othertraits1" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_othertraits1" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_othertraits1" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category" ></td>
+                    <td rowspan="10" class="spacer"></td>
+                    <td>
+                        <input type="text" name="attr_othertraits2_name" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_othertraits2" checked="checked" value="0" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_othertraits2" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_othertraits2" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_othertraits2" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_othertraits2" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_othertraits2" value="5" /><span></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+</div>
+
+<rolltemplate class="sheet-rolltemplate-wod-simple">
+<table>
+    <tr><th>{{name}} <span data-i18n="rolls">rolls</span></th></tr>
+    <tr><td class="attr">
+        {{option}} <span data-i18n="dice-for">dice for</span><br>
+    </td></tr>
+    <tr>
+        <td class="result">{{result}} <span data-i18n="successes">Successes</span></td>
+    </tr>
+    <tr>
+        <td class="specialrollflag">
+            {{#chance}}
+                0C
+            {{/chance}}
+            {{#9again}}
+                9A
+            {{/9again}}
+            {{#8again}}
+                8A
+            {{/8again}}
+        </td>
+    </tr>
+</table>
+</rolltemplate>
+
+<rolltemplate class="sheet-rolltemplate-wod-3part">
+<table>
+    <tr><th>{{name}} <span data-i18n="rolls">rolls</span>{{#roll_name}} {{roll_name}}{{/roll_name}}</th></tr>
+    <tr><td class="attr">
+        {{#part1}}
+            {{part1}}({{part1pool}})<br>
+        {{/part1}}
+        {{#part2}}
+            {{part2}}({{part2pool}})<br>
+        {{/part2}}
+        {{#part3}}
+            {{part3}}({{part3pool}})<br>
+        {{/part3}}
+        
+    </td></tr>
+    <tr>
+        <td class="result">{{result}} <span data-i18n="successes">Successes</span></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+</table>
+</rolltemplate>
+
+<input type="hidden" name="attr_rollsimple" value="&{template:wod-simple} {{name=@{character_name}}} {{option=?{@{dicepoolmacro}|0}}} {{result=[[{(?{@{dicepoolmacro}|1}" />
+<input type="hidden" name="attr_roll3part" value="" />
+<input type="hidden" name="attr_roll_array" />
+<input type="hidden" name="attr_rolltype" value=")d10s>6f1]]}}" />
+<input type="hidden" name="attr_roll_base" value="" />
+
+
+<script type="text/worker">
+
+var attributes = ["strength","dexterity","stamina","charisma","manipulation","appearance","perception","intelligence","wits"];
+var skills = ["alertness","athletics","awareness","brawl","empathy","expression","intimidation","leadership","legerdemain","subterfuge",
+"animalken","archery","commerce","crafts","etiquette","melee","performance","ride","stealth","survival",
+"academics","enigmas","hearthwisdom","investigation","law","medicine","occult","politics","seneschal","theology",
+"conscience", "instinct","courage"];
+var normalStats = ["strength","dexterity","stamina","charisma","manipulation","appearance","perception","intelligence","wits",
+"alertness","athletics","awareness","brawl","empathy","expression","intimidation","leadership","legerdemain","subterfuge",
+"animalken","archery","commerce","crafts","etiquette","melee","performance","ride","stealth","survival",
+"academics","enigmas","hearthwisdom","investigation","law","medicine","occult","politics","seneschal","theology", 
+"conscience", "instinct","courage"]
+
+var allStats = ["strength","dexterity","stamina","charisma","manipulation","appearance","perception","intelligence","wits",
+"alertness","athletics","awareness","brawl","empathy","expression","intimidation","leadership","legerdemain","subterfuge",
+"animalken","archery","commerce","crafts","etiquette","melee","performance","ride","stealth","survival",
+"academics","enigmas","hearthwisdom","investigation","law","medicine","occult","politics","seneschal","theology",
+"conscience", "instinct","courage"];
+
+["strength","dexterity","stamina","charisma","manipulation","appearance","perception","intelligence","wits", 
+"alertness", "athletics", "awareness","brawl","empathy","expression","intimidation","leadership","legerdemain","subterfuge",
+"animalken","archery","commerce","crafts","etiquette","melee","performance","ride","stealth","survival",
+"academics","enigmas","hearthwisdom","investigation","law","medicine","occult","politics","seneschal","theology",
+"conscience", "instinct","courage"].forEach((attr) => {
+    on(`change:${attr} change:${attr}_flag`, (eventInfo) => {
+        const source = eventInfo.sourceAttribute;
+        const attribute = (attr.includes("flag")) ? attr.split(`_flag`)[0] : attr; //Remove the "_flag" part so we can pass the name
+        updateRolls(`${attribute}`);
+    });
+});
+
+var updateRolls = function(stat) {
+    var type;
+    var stat_flag = stat + "_flag";
+    var rarray = [];
+    getAttrs(["roll_array", "strength_flag","dexterity_flag","stamina_flag","charisma_flag","manipulation_flag","appearance_flag","perception_flag","intelligence_flag","wits_flag",
+    "strength","dexterity","stamina","charisma","manipulation","appearance","perception","intelligence","wits",
+    "alertness", "athletics", "awareness","brawl","empathy","expression","intimidation","leadership","legerdemain","subterfuge",
+    "animalken","archery","commerce","crafts","etiquette","melee","performance","ride","stealth","survival",
+    "academics","enigmas","hearthwisdom","investigation","law","medicine","occult","politics","seneschal","theology",
+    "conscience", "instinct","courage","alertness_flag", "athletics_flag", "awareness_flag","brawl_flag","empathy_flag","expression_flag","intimidation_flag","leadership_flag",
+    "legerdemain_flag","subterfuge_flag","animalken_flag","archery_flag","commerce_flag","crafts_flag","etiquette_flag","melee_flag",
+    "performance_flag","ride_flag","stealth_flag","survival_flag","academics_flag","enigmas_flag","hearthwisdom_flag","investigation_flag",
+    "law_flag","medicine_flag","occult_flag","politics_flag","seneschal_flag","theology_flag", "conscience_flag", "instinct_flag","courage_flag"], function(v) {
+        allStats.forEach(function(x) {
+            var flagname = x + "_flag";
+            if(parseInt(v[flagname], 10) != 0) {
+                rarray.push(x);
+            }
+        });
+        console.log(stat)
+        console.log(rarray.length)
+        var prev_rarray = v.roll_array && v.roll_array != "" ? v.roll_array.split(",") : [];
+    
+        var final = parseInt(v[stat_flag], 10) === 0 || type === "rolltype" ? prev_rarray.join(",") : rarray.join(",");
+        var order = [];
+        console.log(attributes)
+        rarray.filter(function(x){return attributes.indexOf(x) > -1}).forEach(function(x) {order.push(x);});
+        rarray.filter(function(x){return skills.indexOf(x) > -1}).forEach(function(x) {order.push(x);});
+        console.log(order[0])
+        var names = order.map(function(x) {
+           let transX = getTranslationByKey(x);
+           if (x == "potency"){
+               return v.potency_name;//may need to do getTranslationgByKey here as well, but not sure what the potential values of this are, and if they are user defined or sheet defined
+           }
+           return transX.charAt(0).toUpperCase() + transX.slice(1);//note I actually prefer to do this using .replace if there's going to be a chance for multi word casing
+        });
+        var base = "";
+        if(order.length > 0) {
+            base = "&{template:wod-3part} {{name=@{character_name}}} {{part1=" + names[0] + "}} {{part1pool=" + v[order[0]] + "}}";
+            var result = " {{result=[[{((?{Missing Dice|0} + " + v[order[0]];
+            if(order.length > 1) {
+                base = base + " {{part2=" + names[1] + "}} {{part2pool=" + v[order[1]] + "}}";
+                result = result + "+" + v[order[1]];
+            }
+            if(order.length > 2) {
+                base = base + " {{part3=" + names[2] + "}} {{part3pool=" + v[order[2]] + "}}";
+                result = result + "+" + v[order[2]];
+            }
+            console.log(result)
+            base = base + result + ")d10s>?{Difficulty|6}f1)}]]}}"
+            console.log(base)
+        }
+        var display = "";
+        display = names.join(" +\n");
+        setAttrs({
+            roll_array: final,
+            roll_base: base,
+            rolldisplay: display
+        });
+    });  
+}
+</script>
