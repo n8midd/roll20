@@ -43,7 +43,7 @@ input.sheet-beastsheet:checked ~ div * .sheet-beast,
 input.sheet-huntersheet:checked ~ div * .sheet-hunter,
 input.sheet-settingssheet:checked ~ div * .sheet-settings {
     display: inline-block !important;
-}
+} 
 
 input.sheet-mortalsheet:checked ~ div * table.sheet-mortal,
 input.sheet-vampiresheet:checked ~ div * table.sheet-vampire,

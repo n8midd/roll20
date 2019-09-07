@@ -190,7 +190,6 @@ on("chat:message", function(msg) {
         else
         {
             WODdice( list[0].id, 0, cmd[1], cmd[2], cmd[3], cmd[4], cmd[5], str, inputName  );
- 
         }
     }
  

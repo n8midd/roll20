@@ -371,5 +371,6 @@
 	"combat-u": "Combat",
 	"humanity-u": "Humanity/Path",
 	"health-u": "Health",
-	"bloodpool": "Blood Pool"
+    "bloodpool": "Blood Pool"
+    
 }
