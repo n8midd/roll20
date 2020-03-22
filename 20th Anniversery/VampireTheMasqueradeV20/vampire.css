@@ -1,0 +1,705 @@
+.charsheet {
+    font-family:"Patrick Hand";
+}
+
+img.sheet-header{
+    height: 150px;
+    display: inline !important;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+.sheet-diceroller {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  background: white;
+}
+
+.charsheet .sheet-diceroller table th {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.charsheet .sheet-diceroller table {
+  border: solid 1px #000000;
+}
+
+.charsheet .sheet-diceroller table td {
+  border-right: solid 1px #000000;
+}
+
+.charsheet .sheet-diceroller table .sheet-bottom {
+  border-bottom: solid 1px #000000;
+}
+
+.charsheet .sheet-diceroller .sheet-rollcontainer {
+  background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/die.png') no-repeat center;
+  background-size: 3em;
+  border-bottom: solid 1px #000000;
+}
+
+.charsheet .sheet-diceroller .sheet-attackrollcontainerVampire {
+    background: url('https://i.imgur.com/o1wfjB2.png') no-repeat center;
+    background-size: 1.5em;
+    border-bottom: solid 1px #000000;
+  }
+
+.charsheet .sheet-diceroller table td.sheet-initiative {
+  border-bottom: solid 1px #000000;
+  text-align: center;
+}
+
+.charsheet .sheet-diceroller table td.sheet-initiative button:before {
+  content: "" !important;
+}
+
+.charsheet .sheet-diceroller table td.sheet-initiative button {
+  color: #2A2D80;
+  font-weight: bold;
+  height: auto;
+  width: auto;
+  opacity: 100;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.charsheet .sheet-diceroller button:before {
+  font-family: "Courier" !important;
+  content: "Roll" !important;
+  background: none !important;
+}
+
+.charsheet .sheet-diceroller button {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.charsheet .sheet-diceroller .sheet-rolldisplay textarea {
+  resize: none;
+  overflow: hidden;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  border: none;
+  padding: 0px;
+  text-align: center;
+  height: 70px;
+  pointer-events: none;
+  width: 120px;
+}
+
+div.sheet-greyGridTable {
+    border: 0px solid #FFFFFF;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  .sheet-divTable.sheet-greyGridTable .sheet-divTableBody .sheet-divTableCell {
+    font-size: 13px;
+  }
+  .sheet-divTable.sheet-greyGridTable .sheet-divTableHeading {
+    background: #FFFFFF;
+    border-bottom: 4px solid #333333;
+  }
+  .sheet-divTable.sheet-greyGridTable .sheet-divTableHeading .sheet-divTableHead {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    border-left: 2px solid #333333;
+  }
+  .sheet-divTable.sheet-greyGridTable .sheet-divTableHeading .sheet-divTableHead:first-child {
+    border-left: none;
+  }
+  
+  .sheet-greyGridTable .sheet-tableFootStyle {
+    font-size: 14px;
+  }
+  /* DivTable.com */
+  .sheet-divTable{ display: table; }
+  .sheet-divTableRow { display: table-row; }
+  .sheet-divTableHeading { display: table-header-group;}
+  .sheet-divTableCell, .sheet-divTableHead { display: table-cell;}
+  .sheet-divTableHeading { display: table-header-group;}
+  .sheet-divTableFoot { display: table-footer-group;}
+  .sheet-divTableBody { display: table-row-group;}
+
+  input.sheet-attr {
+    width: 87px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+    z-index: 9999;
+}
+
+input.sheet-settingssheet:checked ~ .sheet-header + .sheet-settings {
+    height: 200px;
+    display: block !important;
+}
+
+.sheet-border-div {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 150px 30px 38px 23px;
+  border-image: url('https://imgsrv.roll20.net/?src=http%3A//i.imgur.com/hjjMqek.png') 793 64 62 66 repeat;
+   
+}
+
+.sheet-image-div {
+    background-image: url('https://imgsrv.roll20.net/?src=https%3A//i.imgur.com/FAPda5N.jpg');
+    background-size: 100% 140px;
+    background-repeat: repeat-x;
+    background-position: 0px 10px;
+}
+
+input.sheet-settingssheet:checked ~ .sheet-background-image::after{
+    background-size: 100%;
+}
+
+
+span.sheet-attr {
+    
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    margin-left: -81px;
+    float:right;
+}
+
+span.sheet-aura {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  position: relative;
+}
+
+/* Hide actual dot/checkbox */
+input[type="radio"].sheet-normal,
+input.sheet-weapon,
+input[type="checkbox"].sheet-normal
+{
+    position: absolute;
+    float:center;
+    opacity: 0.0;
+    width: 15px;
+    padding: 1em;
+    cursor: pointer;
+    z-index: 10;
+    margin-top: 5px;
+}
+
+/* Styles common to fake dot and checkbox */
+input[type="radio"].sheet-normal + span::before,
+input.sheet-weapon + span::before,
+input[type="checkbox"].sheet-normal + span::before,
+.sheet-permadot::before
+{
+    border: solid 1px #000000;
+    line-height: 11px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0em;
+
+    -moz-box-shadow: 0 0 0px #000;
+    -webkit-box-shadow: 0 0 0px #000;
+    box-shadow: 0 0 0px #000;
+
+    background: #000000;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+}
+
+
+/* Styles unique to fake checkbox (unchecked) */
+input[type="checkbox"].sheet-normal + span::before
+{
+    position:relative;
+    content: "";
+    opacity: 1.0;
+    width: 10px;
+    height: 10px;
+    font-size: 12px;
+
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+
+/* Styles unique to fake checkbox (checked) */
+input[type="checkbox"].sheet-normal:checked + span::before
+{
+    background:
+        linear-gradient(to top left,
+           rgba(0,0,0,0) 0%,
+           rgba(0,0,0,0) calc(50% - 0.8px),
+           rgba(0,0,0,1) 50%,
+           rgba(0,0,0,0) calc(50% + 0.8px),
+           rgba(0,0,0,0) 100%),
+       linear-gradient(to top right,
+           rgba(0,0,0,0) 0%,
+           rgba(0,0,0,0) calc(50% - 0.8px),
+           rgba(0,0,0,1) 50%,
+           rgba(0,0,0,0) calc(50% + 0.8px),
+           rgba(0,0,0,0) 100%);
+
+    -moz-box-shadow: 0 0 2px transparent;
+    -webkit-box-shadow: 0 0 2px transparent;
+    box-shadow: 0 0 2px transparent;
+}
+
+/* Styles unique to fake dot (checked or left of checked) */
+input[type="radio"].sheet-normal + span::before,
+input.sheet-weapon:checked + span::before,
+.sheet-permadot::before
+{
+    content: "•";
+    width: 10px;
+    height: 10px;
+    font-size: 41.9px;
+    font-family: "Arial";
+    text-indent: -2px;
+    font-weight: normal;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+/* Remove dot from all radios _after_ selected one */
+input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before
+{
+    content: "";
+}
+
+.sheet-column {
+    float: left;
+    width: 33.33%;
+}
+  
+
+.sheet-row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.sheet-3column{
+    float:left;
+    width:33%;
+}
+
+.sheet-5column{
+  float:left;
+  width:20%;
+}
+
+.sheet-2column{
+    float:left;
+    width:50%;
+}
+
+
+input.sheet-zero:checked + span::before
+{
+    opacity: 0;
+}
+
+input.sheet-zero:hover + span::before
+{
+    opacity: 0.25;
+    font-size: 12px;
+    content: "✖";
+    text-indent: 0.5px;
+}
+
+input.sheet-zero + span::before
+{
+    opacity: 0;
+}
+
+.sheet-spacer200 {
+  height: 200px;
+}
+.sheet-spacer100 {
+  height: 100px;
+}
+
+.sheet-spacer {
+    height: 40px;
+    width: 100%;
+}
+
+div * input.sheet-attr:checked + span.sheet-attr,
+span > input.sheet-attr:checked + span.sheet-attr{
+  color: #B21800;
+  text-shadow: 0px 0px 10px black;
+}
+
+div * input.sheet-attr2:checked + span.sheet-attr2,
+span > input.sheet-attr2:checked + span.sheet-attr2{
+  color: #B21800;
+  text-shadow: 0px 0px 10px black;
+}
+
+.sheet-inputSpecialization
+{
+    float:right; 
+    width:100%; 
+    padding-left: 5px;
+}
+
+.sheet-inputSpecializationLeft
+{
+    float:left; 
+    width:100%; 
+    padding-left: 5px;
+}
+
+.sheet-overrideWidth{
+  width:80%;
+}
+
+.sheet-overrideWidth50{
+   width: 50%;
+}
+
+.sheet-healthButton{
+  width:50px;
+  height: 20px;
+}
+.sheet-healthButton_risen{
+  width:15px;
+  height: 15px;
+  text-indent: 0px;
+  line-height: 1;
+  font-size: 7px !important;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.charsheet textarea {
+  display: inline-block;
+  width:100%;
+  height: 75px;
+  margin:1px 0px;
+  resize:none;
+  font-family: "Courier";
+  color: #000000;
+}
+
+.sheet-overrideWidth20{
+  width:20%;
+}
+
+.sheet-fancy {
+    line-height: 0.5;
+    text-align: center;
+  }
+  .sheet-fancy span {
+    display: inline-block;
+    position: relative;  
+  }
+  .sheet-fancy span:before,
+  .sheet-fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    top: 0;
+    width: 400px;
+  }
+
+
+input.sheet-page1:checked ~ div.sheet-page1Area {
+    display: inline-block;
+}
+
+input.sheet-page2:checked ~ div.sheet-page2Area {
+    display: inline-block;
+}
+
+input.sheet-page3:checked ~ div.sheet-page3Area {
+    display: inline-block;
+}
+
+input.sheet-page4:checked ~ div.sheet-page4Area {
+    display: inline-block;
+}
+
+input.sheet-page5:checked ~ div.sheet-page5Area {
+  display: inline-block;
+}
+
+input.sheet-page6:checked ~ div.sheet-page6Area {
+  display: inline-block;
+}
+
+  input.sheet-sheetoptions + span.sheet-attr {
+    background: white;
+    border-radius: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.sheet-settings,
+.sheet-extraHealth1,
+.sheet-extraHealth2,
+.sheet-extraHealth3,
+.sheet-extraHealth4,
+.sheet-extraHealth5,
+.sheet-extraHealth6 {
+    display: none !important;
+}
+
+
+input.sheet-extraHealth1Input:checked ~ div * div * .sheet-extraHealth1,
+input.sheet-extraHealth2Input:checked ~ div * div * .sheet-extraHealth1,
+input.sheet-extraHealth2Input:checked ~ div * div * .sheet-extraHealth2,
+input.sheet-extraHealth3Input:checked ~ div * div * .sheet-extraHealth1,
+input.sheet-extraHealth3Input:checked ~ div * div * .sheet-extraHealth2,
+input.sheet-extraHealth3Input:checked ~ div * div * .sheet-extraHealth3,
+input.sheet-extraHealth4Input:checked ~ div * div * .sheet-extraHealth1,
+input.sheet-extraHealth4Input:checked ~ div * div * .sheet-extraHealth2,
+input.sheet-extraHealth4Input:checked ~ div * div * .sheet-extraHealth3,
+input.sheet-extraHealth4Input:checked ~ div * div * .sheet-extraHealth4,
+input.sheet-extraHealth5Input:checked ~ div * div * .sheet-extraHealth1,
+input.sheet-extraHealth5Input:checked ~ div * div * .sheet-extraHealth2,
+input.sheet-extraHealth5Input:checked ~ div * div * .sheet-extraHealth3,
+input.sheet-extraHealth5Input:checked ~ div * div * .sheet-extraHealth4,
+input.sheet-extraHealth5Input:checked ~ div * div * .sheet-extraHealth5,
+input.sheet-extraHealth6Input:checked ~ div * div * .sheet-extraHealth1,
+input.sheet-extraHealth6Input:checked ~ div * div * .sheet-extraHealth2,
+input.sheet-extraHealth6Input:checked ~ div * div * .sheet-extraHealth3,
+input.sheet-extraHealth6Input:checked ~ div * div * .sheet-extraHealth4,
+input.sheet-extraHealth6Input:checked ~ div * div * .sheet-extraHealth5,
+input.sheet-extraHealth6Input:checked ~ div * div * .sheet-extraHealth6{
+    display: table-row !important;
+}
+
+input.sheet-settingssheet:checked ~ div * .sheet-settings {
+    display: inline-block !important;
+}
+
+
+input.sheet-page1:checked ~ div.sheet-page2Area,
+input.sheet-page1:checked ~ div.sheet-settings,
+input.sheet-page1:checked ~ div.sheet-page3Area,
+input.sheet-page1:checked ~ div.sheet-page4Area,
+input.sheet-page1:checked ~ div.sheet-page5Area,
+input.sheet-page1:checked ~ div.sheet-page6Area,
+input.sheet-page2:checked ~ div.sheet-page1Area,
+input.sheet-page2:checked ~ div.sheet-settings,
+input.sheet-page2:checked ~ div.sheet-page3Area,
+input.sheet-page2:checked ~ div.sheet-diceroller,
+input.sheet-page2:checked ~ div.sheet-page4Area,
+input.sheet-page2:checked ~ div.sheet-page5Area,
+input.sheet-page2:checked ~ div.sheet-page6Area,
+input.sheet-page3:checked ~ div.sheet-diceroller,
+input.sheet-page3:checked ~ div.sheet-settings,
+input.sheet-page3:checked ~ div.sheet-page2Area,
+input.sheet-page3:checked ~ div.sheet-page1Area,
+input.sheet-page3:checked ~ div.sheet-page4Area,
+input.sheet-page3:checked ~ div.sheet-page5Area,
+input.sheet-page3:checked ~ div.sheet-page6Area,
+input.sheet-page4:checked ~ div.sheet-diceroller,
+input.sheet-page4:checked ~ div.sheet-settings,
+input.sheet-page4:checked ~ div.sheet-page2Area,
+input.sheet-page4:checked ~ div.sheet-page1Area,
+input.sheet-page4:checked ~ div.sheet-page3Area,
+input.sheet-page4:checked ~ div.sheet-page5Area,
+input.sheet-page4:checked ~ div.sheet-page6Area,
+input.sheet-page5:checked ~ div.sheet-diceroller,
+input.sheet-page5:checked ~ div.sheet-settings,
+input.sheet-page5:checked ~ div.sheet-page2Area,
+input.sheet-page5:checked ~ div.sheet-page1Area,
+input.sheet-page5:checked ~ div.sheet-page3Area,
+input.sheet-page5:checked ~ div.sheet-page4Area,
+input.sheet-settingssheet:checked ~ div.sheet-page1Area,
+input.sheet-settingssheet:checked ~ div.sheet-page2Area,
+input.sheet-settingssheet:checked ~ div.sheet-page3Area,
+input.sheet-settingssheet:checked ~ div.sheet-page4Area,
+input.sheet-settingssheet:checked ~ div.sheet-page5Area,
+input.sheet-settingssheet:checked ~ div.sheet-page6Area,
+input.sheet-settingssheet:checked ~ div.sheet-diceroller,
+input.sheet-pages:checked ~ .sheet-gametype,
+input.sheet-pages:checked ~ input.sheet-gametype + span
+{
+    display: none !important;
+}
+
+  .sheet-fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  .sheet-fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+
+  .sheet-fancy-sub {
+    line-height: 0.5;
+    text-align: center;
+  }
+
+  .sheet-fancy-inline {
+    display: inline-block;
+    padding-left: 33%;
+  }
+
+  .sheet-fancy-inline-span{
+      font-size: 30px !important;
+  }
+
+  .sheet-fancy-sub span {
+    display: inline-block;
+    position: relative;  
+  }
+
+  .sheet-fancy-sub input {
+      display: inline-block;
+      position: relative;
+  }
+
+  .sheet-fancy-sub span:before,
+  .sheet-fancy-sub span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    top: 0;
+    width: 50px;
+  }
+
+  .sheet-fancy-sub span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  .sheet-fancy-sub span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+
+
+input.sheet-sheetoptions + span.sheet-attr2 {
+    background: white;
+    border-radius: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+input.sheet-attr2 {
+    width: 87px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+    z-index: 9999;
+}
+
+span.sheet-attr2 {
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    margin-left: -91px;
+}
+
+.sheet-rolltemplate-WoDV20Attack table, 
+.sheet-rolltemplate-WoDV20Init table, 
+.sheet-rolltemplate-WoDV20ArmorSoak table,
+.sheet-rolltemplate-WoDV20Damage table {
+    width: 189px;
+    height: 189px;
+    padding: 2px;
+    background: url(http://i.imgur.com/xBk4U1p.jpg) top left;
+    background-size: 189px 189px;
+    background-repeat: no-repeat;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-WoDV20Attack th, 
+.sheet-rolltemplate-WoDV20Init th, 
+.sheet-rolltemplate-WoDV20ArmorSoak th,
+.sheet-rolltemplate-WoDV20Damage th {
+	color: rgb(112, 0, 0);
+    padding: 15px 2px 2px 20px;
+	line-height: 1.2em;
+	font-size: 1.2em;
+    text-align: left;
+}
+ 
+ 
+.sheet-rolltemplate-WoDV20Attack td, 
+.sheet-rolltemplate-WoDV20Init td, 
+.sheet-rolltemplate-WoDV20ArmorSoak td,
+.sheet-rolltemplate-WoDV20Damage td {
+    padding-left: 20px;
+    font-size: 1.0em;
+    vertical-align: top;
+}
+ 
+.sheet-rolltemplate-WoDV20Attack .sheet-result, 
+.sheet-rolltemplate-WoDV20Init .sheet-result, 
+.sheet-rolltemplate-WoDV20ArmorSoak .sheet-result,
+.sheet-rolltemplate-WoDV20Damage .sheet-result {
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(112, 0, 0);
+    padding-bottom: 20px;
+}
+ 
+.sheet-rolltemplate-WoDV20Attack .inlinerollresult, 
+.sheet-rolltemplate-WoDV20Init .inlinerollresult, 
+.sheet-rolltemplate-WoDV20ArmorSoak .inlinerollresult,
+.sheet-rolltemplate-WoDV20Damage .inlinerollresult  {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-WoDV20Attack .inlinerollresult.fullcrit, 
+.sheet-rolltemplate-WoDV20Init .inlinerollresult.fullcrit, 
+.sheet-rolltemplate-WoDV20ArmorSoak .inlinerollresult.fullcrit,
+.sheet-rolltemplate-WoDV20Damage .inlinerollresult.fullcrit {
+   color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-WoDV20Attack .inlinerollresult.fullfail, 
+.sheet-rolltemplate-WoDV20Init .inlinerollresult.fullfail, 
+.sheet-rolltemplate-WoDV20ArmorSoak .inlinerollresult.fullfail,
+.sheet-rolltemplate-WoDV20Damage .inlinerollresult.fullfail {
+    color: #000000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-WoDV20Attack .inlinerollresult.importantroll, 
+.sheet-rolltemplate-WoDV20Init .inlinerollresult.importantroll, 
+.sheet-rolltemplate-WoDV20ArmorSoak .inlinerollresult.importantroll,
+.sheet-rolltemplate-WoDV20Damage .inlinerollresult.importantroll {
+	color: #3FB315;
+    border: none;
+}
