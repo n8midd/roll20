@@ -155,10 +155,10 @@ input.sheet-settingssheet:checked ~ .sheet-header + .sheet-settings {
 }
 
 .sheet-image-div {
-    background-image: url('https://i.imgur.com/Ys6shoz.jpg');
-    background-size: 100% 240px;
-    background-repeat: repeat-x;
-    background-position: 0px 10px;
+    background-image: url('https://i.imgur.com/xBUKwJU.jpg');
+    background-size: 70% 190px;
+    background-repeat: no-repeat;
+    background-position: 100px 10px;
 }
 
 input.sheet-settingssheet:checked ~ .sheet-background-image::after{
