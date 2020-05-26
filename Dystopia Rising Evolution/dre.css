@@ -1,0 +1,460 @@
+
+  .sheet-border-div {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 150px 30px 38px 30px;
+    border-image: url('https://i.imgur.com/7kcg4M2.png') 793 64 62 66 repeat;
+    width: 806px;
+  }
+  
+  .sheet-image-div {
+      background-image: url('https://i.imgur.com/lZRuteR.png');
+      background-size: 385px 150px;
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+  }
+  
+  .charsheet .sheet-rollcontainer {
+    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Chronicles%20of%20Darkness%20by%20Roll20/images/die.png') no-repeat center;
+    background-size: 3em;
+    width: 50px;
+    height: 50px;
+    
+  }
+
+  .charsheet .sheet-rollcontainer button:before {
+    font-family: "Courier" !important;
+    content: "Roll" !important;
+    background: none !important;
+  }
+  
+  .charsheet .sheet-rollcontainer button {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+  
+
+.sheet-inputSpecialization
+{
+    float:right; 
+    width:100%; 
+    padding-left: 5px;
+}
+
+span.sheet-attrHeader {
+    
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    margin-left: -81px;
+    float:right;
+}
+
+.sheet-mainDiv{
+    width: 800px;
+}
+
+
+div.sheet-greyGridTable {
+    border: 0px solid #FFFFFF;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  .sheet-divTable.sheet-greyGridTable .sheet-divTableBody .sheet-divTableCell {
+    font-size: 13px;
+  }
+  .sheet-divTable.sheet-greyGridTable .sheet-divTableHeading {
+    background: #FFFFFF;
+    border-bottom: 4px solid #333333;
+  }
+  .sheet-divTable.sheet-greyGridTable .sheet-divTableHeading .sheet-divTableHead {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+  }
+
+  .sheet-borderRight{
+    border-right: 2px solid #333333;
+    padding-right: 5px;
+  }
+  
+  .sheet-greyGridTable .sheet-tableFootStyle {
+    font-size: 14px;
+  }
+  /* DivTable.com */
+  .sheet-divTable{ display: table; }
+  .sheet-divTableRow { display: table-row; }
+  .sheet-divTableHeading { display: table-header-group;}
+  .sheet-divTableCell, .sheet-divTableHead { display: table-cell;}
+  .sheet-divTableHeading { display: table-header-group;}
+  .sheet-divTableFoot { display: table-footer-group;}
+  .sheet-divTableBody { display: table-row-group;}
+
+  .sheet-roteSkill {
+    position: relative;
+    top:-11px;
+    left: 10px;
+}
+
+.sheet-3column{
+    float:left;
+    width:33%;
+}
+
+
+div * input.sheet-attr:checked + span.sheet-attr,
+span > input.sheet-attr:checked + span.sheet-attr{
+  color: #B21800;
+  text-shadow: 0px 0px 10px black;
+}
+
+
+input.sheet-attr {
+    width: 87px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+    z-index: 9999;
+}
+.sheet-2column{
+    float:left;
+    width:50%;
+}
+
+.sheet-attributeHeaders{
+    float: right;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .sheet-row2{
+      display:inline-block;
+      clear: both;
+      width:100%;
+  }
+
+.repcontrol {
+    /* This will make the Add & Modify words transparent so that only our symbols below show up */ }
+    .repcontrol .btn {
+      background: #003180;
+      border-radius: 2px;
+      border: 1px solid white;
+      display: inline-block;
+      font-size: 0;
+      height: 20px;
+      line-height: 1;
+      margin: 5px;
+      padding: 0;
+      width: 20px; }
+    .repcontrol .repcontrol_add, .repcontrol .repcontrol_edit {
+      color: transparent;
+      /* This will put icons next to the buttons. A `+` for Add and a lock for edit */ }
+      .repcontrol .repcontrol_add:after, .repcontrol .repcontrol_edit:after {
+        color: white;
+        font-family: "pictos";
+        font-size: 12pt;
+        opacity: 1; }
+    .repcontrol .repcontrol_edit:after {
+      content: '('; }
+    .repcontrol .repcontrol_add:after {
+      content: '&'; }
+
+
+.sheet-inputSpecialization
+{
+    float:right; 
+    width:100%; 
+    padding-left: 5px;
+}
+
+
+span.sheet-attr {
+    
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    margin-left: -81px;
+    float:right;
+}
+
+input.sheet-zero:checked + span::before
+{
+    opacity: 0;
+}
+
+input.sheet-zero:hover + span::before
+{
+    opacity: 0.25;
+    font-size: 12px;
+    content: "✖";
+    text-indent: 0.5px;
+}
+
+input.sheet-zero + span::before
+{
+    opacity: 0;
+}
+
+
+/* Hide actual dot/checkbox */
+input[type="radio"].sheet-normal,
+input.sheet-weapon,
+input[type="checkbox"].sheet-normal
+{
+    position: absolute;
+    float:center;
+    opacity: 0.0;
+    width: 15px;
+    padding: 1em;
+    cursor: pointer;
+    z-index: 10;
+    margin-top: 5px;
+}
+
+/* Styles common to fake dot and checkbox */
+input[type="radio"].sheet-normal + span::before,
+input.sheet-weapon + span::before,
+input[type="checkbox"].sheet-normal + span::before,
+.sheet-permadot::before
+{
+    border: solid 1px #000000;
+    line-height: 11px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0em;
+
+    -moz-box-shadow: 0 0 0px #000;
+    -webkit-box-shadow: 0 0 0px #000;
+    box-shadow: 0 0 0px #000;
+
+    background: #000000;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+}
+
+
+/* Styles unique to fake checkbox (unchecked) */
+input[type="checkbox"].sheet-normal + span::before
+{
+    position:relative;
+    content: "";
+    opacity: 1.0;
+    width: 10px;
+    height: 10px;
+    font-size: 12px;
+
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+
+/* Styles unique to fake checkbox (checked) */
+input[type="checkbox"].sheet-normal:checked + span::before
+{
+    background:
+        linear-gradient(to top left,
+           rgba(0,0,0,0) 0%,
+           rgba(0,0,0,0) calc(50% - 0.8px),
+           rgba(0,0,0,1) 50%,
+           rgba(0,0,0,0) calc(50% + 0.8px),
+           rgba(0,0,0,0) 100%),
+       linear-gradient(to top right,
+           rgba(0,0,0,0) 0%,
+           rgba(0,0,0,0) calc(50% - 0.8px),
+           rgba(0,0,0,1) 50%,
+           rgba(0,0,0,0) calc(50% + 0.8px),
+           rgba(0,0,0,0) 100%);
+
+    -moz-box-shadow: 0 0 2px transparent;
+    -webkit-box-shadow: 0 0 2px transparent;
+    box-shadow: 0 0 2px transparent;
+}
+
+/* Styles unique to fake dot (checked or left of checked) */
+input[type="radio"].sheet-normal + span::before,
+input.sheet-weapon:checked + span::before,
+.sheet-permadot::before
+{
+    content: "•";
+    width: 10px;
+    height: 10px;
+    font-size: 41.9px;
+    font-family: "Arial";
+    text-indent: -2px;
+    font-weight: normal;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+/* Remove dot from all radios _after_ selected one */
+input[type="radio"].sheet-normal:checked ~ input[type="radio"] + span::before
+{
+    content: "";
+}
+
+span.sheet-attr.sheet-attribute {
+    position: absolute !important;
+    float: left !important;
+}
+
+.sheet-inputSpecializationLeft
+{
+    float:left; 
+    width:100%; 
+    padding-left: 5px;
+}
+
+
+
+.sheet-diceroller {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    background: white;
+  }
+  
+  .charsheet .sheet-diceroller table th {
+    text-align: center;
+    font-size: 1.3em;
+  }
+  
+  .charsheet .sheet-diceroller table {
+    border: solid 1px #000000;
+  }
+  
+  .charsheet .sheet-diceroller table td {
+    border-right: solid 1px #000000;
+  }
+  
+  .charsheet .sheet-diceroller table .sheet-bottom {
+    border-bottom: solid 1px #000000;
+  }
+  
+  .charsheet .sheet-diceroller .sheet-rollcontainer {
+    background: url('https://i.imgur.com/cZqxakP.jpg') no-repeat center;
+    background-size: 7em;
+    border-bottom: solid 1px #000000;
+  }
+  
+  .charsheet .sheet-diceroller .sheet-attackrollcontainerVampire {
+      background: url('https://i.imgur.com/l3EkID9.png') no-repeat center;
+      background-size: 4em;
+      border-bottom: solid 1px #000000;
+    }
+  
+  .charsheet .sheet-diceroller table td.sheet-initiative {
+    border-bottom: solid 1px #000000;
+    text-align: center;
+  }
+  
+  .charsheet .sheet-diceroller table td.sheet-initiative button:before {
+    content: "" !important;
+  }
+  
+  .charsheet .sheet-diceroller table td.sheet-initiative button {
+    color: #2A2D80;
+    font-weight: bold;
+    height: auto;
+    width: auto;
+    opacity: 100;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .charsheet .sheet-diceroller button:before {
+    font-family: "Courier" !important;
+    content: "Roll" !important;
+    background: none !important;
+  }
+  
+  .charsheet .sheet-diceroller button {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+  
+  .charsheet .sheet-diceroller .sheet-rolldisplay textarea {
+    resize: none;
+    overflow: hidden;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+    padding: 0px;
+    text-align: center;
+    height: 70px;
+    pointer-events: none;
+    width: 120px;
+  }
+
+
+.sheet-rolltemplate-WoDV20Attack table {
+    width: 189px;
+    height: 189px;
+    padding: 2px;
+    background: url(https://i.imgur.com/7kcg4M2.png) top left;
+    background-size: 189px 189px;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    border-spacing: 0;
+}
+ 
+.sheet-rolltemplate-WoDV20Attack th {
+	color: rgb(112, 0, 0);
+    padding: 15px 2px 2px 20px;
+	line-height: 1.2em;
+	font-size: 1.2em;
+    text-align: left;
+}
+ 
+ 
+.sheet-rolltemplate-WoDV20Attack td {
+    padding-left: 20px;
+    font-size: 1.0em;
+    vertical-align: top;
+}
+ 
+.sheet-rolltemplate-WoDV20Attack .sheet-result{
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(112, 0, 0);
+    padding-bottom: 20px;
+}
+ 
+.sheet-rolltemplate-WoDV20Attack .inlinerollresult {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-WoDV20Attack .inlinerollresult.fullcrit {
+   color: #3FB315;
+    border: none;
+}
+ 
+.sheet-rolltemplate-WoDV20Attack .inlinerollresult.fullfail {
+    color: #000000;
+    border: none;
+}
+ 
+.sheet-rolltemplate-WoDV20Attack .inlinerollresult.importantroll {
+	color: #3FB315;
+    border: none;
+}

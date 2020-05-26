@@ -1,0 +1,907 @@
+<div class="image-div">
+    <div class="border-div">
+    <div class="rollcontainer" style="top: 75px; right: 30px;width: 150px;  position: absolute;" >
+        <button type="roll" name="roll_check" style="width:50px; padding-left:50px;" value="!apiv20roll ;@{rolldisplay}; @{numberOfDice}; ?{Modifier|0}; ?{Difficulty|8}; 10"></button><span style="float:right; padding-top:15px; font-weight:bold; margin-left:-50px;">10-Again</span>
+    </div>
+    <div class="rollcontainer" style="top: 125px; right: 30px; width: 150px; position: absolute;" >
+        <button type="roll" name="roll_check" style="width:50px;padding-left:50px;" value="!apiv20roll ;@{rolldisplay}; @{numberOfDice}; ?{Modifier|0}; ?{Difficulty|8}; 9"></button><span style="float:right; padding-top:15px; font-weight:bold;margin-left:-50px;">9-Again</span>
+    </div>
+    <div class="rollcontainer" style="top: 175px; right: 30px; width: 150px; position: absolute;" >
+        <button type="roll" name="roll_check" style="width:50px;padding-left:50px;" value="!apiv20roll ;@{rolldisplay}; @{numberOfDice}; ?{Modifier|0}; ?{Difficulty|8}; 8"></button><span style="float:right; padding-top:15px; font-weight:bold;margin-left:-50px;">8-Again</span>
+    </div>
+    <div style="width:369px; float:right; margin-top: -144px; padding-right: 25px;">
+        <div style="width: 100%; float:right; padding-top:10px">
+            <div style="float: left;">
+                <span class="attrHeader" >Name:</span>
+            </div>
+            <div style="float: left;">
+                <input type="text" class="inputSpecialization" style="width: 300px;" name="attr_character_name">
+            </div>
+        </div>
+        <div style="width: 100%; float:right; padding-top:10px">
+            <div style="float: left;">
+                <span class="attrHeader" >Player:</span>
+            </div>
+            <div style="float: left;">
+                <input type="text" class="inputSpecialization" style="width: 300px;" name="attr_player">
+            </div>
+        </div>
+        <div style="width: 100%; float:right; padding-top:10px">
+            <div style="float: left;">
+                <span class="attrHeader" >Series:</span>
+            </div>
+            <div style="float: left;">
+                <input type="text" class="inputSpecialization" style="width: 300px;" name="attr_series">
+            </div>
+        </div>
+        <div style="width: 100%; float:right; padding-top:10px">
+            <div style="float: left;">
+                <span class="attrHeader" >Strain:</span>
+            </div>
+            <div style="float: left;">
+                <input type="text" class="inputSpecialization" style="width: 300px;" name="attr_strain_text">
+            </div>
+        </div>
+    </div>
+
+    <div class="mainDiv">
+        <div class="divTable greyGridTable">
+            <div class="divTableHeading">
+                <div class="divTableRow">
+                    <div class="divTableHead" style="color: white;">blank</div>
+                    <div class="divTableHead"><span style="float:left;">SKILLS</span></div>
+                </div>
+            </div>
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Academics_flag" value="1" />
+                            <span class="attr attribute" >Academics</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecializationLeft"  style="margin-left: -15px; width: 145px" name="attr_Academics_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Academics" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Academics" value="1" /><span></span><input type="radio" class="normal" name="attr_Academics" value="2" /><span></span><input type="radio" class="normal" name="attr_Academics" value="3" /><span></span><input type="radio" class="normal" name="attr_Academics" value="4" /><span></span><input type="radio" class="normal" name="attr_Academics" value="5" /><span></span>
+                        </div>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Lore_flag" value="1" />
+                            <span class="attr attribute" >Lore</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecialization" style="width:204px; margin-right:-26px; margin-left: -150px;"  name="attr_Lore_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Lore" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Lore" value="1" /><span></span><input type="radio" class="normal" name="attr_Lore" value="2" /><span></span><input type="radio" class="normal" name="attr_Lore" value="3" /><span></span><input type="radio" class="normal" name="attr_Lore" value="4" /><span></span><input type="radio" class="normal" name="attr_Lore" value="5" /><span></span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="divTableRow">
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Athletics_flag" value="1" />
+                            <span class="attr attribute" >Athletics</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecializationLeft"  style="margin-left: -29px; width: 159px" name="attr_Athletics_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Athletics" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Athletics" value="1" /><span></span><input type="radio" class="normal" name="attr_Athletics" value="2" /><span></span><input type="radio" class="normal" name="attr_Athletics" value="3" /><span></span><input type="radio" class="normal" name="attr_Athletics" value="4" /><span></span><input type="radio" class="normal" name="attr_Athletics" value="5" /><span></span>
+                        </div>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Medicine_flag" value="1" />
+                            <span class="attr attribute" >Medicine</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecialization" style="width:185px; margin-right:-26px; margin-left:-150px;"  name="attr_Medicine_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Medicine" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Medicine" value="1" /><span></span><input type="radio" class="normal" name="attr_Medicine" value="2" /><span></span><input type="radio" class="normal" name="attr_Medicine" value="3" /><span></span><input type="radio" class="normal" name="attr_Medicine" value="4" /><span></span><input type="radio" class="normal" name="attr_Medicine" value="5" /><span></span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="divTableRow">
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_CloseCombat_flag" value="1" />
+                            <span class="attr attribute" >Close Combat</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecializationLeft"  style="margin-left: 10px; width: 120px" name="attr_CloseCombat_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_CloseCombat" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_CloseCombat" value="1" /><span></span><input type="radio" class="normal" name="attr_CloseCombat" value="2" /><span></span><input type="radio" class="normal" name="attr_CloseCombat" value="3" /><span></span><input type="radio" class="normal" name="attr_CloseCombat" value="4" /><span></span><input type="radio" class="normal" name="attr_CloseCombat" value="5" /><span></span>
+                        </div>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Persuasion_flag" value="1" />
+                            <span class="attr attribute" >Persuasion</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecialization" style="width:166px; margin-right:-26px; margin-left: -150px;"  name="attr_Persuasion_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Persuasion" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Persuasion" value="1" /><span></span><input type="radio" class="normal" name="attr_Persuasion" value="2" /><span></span><input type="radio" class="normal" name="attr_Persuasion" value="3" /><span></span><input type="radio" class="normal" name="attr_Persuasion" value="4" /><span></span><input type="radio" class="normal" name="attr_Persuasion" value="5" /><span></span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="divTableRow">
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Culture_flag" value="1" />
+                            <span class="attr attribute" >Culture</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecializationLeft"  style="margin-left: -42px; width: 171px" name="attr_Culture_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Culture" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Culture" value="1" /><span></span><input type="radio" class="normal" name="attr_Culture" value="2" /><span></span><input type="radio" class="normal" name="attr_Culture" value="3" /><span></span><input type="radio" class="normal" name="attr_Culture" value="4" /><span></span><input type="radio" class="normal" name="attr_Culture" value="5" /><span></span>
+                        </div>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Pilot_flag" value="1" />
+                            <span class="attr attribute" >Pilot</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecialization" style="width:204px; margin-right:-26px; margin-left: -150px;"  name="attr_Pilot_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Pilot" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Pilot" value="1" /><span></span><input type="radio" class="normal" name="attr_Pilot" value="2" /><span></span><input type="radio" class="normal" name="attr_Pilot" value="3" /><span></span><input type="radio" class="normal" name="attr_Pilot" value="4" /><span></span><input type="radio" class="normal" name="attr_Pilot" value="5" /><span></span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="divTableRow">
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Empathy_flag" value="1" />
+                            <span class="attr attribute" >Empathy</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecializationLeft"  style="margin-left: -35px; width: 164px" name="attr_Empathy_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Empathy" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Empathy" value="1" /><span></span><input type="radio" class="normal" name="attr_Empathy" value="2" /><span></span><input type="radio" class="normal" name="attr_Empathy" value="3" /><span></span><input type="radio" class="normal" name="attr_Empathy" value="4" /><span></span><input type="radio" class="normal" name="attr_Empathy" value="5" /><span></span>
+                        </div>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Science_flag" value="1" />
+                            <span class="attr attribute" >Science</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecialization" style="width:190px; margin-right:-26px; margin-left:-50px"  name="attr_Science_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Science" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Science" value="1" /><span></span><input type="radio" class="normal" name="attr_Science" value="2" /><span></span><input type="radio" class="normal" name="attr_Science" value="3" /><span></span><input type="radio" class="normal" name="attr_Science" value="4" /><span></span><input type="radio" class="normal" name="attr_Science" value="5" /><span></span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="divTableRow">
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Firearms_flag" value="1" />
+                            <span class="attr attribute" >Firearms</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecializationLeft"  style="margin-left: -33px; width: 162px" name="attr_Firearms_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Firearms" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Firearms" value="1" /><span></span><input type="radio" class="normal" name="attr_Firearms" value="2" /><span></span><input type="radio" class="normal" name="attr_Firearms" value="3" /><span></span><input type="radio" class="normal" name="attr_Firearms" value="4" /><span></span><input type="radio" class="normal" name="attr_Firearms" value="5" /><span></span>
+                        </div>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Subterfuge_flag" value="1" />
+                            <span class="attr attribute" >Subterfuge</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecialization" style="width:165px; margin-right:-26px; margin-left:-50px"  name="attr_Subterfuge_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Subterfuge" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Subterfuge" value="1" /><span></span><input type="radio" class="normal" name="attr_Subterfuge" value="2" /><span></span><input type="radio" class="normal" name="attr_Subterfuge" value="3" /><span></span><input type="radio" class="normal" name="attr_Subterfuge" value="4" /><span></span><input type="radio" class="normal" name="attr_Subterfuge" value="5" /><span></span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="divTableRow">
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Integrity_flag" value="1" />
+                            <span class="attr attribute" >Integrity</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecializationLeft"  style="margin-left: -33px; width: 162px" name="attr_Integrity_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Integrity" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Integrity" value="1" /><span></span><input type="radio" class="normal" name="attr_Integrity" value="2" /><span></span><input type="radio" class="normal" name="attr_Integrity" value="3" /><span></span><input type="radio" class="normal" name="attr_Integrity" value="4" /><span></span><input type="radio" class="normal" name="attr_Integrity" value="5" /><span></span>
+                        </div>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Survival_flag" value="1" />
+                            <span class="attr attribute" >Survival</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecialization" style="width:190px; margin-right:-26px; margin-left:-50px"  name="attr_Survival_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Survival" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Survival" value="1" /><span></span><input type="radio" class="normal" name="attr_Survival" value="2" /><span></span><input type="radio" class="normal" name="attr_Survival" value="3" /><span></span><input type="radio" class="normal" name="attr_Survival" value="4" /><span></span><input type="radio" class="normal" name="attr_Survival" value="5" /><span></span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="divTableRow">
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Leadership_flag" value="1" />
+                            <span class="attr attribute" >Leadership</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecializationLeft"  style="margin-left: -15px; width: 144px" name="attr_Leadership_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Leadership" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Leadership" value="1" /><span></span><input type="radio" class="normal" name="attr_Leadership" value="2" /><span></span><input type="radio" class="normal" name="attr_Leadership" value="3" /><span></span><input type="radio" class="normal" name="attr_Leadership" value="4" /><span></span><input type="radio" class="normal" name="attr_Leadership" value="5" /><span></span>
+                        </div>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="3column">
+                            <input type="checkbox" class="attr" name="attr_Technology_flag" value="1" />
+                            <span class="attr attribute" >Technology</span>
+                        </div>
+                        <div class="3column">
+                            <input type="text" class="inputSpecialization" style="width:164px; margin-right:-26px; margin-left:-50px"  name="attr_Technology_Specialization"/>
+                        </div>
+                        <div class="3column">
+                            <input type="radio" class="normal zero" name="attr_Technology" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Technology" value="1" /><span></span><input type="radio" class="normal" name="attr_Technology" value="2" /><span></span><input type="radio" class="normal" name="attr_Technology" value="3" /><span></span><input type="radio" class="normal" name="attr_Technology" value="4" /><span></span><input type="radio" class="normal" name="attr_Technology" value="5" /><span></span>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="divTable greyGridTable">
+            <div class="divTableHeading">
+                <div class="divTableRow">
+                    <div class="divTableHead" style="color: white;">blank</div>
+                    <div class="divTableHead" style="color: white;">blank</div>
+                    <div class="divTableHead"><span style="">ATTRIBUTE</span></div>
+                    <div class="divTableHead" style="color: white;">blank</div>
+                </div>
+            </div>
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableCell">
+                        <span class="sheet-attributeHeaders" style="position: absolute; padding-top:2px; margin-left:-32px;" >Force</span>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="2column">
+                            <input type="checkbox" class="attr" name="attr_Intellect_flag" value="1" />
+                            <span class="attr attribute" >Intellect</span>
+                        </div>
+                        <div class="2column">
+                            <input type="radio" class="normal zero" name="attr_Intellect" value="0" /><span></span><input type="radio" class="normal" name="attr_Intellect" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_Intellect" value="2" /><span></span><input type="radio" class="normal" name="attr_Intellect" value="3" /><span></span><input type="radio" class="normal" name="attr_Intellect" value="4" /><span></span><input type="radio" class="normal" name="attr_Intellect" value="5" /><span></span>
+                        </div>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="2column">
+                            <input type="checkbox" class="attr" name="attr_Might_flag" value="1" />
+                            <span class="attr attribute" >Might</span>
+                        </div>
+                        <div class="2column">
+                            <input type="radio" class="normal zero" name="attr_Might" value="0" /><span></span><input type="radio" class="normal" name="attr_Might" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_Might" value="2" /><span></span><input type="radio" class="normal" name="attr_Might" value="3" /><span></span><input type="radio" class="normal" name="attr_Might" value="4" /><span></span><input type="radio" class="normal" name="attr_Might" value="5" /><span></span>
+                        </div>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="2column">
+                            <input type="checkbox" class="attr" name="attr_Presence_flag" value="1" />
+                            <span class="attr attribute" >Presence</span>
+                        </div>
+                        <div class="2column">
+                            <input type="radio" class="normal zero" name="attr_Presence" value="0" /><span></span><input type="radio" class="normal" name="attr_Presence" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_Presence" value="2" /><span></span><input type="radio" class="normal" name="attr_Presence" value="3" /><span></span><input type="radio" class="normal" name="attr_Presence" value="4" /><span></span><input type="radio" class="normal" name="attr_Presence" value="5" /><span></span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="divTableRow">
+                    <div class="divTableCell">
+                        <span class="sheet-attributeHeaders" style="position: absolute; padding-top:2px; margin-left:-32px;" >Finesse</span>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="2column">
+                            <input type="checkbox" class="attr" name="attr_Cunning_flag" value="1" />
+                            <span class="attr attribute" >Cunning</span>
+                        </div>
+                        <div class="2column">
+                            <input type="radio" class="normal zero" name="attr_Cunning" value="0" /><span></span><input type="radio" class="normal" name="attr_Cunning" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_Cunning" value="2" /><span></span><input type="radio" class="normal" name="attr_Cunning" value="3" /><span></span><input type="radio" class="normal" name="attr_Cunning" value="4" /><span></span><input type="radio" class="normal" name="attr_Cunning" value="5" /><span></span>
+                        </div>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="2column">
+                            <input type="checkbox" class="attr" name="attr_Dexterity_flag" value="1" />
+                            <span class="attr attribute" >Dexterity</span>
+                        </div>
+                        <div class="2column">
+                            <input type="radio" class="normal zero" name="attr_Dexterity" value="0" /><span></span><input type="radio" class="normal" name="attr_Dexterity" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_Dexterity" value="2" /><span></span><input type="radio" class="normal" name="attr_Dexterity" value="3" /><span></span><input type="radio" class="normal" name="attr_Dexterity" value="4" /><span></span><input type="radio" class="normal" name="attr_Dexterity" value="5" /><span></span>
+                        </div>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="2column">
+                            <input type="checkbox" class="attr" name="attr_Manipulation_flag" value="1" />
+                            <span class="attr attribute" >Manipulation</span>
+                        </div>
+                        <div class="2column">
+                            <input type="radio" class="normal zero" name="attr_Manipulation" value="0" /><span></span><input type="radio" class="normal" name="attr_Manipulation" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_Manipulation" value="2" /><span></span><input type="radio" class="normal" name="attr_Manipulation" value="3" /><span></span><input type="radio" class="normal" name="attr_Manipulation" value="4" /><span></span><input type="radio" class="normal" name="attr_Manipulation" value="5" /><span></span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="divTableRow">
+                    <div class="divTableCell">
+                        <span class="sheet-attributeHeaders" style="position: absolute; padding-top:2px; margin-left:-32px;" >Resilience</span>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="2column">
+                            <input type="checkbox" class="attr" name="attr_Resolve_flag" value="1" />
+                            <span class="attr attribute" >Resolve</span>
+                        </div>
+                        <div class="2column">
+                            <input type="radio" class="normal zero" name="attr_Resolve" value="0" /><span></span><input type="radio" class="normal" name="attr_Resolve" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_Resolve" value="2" /><span></span><input type="radio" class="normal" name="attr_Resolve" value="3" /><span></span><input type="radio" class="normal" name="attr_Resolve" value="4" /><span></span><input type="radio" class="normal" name="attr_Resolve" value="5" /><span></span>
+                        </div>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="2column">
+                            <input type="checkbox" class="attr" name="attr_Stamina_flag" value="1" />
+                            <span class="attr attribute" >Stamina</span>
+                        </div>
+                        <div class="2column">
+                            <input type="radio" class="normal zero" name="attr_Stamina" value="0" /><span></span><input type="radio" class="normal" name="attr_Stamina" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_Stamina" value="2" /><span></span><input type="radio" class="normal" name="attr_Stamina" value="3" /><span></span><input type="radio" class="normal" name="attr_Stamina" value="4" /><span></span><input type="radio" class="normal" name="attr_Stamina" value="5" /><span></span>
+                        </div>
+                    </div>
+                    <div class="divTableCell">
+                        <div class="2column">
+                            <input type="checkbox" class="attr" name="attr_Composure_flag" value="1" />
+                            <span class="attr attribute" >Composure</span>
+                        </div>
+                        <div class="2column">
+                            <input type="radio" class="normal zero" name="attr_Composure" value="0" /><span></span><input type="radio" class="normal" name="attr_Composure" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_Composure" value="2" /><span></span><input type="radio" class="normal" name="attr_Composure" value="3" /><span></span><input type="radio" class="normal" name="attr_Composure" value="4" /><span></span><input type="radio" class="normal" name="attr_Composure" value="5" /><span></span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div style="width: 100%; overflow:auto">
+            <div style="width:50%; float:left">
+                <div class="divTable greyGridTable">
+                    <div class="divTableHeading">
+                        <div class="divTableRow">
+                            <div class="divTableHead"><span>PATHS</span></div>
+                        </div>
+                    </div>
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div class="3column">
+                                    <input type="checkbox" class="attr" name="attr_Strain_flag" value="1" />
+                                    <span class="attr attribute" >Strain</span>
+                                </div>
+                                <div class="3column">
+                                    <input type="text" class="inputSpecializationLeft"  style="margin-left: -52px; width: 215px" name="attr_Strain_Specialization"/>
+                                </div>
+                                <div class="3column">
+                                    <input type="radio" class="normal zero" name="attr_Strain" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Strain" value="1" /><span></span><input type="radio" class="normal" name="attr_Strain" value="2" /><span></span><input type="radio" class="normal" name="attr_Strain" value="3" /><span></span><input type="radio" class="normal" name="attr_Strain" value="4" /><span></span><input type="radio" class="normal" name="attr_Strain" value="5" /><span></span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div class="2column">
+                                    <input type="checkbox" class="attr" name="attr_Role_flag" value="1" style="margin-left:-58px;"/>
+                                    <span class="attr attribute" >Role</span>
+                                </div>
+                                <div class="2column">
+                                    <input type="text" class="inputSpecializationLeft"  style="margin-left: -120px; width: 215px" name="attr_Origin_Specialization"/>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div class="3column">
+                                    <input type="checkbox" class="attr" name="attr_Society_flag" value="1" />
+                                    <span class="attr attribute" >Society</span>
+                                </div>
+                                <div class="3column">
+                                    <input type="text" class="inputSpecializationLeft"  style="margin-left: -40px; width: 203px" name="attr_Society_Specialization"/>
+                                </div>
+                                <div class="3column">
+                                    <input type="radio" class="normal zero" name="attr_Society" value="0" checked="checked" /><span></span><input type="radio" class="normal" name="attr_Society" value="1" /><span></span><input type="radio" class="normal" name="attr_Society" value="2" /><span></span><input type="radio" class="normal" name="attr_Society" value="3" /><span></span><input type="radio" class="normal" name="attr_Society" value="4" /><span></span><input type="radio" class="normal" name="attr_Society" value="5" /><span></span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <input type="text" class="inputSpecializationLeft"   name="attr_Society2_Specialization"/>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <input type="text" class="inputSpecializationLeft"   name="attr_Society3_Specialization"/>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="repeating">
+                    <div style="text-align: center;">
+                        <span style="float:none; font-size: 20px; font-weight:bold;color:#333333; text-align: center;" >CONNECTIONS</span>
+                    </div>
+                    <br/>
+                    <fieldset class="repeating_ConnectionsRepeating">
+                        <div class="row2">
+                            <div style="width:100%; float:left">
+                                <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_Connectionstext"/>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div style="width:50%; float:left">
+                <div class="repeating">
+                    <div style="text-align: center;">
+                        <span style="float:none; font-size: 20px; font-weight:bold;color:#333333; text-align: center;" >ASPIRATIONS</span>
+                    </div>
+                    <br/>
+                    <fieldset class="repeating_aspirations">
+                        <div class="row2">
+                            <div style="width: 20%; float:left">
+                                <select name="attr_typeOfAspiration" style="width:100%">
+                                    <option value="0" selected="selected">Short</option>
+                                    <option value="1">Long</option>
+                                </select>
+                            </div>
+                            <div style="width:80%; float:left">
+                                <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_Aspirationtext"/>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <br/>
+                <br/>
+                <div class="repeating">
+                    <div style="text-align: center;">
+                        <span style="float:none; font-size: 20px; font-weight:bold;color:#333333; text-align: center;" >SKILL TRICKS</span>
+                    </div>
+                    <br/>
+                    <fieldset class="repeating_skilltricks">
+                        <div class="row2">
+                            <div style="width:100%; float:left">
+                                <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_skilltrickstext"/>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%; overflow:auto; padding-top:15px;">
+            <div style="width:33%; float:left">
+                <div class="divTable greyGridTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div style="width:10%; float:left; margin-top:7px;">
+                                    <input class="roteSkill" type="checkbox" name="attr_Bruised1_Checkbox_flag" value="1" />
+                                </div>
+                                <div style="width:30%; float:left; font-size:13px; font-weight:bold;">
+                                    <span>Bruised</span>
+                                </div>
+                                <div style="width:55%; float:left">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_bruised1text"/>
+                                </div>
+                                <div style="width:5%; float:left; font-size:12px; margin-top: 4px;">
+                                    <span>+1</span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div style="width:10%; float:left; margin-top:7px;">
+                                    <input class="roteSkill" type="checkbox" name="attr_Bruised2_Checkbox_flag" value="1" />
+                                </div>
+                                <div style="width:30%; float:left; font-size:13px; font-weight:bold;">
+                                    <span>Bruised</span>
+                                </div>
+                                <div style="width:55%; float:left">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_bruised2text"/>
+                                </div>
+                                <div style="width:5%; float:left; font-size:12px; margin-top: 4px;">
+                                    <span>+1</span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div style="width:10%; float:left; margin-top:7px;">
+                                    <input class="roteSkill" type="checkbox" name="attr_Injured1_Checkbox_flag" value="1" />
+                                </div>
+                                <div style="width:30%; float:left; font-size:13px; font-weight:bold;">
+                                    <span>Injured</span>
+                                </div>
+                                <div style="width:55%; float:left">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_injured1text"/>
+                                </div>
+                                <div style="width:5%; float:left; font-size:12px; margin-top: 4px;">
+                                    <span>+2</span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div style="width:10%; float:left; margin-top:7px;">
+                                    <input class="roteSkill" type="checkbox" name="attr_Injured2_Checkbox_flag" value="1" />
+                                </div>
+                                <div style="width:30%; float:left; font-size:13px; font-weight:bold;">
+                                    <span>Injured</span>
+                                </div>
+                                <div style="width:55%; float:left">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_injured2text"/>
+                                </div>
+                                <div style="width:5%; float:left; font-size:12px; margin-top: 4px;">
+                                    <span>+2</span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div style="width:10%; float:left; margin-top:7px;">
+                                    <input class="roteSkill" type="checkbox" name="attr_Maimed_Checkbox_flag" value="1" />
+                                </div>
+                                <div style="width:30%; float:left; font-size:13px; font-weight:bold;">
+                                    <span>Maimed</span>
+                                </div>
+                                <div style="width:55%; float:left">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_maimedtext"/>
+                                </div>
+                                <div style="width:5%; float:left; font-size:12px; margin-top: 4px;">
+                                    <span>+4</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div style="width:100%; float:left; font-size:13px; font-weight:bold;">
+                                    <span>Taken Out</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="divTable greyGridTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div style="width:10%; float:left; margin-top:7px;">
+                                    <input class="roteSkill" type="checkbox" name="attr_Troubled1_Checkbox_flag" value="1" />
+                                </div>
+                                <div style="width:30%; float:left; font-size:13px; font-weight:bold;">
+                                    <span>Troubled</span>
+                                </div>
+                                <div style="width:55%; float:left">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_troubled1text"/>
+                                </div>
+                                <div style="width:5%; float:left; font-size:12px; margin-top: 4px;">
+                                    <span>+1</span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div style="width:10%; float:left; margin-top:7px;">
+                                    <input class="roteSkill" type="checkbox" name="attr_Troubled2_Checkbox_flag" value="1" />
+                                </div>
+                                <div style="width:30%; float:left; font-size:13px; font-weight:bold;">
+                                    <span>Troubled</span>
+                                </div>
+                                <div style="width:55%; float:left">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_troubled2text"/>
+                                </div>
+                                <div style="width:5%; float:left; font-size:12px; margin-top: 4px;">
+                                    <span>+1</span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div style="width:10%; float:left; margin-top:7px;">
+                                    <input class="roteSkill" type="checkbox" name="attr_Distraught1_Checkbox_flag" value="1" />
+                                </div>
+                                <div style="width:30%; float:left; font-size:13px; font-weight:bold;">
+                                    <span>Distraught</span>
+                                </div>
+                                <div style="width:55%; float:left">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_distraught1text"/>
+                                </div>
+                                <div style="width:5%; float:left; font-size:12px; margin-top: 4px;">
+                                    <span>+2</span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div style="width:10%; float:left; margin-top:7px;">
+                                    <input class="roteSkill" type="checkbox" name="attr_Distraught2_Checkbox_flag" value="1" />
+                                </div>
+                                <div style="width:30%; float:left; font-size:13px; font-weight:bold;">
+                                    <span>Distraught</span>
+                                </div>
+                                <div style="width:55%; float:left">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_distraught2text"/>
+                                </div>
+                                <div style="width:5%; float:left; font-size:12px; margin-top: 4px;">
+                                    <span>+2</span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div style="width:10%; float:left; margin-top:7px;">
+                                    <input class="roteSkill" type="checkbox" name="attr_Haunted_Checkbox_flag" value="1" />
+                                </div>
+                                <div style="width:30%; float:left; font-size:13px; font-weight:bold;">
+                                    <span>Haunted</span>
+                                </div>
+                                <div style="width:55%; float:left">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_hauntedtext"/>
+                                </div>
+                                <div style="width:5%; float:left; font-size:12px; margin-top: 4px;">
+                                    <span>+4</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div style="width:100%; float:left; font-size:13px; font-weight:bold;">
+                                    <span>Burned</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width:64%; float:left; padding-left:24px;">
+                <div class="divTable greyGridTable">
+                    <div class="divTableHeading">
+                        <div class="divTableRow">
+                            <div class="divTableHead" style="color: white;">blank</div>
+                            <div class="divTableHead"><span style="float:left;">EDGES</span></div>
+                            
+                        </div>
+                    </div>
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div class="2column">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_edge1text"/>
+                                </div>
+                                <div class="2column">
+                                    <input type="radio" class="normal zero" name="attr_Edge1" value="0" /><span></span><input type="radio" class="normal" name="attr_Edge1" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_Edge1" value="2" /><span></span><input type="radio" class="normal" name="attr_Edge1" value="3" /><span></span><input type="radio" class="normal" name="attr_Edge1" value="4" /><span></span><input type="radio" class="normal" name="attr_Edge1" value="5" /><span></span>
+                                </div>
+                            </div>
+                            <div class="divTableCell">
+                                <div class="2column">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_edge2text"/>
+                                </div>
+                                <div class="2column">
+                                    <input type="radio" class="normal zero" name="attr_Edge2" value="0" /><span></span><input type="radio" class="normal" name="attr_Edge2" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_Edge2" value="2" /><span></span><input type="radio" class="normal" name="attr_Edge2" value="3" /><span></span><input type="radio" class="normal" name="attr_Edge2" value="4" /><span></span><input type="radio" class="normal" name="attr_Edge2" value="5" /><span></span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div class="2column">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_edge3text"/>
+                                </div>
+                                <div class="2column">
+                                    <input type="radio" class="normal zero" name="attr_Edge3" value="0" /><span></span><input type="radio" class="normal" name="attr_Edge3" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_Edge3" value="2" /><span></span><input type="radio" class="normal" name="attr_Edge3" value="3" /><span></span><input type="radio" class="normal" name="attr_Edge3" value="4" /><span></span><input type="radio" class="normal" name="attr_Edge3" value="5" /><span></span>
+                                </div>
+                            </div>
+                            <div class="divTableCell">
+                                <div class="2column">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_edge4text"/>
+                                </div>
+                                <div class="2column">
+                                    <input type="radio" class="normal zero" name="attr_edge4" value="0" /><span></span><input type="radio" class="normal" name="attr_edge4" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_edge4" value="2" /><span></span><input type="radio" class="normal" name="attr_edge4" value="3" /><span></span><input type="radio" class="normal" name="attr_edge4" value="4" /><span></span><input type="radio" class="normal" name="attr_edge4" value="5" /><span></span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div class="2column">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_edge5text"/>
+                                </div>
+                                <div class="2column">
+                                    <input type="radio" class="normal zero" name="attr_edge5" value="0" /><span></span><input type="radio" class="normal" name="attr_edge5" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_edge5" value="2" /><span></span><input type="radio" class="normal" name="attr_edge5" value="3" /><span></span><input type="radio" class="normal" name="attr_edge5" value="4" /><span></span><input type="radio" class="normal" name="attr_edge5" value="5" /><span></span>
+                                </div>
+                            </div>
+                            <div class="divTableCell">
+                                <div class="2column">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_edge6text"/>
+                                </div>
+                                <div class="2column">
+                                    <input type="radio" class="normal zero" name="attr_edge6" value="0" /><span></span><input type="radio" class="normal" name="attr_edge6" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_edge6" value="2" /><span></span><input type="radio" class="normal" name="attr_edge6" value="3" /><span></span><input type="radio" class="normal" name="attr_edge6" value="4" /><span></span><input type="radio" class="normal" name="attr_edge6" value="5" /><span></span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div class="2column">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_edge7text"/>
+                                </div>
+                                <div class="2column">
+                                    <input type="radio" class="normal zero" name="attr_edge7" value="0" /><span></span><input type="radio" class="normal" name="attr_edge7" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_edge7" value="2" /><span></span><input type="radio" class="normal" name="attr_edge7" value="3" /><span></span><input type="radio" class="normal" name="attr_edge7" value="4" /><span></span><input type="radio" class="normal" name="attr_edge7" value="5" /><span></span>
+                                </div>
+                            </div>
+                            <div class="divTableCell">
+                                <div class="2column">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_edge8text"/>
+                                </div>
+                                <div class="2column">
+                                    <input type="radio" class="normal zero" name="attr_edge8" value="0" /><span></span><input type="radio" class="normal" name="attr_edge8" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_edge8" value="2" /><span></span><input type="radio" class="normal" name="attr_edge8" value="3" /><span></span><input type="radio" class="normal" name="attr_edge8" value="4" /><span></span><input type="radio" class="normal" name="attr_edge8" value="5" /><span></span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div class="2column">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_edge9text"/>
+                                </div>
+                                <div class="2column">
+                                    <input type="radio" class="normal zero" name="attr_edge9" value="0" /><span></span><input type="radio" class="normal" name="attr_edge9" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_edge9" value="2" /><span></span><input type="radio" class="normal" name="attr_edge9" value="3" /><span></span><input type="radio" class="normal" name="attr_edge9" value="4" /><span></span><input type="radio" class="normal" name="attr_edge9" value="5" /><span></span>
+                                </div>
+                            </div>
+                            <div class="divTableCell">
+                                <div class="2column">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_edge10text"/>
+                                </div>
+                                <div class="2column">
+                                    <input type="radio" class="normal zero" name="attr_edge10" value="0" /><span></span><input type="radio" class="normal" name="attr_edge10" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_edge10" value="2" /><span></span><input type="radio" class="normal" name="attr_edge10" value="3" /><span></span><input type="radio" class="normal" name="attr_edge10" value="4" /><span></span><input type="radio" class="normal" name="attr_edge10" value="5" /><span></span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="divTableRow">
+                            <div class="divTableCell">
+                                <div class="2column">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_edge11text"/>
+                                </div>
+                                <div class="2column">
+                                    <input type="radio" class="normal zero" name="attr_edge11" value="0" /><span></span><input type="radio" class="normal" name="attr_edge11" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_edge11" value="2" /><span></span><input type="radio" class="normal" name="attr_edge11" value="3" /><span></span><input type="radio" class="normal" name="attr_edge11" value="4" /><span></span><input type="radio" class="normal" name="attr_edge11" value="5" /><span></span>
+                                </div>
+                            </div>
+                            <div class="divTableCell">
+                                <div class="2column">
+                                    <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_edge12text"/>
+                                </div>
+                                <div class="2column">
+                                    <input type="radio" class="normal zero" name="attr_edge12" value="0" /><span></span><input type="radio" class="normal" name="attr_edge12" value="1" checked="checked"/><span></span><input type="radio" class="normal" name="attr_edge12" value="2" /><span></span><input type="radio" class="normal" name="attr_edge12" value="3" /><span></span><input type="radio" class="normal" name="attr_edge12" value="4" /><span></span><input type="radio" class="normal" name="attr_edge12" value="5" /><span></span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="float:left;">
+                        <span class="sheet-attributeHeaders" >Weapon:</span>
+                    </div>
+                    <div style="width:100%;">
+                        <input type="text" class="sheet-inputSpecialization" style="width: 83%;"  name="attr_Weapon"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="float:left;">
+                        <span class="sheet-attributeHeaders" >Armor:</span>
+                    </div>
+                    <div style="width:100%;">
+                        <input type="text" class="sheet-inputSpecialization" style="width: 83%;"  name="attr_Armor"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="float:left;">
+                        <span class="sheet-attributeHeaders" >Gear:</span>
+                    </div>
+                    <div style="width:100%;">
+                        <input type="text" class="sheet-inputSpecialization" style="width: 83%;"  name="attr_Gear1"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="width:100%;">
+                        <input type="text" class="sheet-inputSpecialization" style="width: 83%;"  name="attr_Gear2"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="float:left;">
+                        <span class="sheet-attributeHeaders" >Experience:</span>
+                    </div>
+                    <div style="width:100%;">
+                        <input type="text" class="sheet-inputSpecialization" style="width: 83%;"  name="attr_Experience"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" name="numberOfDice" value="0" />
+        <input type="hidden" name="rolldisplay" value="0" />
+    </div>
+</div>
+
+<script type="text/worker">
+
+
+    var stats = ["academics", "lore", "athletics", "medicine", "closecombat", "persuasion", 
+    "culture", "pilot", "empathy", "science", "firearms", "subterfuge",
+    "integrity", "survival", "leadership", "technology", "intellect", "might",
+    "presence", "cunning", "dexterity", "manipulation", "resolve", "stamina",
+    "composure"];
+    var flags = ["Academics_flag", "Lore_flag", "Athletics_flag", "Medicine_flag", "CloseCombat_flag", "Persuasion_flag", 
+    "Culture_flag", "Pilot_flag", "Empathy_flag", "Science_flag", "Firearms_flag", "Subterfuge_flag",
+    "Integrity_flag", "Survival_flag", "Leadership_flag", "Technology_flag", "Intellect_flag", "Might_flag",
+    "Presence_flag", "Cunning_flag", "Dexterity_flag", "Manipulation_flag", "Resolve_flag", "Stamina_flag",
+    "Composure_flag"];
+    stats.forEach((attr) => {
+        on(`change:${attr} change:${attr}_flag`, (eventInfo) => {
+            const source = eventInfo.sourceAttribute;
+            const attribute = (attr.includes("flag")) ? attr.split(`_flag`)[0] : attr;
+            console.log("here");
+            setDice();
+        });
+    });
+
+    function setDice(){
+        var numDice = 0;
+        var display = "";
+        flags.forEach(function(flag) {
+            getAttrs([flag], function(values){
+                var val = parseInt(values[flag], 10) || 0;
+                if(val == 1){
+                    var attr = flag.split(`_flag`)[0];
+                    getAttrs([attr], function(dots){
+                        var dot = parseInt(dots[attr], 10) || 0;
+                        numDice = numDice + dot;
+                        if(display == ""){
+                            display = attr;
+                        } else {
+                            display = display + " + " + attr;
+                        }
+                        setAttrs({
+                            numberOfDice: numDice,
+                            rolldisplay: display
+                        });
+                    });
+                }
+                else {
+                    setAttrs({
+                        numberOfDice: 0,
+                        rolldisplay: ""
+                    });
+                }
+            });
+        });
+    }
+
+</script>
+<rolltemplate class="sheet-rolltemplate-WoDV20Attack">
+    <table>
+        <tr><th>{{name}} rolls</th></tr>
+        <tr><td class="attr">
+            {{#attr}}
+                {{attr}}
+            {{/attr}}
+        </td></tr>
+        <tr>
+            <td class="result">{{result}} Successes</td>        
+        </tr>
+    </table>
+</rolltemplate>
