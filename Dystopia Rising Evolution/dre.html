@@ -1,12 +1,12 @@
 <div class="image-div">
     <div class="border-div">
-    <div class="rollcontainer" style="top: 75px; right: 30px;width: 150px;  position: absolute;" >
+    <div class="rollcontainer" style="top: 75px; right: 23px;width: 150px;  position: absolute;" >
         <button type="roll" name="roll_check" style="width:50px; padding-left:50px;" value="!apiv20roll ;@{rolldisplay}; @{numberOfDice}; ?{Modifier|0}; ?{Difficulty|8}; 10"></button><span style="float:right; padding-top:15px; font-weight:bold; margin-left:-50px;">10-Again</span>
     </div>
-    <div class="rollcontainer" style="top: 125px; right: 30px; width: 150px; position: absolute;" >
+    <div class="rollcontainer" style="top: 125px; right: 23px; width: 150px; position: absolute;" >
         <button type="roll" name="roll_check" style="width:50px;padding-left:50px;" value="!apiv20roll ;@{rolldisplay}; @{numberOfDice}; ?{Modifier|0}; ?{Difficulty|8}; 9"></button><span style="float:right; padding-top:15px; font-weight:bold;margin-left:-50px;">9-Again</span>
     </div>
-    <div class="rollcontainer" style="top: 175px; right: 30px; width: 150px; position: absolute;" >
+    <div class="rollcontainer" style="top: 175px; right: 23px; width: 150px; position: absolute;" >
         <button type="roll" name="roll_check" style="width:50px;padding-left:50px;" value="!apiv20roll ;@{rolldisplay}; @{numberOfDice}; ?{Modifier|0}; ?{Difficulty|8}; 8"></button><span style="float:right; padding-top:15px; font-weight:bold;margin-left:-50px;">8-Again</span>
     </div>
     <div style="width:369px; float:right; margin-top: -144px; padding-right: 25px;">
@@ -40,6 +40,14 @@
             </div>
             <div style="float: left;">
                 <input type="text" class="inputSpecialization" style="width: 300px;" name="attr_strain_text">
+            </div>
+        </div>
+        <div style="width: 100%; float:right; padding-top:10px">
+            <div style="float: left;">
+                <span class="attrHeader" >Strain Condition:</span>
+            </div>
+            <div style="float: left;">
+                <input type="text" class="inputSpecialization" style="width: 254px;" name="attr_strain_condition_text">
             </div>
         </div>
     </div>
@@ -484,6 +492,21 @@
                         </div>
                     </fieldset>
                 </div>
+                <br/>
+                <br/>
+                <div class="repeating">
+                    <div style="text-align: center;">
+                        <span style="float:none; font-size: 20px; font-weight:bold;color:#333333; text-align: center;" >CONDTIONS</span>
+                    </div>
+                    <br/>
+                    <fieldset class="repeating_conditions">
+                        <div class="row2">
+                            <div style="width:100%; float:left">
+                                <input type="text" class="sheet-inputSpecialization" style="width:100%" name="attr_conditiontext"/>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
             </div>
         </div>
         <div style="width: 100%; overflow:auto; padding-top:15px;">
@@ -820,6 +843,41 @@
                 <div class="row">
                     <div style="width:100%;">
                         <input type="text" class="sheet-inputSpecialization" style="width: 83%;"  name="attr_Gear2"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="width:100%;">
+                        <input type="text" class="sheet-inputSpecialization" style="width: 83%;"  name="attr_Gear3"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="width:100%;">
+                        <input type="text" class="sheet-inputSpecialization" style="width: 83%;"  name="attr_Gear4"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="width:100%;">
+                        <input type="text" class="sheet-inputSpecialization" style="width: 83%;"  name="attr_Gear5"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="width:100%;">
+                        <input type="text" class="sheet-inputSpecialization" style="width: 83%;"  name="attr_Gear6"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="width:100%;">
+                        <input type="text" class="sheet-inputSpecialization" style="width: 83%;"  name="attr_Gear7"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="width:100%;">
+                        <input type="text" class="sheet-inputSpecialization" style="width: 83%;"  name="attr_Gear8"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="width:100%;">
+                        <input type="text" class="sheet-inputSpecialization" style="width: 83%;"  name="attr_Gear9"/>
                     </div>
                 </div>
                 <div class="row">
