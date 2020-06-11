@@ -1,0 +1,752 @@
+
+.sheet-image-div {
+    background-image: url('https://i.imgur.com/FIZtUc2.png');
+    background-size: 430px 150px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.sheet-border-div {
+    background-color: transparent;
+    width:950px;
+}
+
+.sheet-fullBorder {
+    border-style:solid; 
+    border-color: black; 
+    border-radius: 0px 15px;
+}
+
+span.sheet-attrHeader {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    float:right;
+}
+
+/* Ability Section */
+div.sheet-ability-scores {
+    text-transform: capitalize;
+    /* Shows a span and reveals an input on hover */ }
+    div.sheet-ability-scores input.sheet-hover,
+    div.sheet-ability-scores label.sheet-hover:hover span.sheet-hover,
+    div.sheet-ability-scores input.sheet-hover:focus + span.sheet-hover {
+      display: none; }
+    div.sheet-ability-scores label.sheet-hover:hover input.sheet-hover,
+    div.sheet-ability-scores label.sheet-hover input.sheet-hover:focus {
+      display: inherit; }
+    div.sheet-ability-scores input[type="number"] {
+      height: 2.5em; }
+    div.sheet-ability-scores div.sheet-settings {
+      display: grid;
+      grid-template-columns: 130px 130px;
+      grid-column-gap: 2%; }
+    div.sheet-ability-scores div.sheet-display {
+      display: grid;
+      grid-template-columns: 1.25fr .3fr;
+      grid-column-gap: 5px;
+      align-items: stretch;
+      margin-bottom: 1px; }
+      div.sheet-ability-scores div.sheet-display > button[type="action"] {
+        position: absolute; }
+      div.sheet-ability-scores div.sheet-display div.sheet-ability-score {
+        text-align: right; }
+        div.sheet-ability-scores div.sheet-display div.sheet-ability-score span:first-child {
+          font-size: 1em;
+          font-weight: bold; }
+      div.sheet-ability-scores div.sheet-display div.sheet-circle {
+        font-size: 1.5em;
+        padding: 5% 0px; }
+
+        /* Ability Section */
+div.sheet-defense-offense {
+    text-transform: capitalize;
+    /* Shows a span and reveals an input on hover */ }
+    div.sheet-defense-offense input.sheet-hover,
+    div.sheet-defense-offense label.sheet-hover:hover span.sheet-hover,
+    div.sheet-defense-offense input.sheet-hover:focus + span.sheet-hover {
+      display: none; }
+    div.sheet-defense-offense label.sheet-hover:hover input.sheet-hover,
+    div.sheet-defense-offense label.sheet-hover input.sheet-hover:focus {
+      display: inherit; }
+    div.sheet-defense-offense input[type="number"] {
+      height: 2.5em; }
+    div.sheet-defense-offense div.sheet-settings {
+      display: grid;
+      grid-template-columns: 130px 130px;
+      grid-column-gap: 2%; }
+    div.sheet-defense-offense div.sheet-display {
+      display: grid;
+      grid-template-columns: 1.25fr .3fr;
+      grid-column-gap: 5px;
+      align-items: stretch;
+      margin-bottom: 1px; }
+      div.sheet-defense-offense div.sheet-display > button[type="action"] {
+        position: absolute; }
+      div.sheet-defense-offense div.sheet-display div.sheet-ability-score {
+        text-align: right; }
+        div.sheet-defense-offense div.sheet-display div.sheet-ability-score span:first-child {
+          font-size: 1em;
+          font-weight: bold; }
+      div.sheet-defense-offense div.sheet-display div.sheet-circle {
+        font-size: 1.5em;
+        padding: 5% 0px; }
+
+div.sheet-strength-row, div.sheet-stamina-row,div.sheet-agility-row,div.sheet-dexterity-row,div.sheet-fighting-row,div.sheet-intellect-row,div.sheet-awareness-row,div.sheet-presence-row,
+div.sheet-dodge-row, div.sheet-parry-row,div.sheet-fortitude-row,div.sheet-toughness-row,div.sheet-will-row,div.sheet-acrobatics-row, div.sheet-athletics-row,
+div.sheet-deception-row, div.sheet-insight-row, div.sheet-intimidation-row, div.sheet-investigation-row, div.sheet-perception-row, div.sheet-persuasion, 
+div.sheet-sleightofhand-row, div.sheet-stealth-row, div.sheet.technology-row, div.sheet-treatment-row, div.sheet-vehicles-row, div.sheet-initiative-row {
+    padding-top: 1%; }
+
+input[name="attr_toggles"][value*="settings"] + button.sheet-settings-button,
+input[name="attr_toggles"][value*="settings"] + div > button.sheet-settings-button,
+input[name="attr_toggles"][value*="strength"] ~ div div.sheet-ability-scores div.sheet-strength-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="stamina"] ~ div div.sheet-ability-scores div.sheet-stamina-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="agility"] ~ div div.sheet-ability-scores div.sheet-agility-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="dexterity"] ~ div div.sheet-ability-scores div.sheet-dexterity-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="fighting"] ~ div div.sheet-ability-scores div.sheet-fighting-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="intellect"] ~ div div.sheet-ability-scores div.sheet-intellect-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="awareness"] ~ div div.sheet-ability-scores div.sheet-awareness-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="presence"] ~ div div.sheet-ability-scores div.sheet-presence-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="dodge"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-dodge-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="parry"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-parry-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="fortitude"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-fortitude-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="toughness"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-toughness-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="will"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-will-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="acrobatics"] ~ div div.sheet-ability-scores div.sheet-acrobatics-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="athletics"] ~ div div.sheet-ability-scores div.sheet-athletics-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="deception"] ~ div div.sheet-ability-scores div.sheet-deception-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="insight"] ~ div div.sheet-ability-scores div.sheet-insight-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="intimidation"] ~ div div.sheet-ability-scores div.sheet-intimidation-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="investigation"] ~ div div.sheet-ability-scores div.sheet-investigation-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="perception"] ~ div div.sheet-ability-scores div.sheet-perception-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="persuasion"] ~ div div.sheet-ability-scores div.sheet-persuasion-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="sleightofhand"] ~ div div.sheet-ability-scores div.sheet-sleightofhand-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="stealth"] ~ div div.sheet-ability-scores div.sheet-stealth-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="technology"] ~ div div.sheet-ability-scores div.sheet-technology-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="treatment"] ~ div div.sheet-ability-scores div.sheet-treatment-row button.sheet-settings-button,
+input[name="attr_toggles"][value*="vehicles"] ~ div div.sheet-ability-scores div.sheet-vehicles-row button.sheet-settings-button
+input[name="attr_toggles"][value*="initiative"] ~ div div.sheet-ability-scores div.sheet-initiative-row button.sheet-settings-button
+{
+    opacity: 1;
+    background-color: #ff0400; 
+}
+
+input[name="attr_toggles"][value*="settings"] ~ div.sheet-settings{
+    height: auto;
+}
+
+div.sheet-repeating input.sheet-toggles[value*="settings"] ~ div.sheet-settings,
+input.sheet-toggles[value*="settings"] ~ div.sheet-settings{
+    padding: 5px;
+    overflow: visible;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+div.sheet-offense div.sheet-display {
+    grid-row-gap: 3%;
+    margin-top: 1%;
+    grid-template-columns: 1fr 1fr 1.5em; }
+
+input[name="attr_toggles"][value*="strength"] ~ div div.sheet-ability-scores div.sheet-strength-settings,
+input[name="attr_toggles"][value*="stamina"] ~ div div.sheet-ability-scores div.sheet-stamina-settings,
+input[name="attr_toggles"][value*="agility"] ~ div div.sheet-ability-scores div.sheet-agility-settings,
+input[name="attr_toggles"][value*="dexterity"] ~ div div.sheet-ability-scores div.sheet-dexterity-settings,
+input[name="attr_toggles"][value*="fighting"] ~ div div.sheet-ability-scores div.sheet-fighting-settings,
+input[name="attr_toggles"][value*="intellect"] ~ div div.sheet-ability-scores div.sheet-intellect-settings,
+input[name="attr_toggles"][value*="awareness"] ~ div div.sheet-ability-scores div.sheet-awareness-settings,
+input[name="attr_toggles"][value*="presence"] ~ div div.sheet-ability-scores div.sheet-presence-settings,
+input[name="attr_toggles"][value*="acrobatics"] ~ div div.sheet-ability-scores div.sheet-acrobatics-settings,
+input[name="attr_toggles"][value*="athletics"] ~ div div.sheet-ability-scores div.sheet-athletics-settings,
+input[name="attr_toggles"][value*="deception"] ~ div div.sheet-ability-scores div.sheet-deception-settings,
+input[name="attr_toggles"][value*="insight"] ~ div div.sheet-ability-scores div.sheet-insight-settings,
+input[name="attr_toggles"][value*="intimidation"] ~ div div.sheet-ability-scores div.sheet-intimidation-settings,
+input[name="attr_toggles"][value*="investigation"] ~ div div.sheet-ability-scores div.sheet-investigation-settings,
+input[name="attr_toggles"][value*="perception"] ~ div div.sheet-ability-scores div.sheet-perception-settings,
+input[name="attr_toggles"][value*="persuasion"] ~ div div.sheet-ability-scores div.sheet-persuasion-settings,
+input[name="attr_toggles"][value*="sleightofhand"] ~ div div.sheet-ability-scores div.sheet-sleightofhand-settings,
+input[name="attr_toggles"][value*="stealth"] ~ div div.sheet-ability-scores div.sheet-stealth-settings,
+input[name="attr_toggles"][value*="technology"] ~ div div.sheet-ability-scores div.sheet-technology-settings,
+input[name="attr_toggles"][value*="treatment"] ~ div div.sheet-ability-scores div.sheet-treatment-settings,
+input[name="attr_toggles"][value*="vehicles"] ~ div div.sheet-ability-scores div.sheet-vehicles-settings,
+input[name="attr_toggles"][value*="initiative"] ~ div div.sheet-ability-scores div.sheet-initiative-settings,
+input[name="attr_toggles"][value*="dodge"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-dodge-settings,
+input[name="attr_toggles"][value*="parry"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-parry-settings,
+input[name="attr_toggles"][value*="fortitude"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-fortitude-settings,
+input[name="attr_toggles"][value*="toughness"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-toughness-settings,
+input[name="attr_toggles"][value*="will"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-will-settings{
+    height: auto; }
+  
+  input[name="attr_toggles"][value*="strength"] ~ div div.sheet-ability-scores div.sheet-strength-settings,
+  input[name="attr_toggles"][value*="stamina"] ~ div div.sheet-ability-scores div.sheet-stamina-settings,
+  input[name="attr_toggles"][value*="agility"] ~ div div.sheet-ability-scores div.sheet-agility-settings,
+  input[name="attr_toggles"][value*="dexterity"] ~ div div.sheet-ability-scores div.sheet-dexterity-settings,
+  input[name="attr_toggles"][value*="fighting"] ~ div div.sheet-ability-scores div.sheet-fighting-settings,
+  input[name="attr_toggles"][value*="intellect"] ~ div div.sheet-ability-scores div.sheet-intellect-settings,
+  input[name="attr_toggles"][value*="awareness"] ~ div div.sheet-ability-scores div.sheet-awareness-settings,
+  input[name="attr_toggles"][value*="presence"] ~ div div.sheet-ability-scores div.sheet-presence-settings,
+  input[name="attr_toggles"][value*="acrobatics"] ~ div div.sheet-ability-scores div.sheet-acrobatics-settings,
+  input[name="attr_toggles"][value*="athletics"] ~ div div.sheet-ability-scores div.sheet-athletics-settings,
+  input[name="attr_toggles"][value*="deception"] ~ div div.sheet-ability-scores div.sheet-deception-settings,
+  input[name="attr_toggles"][value*="insight"] ~ div div.sheet-ability-scores div.sheet-insight-settings,
+  input[name="attr_toggles"][value*="intimidation"] ~ div div.sheet-ability-scores div.sheet-intimidation-settings,
+  input[name="attr_toggles"][value*="investigation"] ~ div div.sheet-ability-scores div.sheet-investigation-settings,
+  input[name="attr_toggles"][value*="perception"] ~ div div.sheet-ability-scores div.sheet-perception-settings,
+  input[name="attr_toggles"][value*="persuasion"] ~ div div.sheet-ability-scores div.sheet-persuasion-settings,
+  input[name="attr_toggles"][value*="sleightofhand"] ~ div div.sheet-ability-scores div.sheet-sleightofhand-settings,
+  input[name="attr_toggles"][value*="stealth"] ~ div div.sheet-ability-scores div.sheet-stealth-settings,
+  input[name="attr_toggles"][value*="technology"] ~ div div.sheet-ability-scores div.sheet-technology-settings,
+  input[name="attr_toggles"][value*="treatment"] ~ div div.sheet-ability-scores div.sheet-treatment-settings,
+  input[name="attr_toggles"][value*="vehicles"] ~ div div.sheet-ability-scores div.sheet-vehicles-settings,
+  input[name="attr_toggles"][value*="initiative"] ~ div div.sheet-ability-scores div.sheet-initiative-settings,
+  input[name="attr_toggles"][value*="dodge"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-dodge-settings,
+  input[name="attr_toggles"][value*="parry"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-parry-settings,
+  input[name="attr_toggles"][value*="fortitude"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-fortitude-settings,
+  input[name="attr_toggles"][value*="toughness"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-toughness-settings,
+  input[name="attr_toggles"][value*="will"] ~ div div.sheet-defense-offense div.sheet-defense div.sheet-will-settings {
+    padding: 5px;
+    overflow: visible;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+div.sheet-strength-row, div.sheet-stamina-row,div.sheet-agility-row,div.sheet-dexterity-row,div.sheet-fighting-row,div.sheet-intellect-row,div.sheet-awareness-row,div.sheet-presence-row,
+div.sheet-acrobatics-row,div.sheet-athletics-row,div.sheet-deception-row,div.sheet-insight-row,div.sheet-intimidation-row,div.sheet-investigation-row,div.sheet-perception-row,
+div.sheet-persuasion-row,div.sheet-sleightofhand-row,div.sheet-stealth-row,div.sheet-technology-row,div.sheet-treatment-row,div.sheet-vehicles-row,div.sheet-initiative-row,
+div.sheet-dodge-row, div.sheet-parry-row,div.sheet-fortitude-row,div.sheet-toughness-row,div.sheet-will-row {
+    padding-right: 2%;
+    padding-left: 2%; }
+
+.sheet-pictos {
+    font-family: "pictos"; 
+}
+
+button.sheet-settings-button {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    margin-left: -7px;
+    margin-top: -7px;
+    border: 1.5px solid #fee;
+    border-radius: 50%;
+    color: #fdd;
+    background: #600;
+    opacity: 0;
+    font-size: 7pt;
+    line-height: 1em;
+    z-index: 10; }
+    
+    div.sheet-offense button.sheet-diplay-attack {
+        grid-area: 2 / 1 / 2 / 4; }
+
+
+
+  /* BUTTON HOVER EFFECTS */
+  .sheet-perception:hover button.sheet-settings-button, .sheet-attack:hover button.sheet-settings-button, .sheet-ranged:hover button.sheet-settings-button, .sheet-classdc:hover button.sheet-settings-button, .sheet-armorclass:hover button.sheet-settings-button, .sheet-savingthrows:hover button.sheet-settings-button, .sheet-hitpoints:hover button.sheet-settings-button, .sheet-skills:hover button.sheet-settings-button, .sheet-spellattack:hover button.sheet-settings-button, .sheet-spelldc:hover button.sheet-settings-button, .sheet-ability-scores:hover button.sheet-settings-button, .sheet-details:hover button.sheet-settings-button, .sheet-languages:hover button.sheet-settings-button, .sheet-inv-display-grid:hover button.sheet-settings-button, .sheet-actions:hover button.sheet-settings-button, .sheet-action-abilities:hover button.sheet-settings-button, .sheet-action-activity:hover button.sheet-settings-button, .sheet-action-reaction:hover button.sheet-settings-button, .sheet-feats-ancestry-grid:hover button.sheet-settings-button, .sheet-feats-skill-grid:hover button.sheet-settings-button, .sheet-feats-general-grid:hover button.sheet-settings-button, .sheet-feats-class-grid:hover button.sheet-settings-button, .sheet-feats-bonus-grid:hover button.sheet-settings-button, .sheet-spells .sheet-power:hover button.sheet-settings-button, .sheet-spells .sheet-innate:hover button.sheet-settings-button, .sheet-spells .sheet-focus:hover button.sheet-settings-button, .sheet-spells .sheet-cantrips:hover button.sheet-settings-button, .sheet-spells .sheet-normalspells:hover button.sheet-settings-button {
+    opacity: 0.5; }
+  
+  button.sheet-settings-button:focus, .sheet-perception:hover button.sheet-settings-button:hover, .sheet-attack:hover button.sheet-settings-button:hover, .sheet-ranged:hover button.sheet-settings-button:hover, .sheet-classdc:hover button.sheet-settings-button:hover, .sheet-armorclass:hover button.sheet-settings-button:hover, .sheet-savingthrows:hover button.sheet-settings-button:hover, .sheet-hitpoints:hover button.sheet-settings-button:hover, .sheet-skills:hover button.sheet-settings-button:hover, .sheet-spellattack:hover button.sheet-settings-button:hover, .sheet-spelldc:hover button.sheet-settings-button:hover, .sheet-ability-scores:hover button.sheet-settings-button:hover, .sheet-details:hover button.sheet-settings-button:hover, .sheet-languages:hover button.sheet-settings-button:hover, .sheet-inv-display-grid:hover button.sheet-settings-button:hover, .sheet-actions:hover button.sheet-settings-button:hover, .sheet-action-abilities:hover button.sheet-settings-button:hover, .sheet-action-activity:hover button.sheet-settings-button:hover, .sheet-action-reaction:hover button.sheet-settings-button:hover, .sheet-feats-ancestry-grid:hover button.sheet-settings-button:hover, .sheet-feats-skill-grid:hover button.sheet-settings-button:hover, .sheet-feats-general-grid:hover button.sheet-settings-button:hover, .sheet-feats-class-grid:hover button.sheet-settings-button:hover, .sheet-feats-bonus-grid:hover button.sheet-settings-button:hover, .sheet-spells .sheet-power:hover button.sheet-settings-button:hover, .sheet-spells .sheet-innate:hover button.sheet-settings-button:hover, .sheet-spells .sheet-focus:hover button.sheet-settings-button:hover, .sheet-spells .sheet-cantrips:hover button.sheet-settings-button:hover, .sheet-spells .sheet-normalspells:hover button.sheet-settings-button:hover {
+    opacity: 1; }
+
+    input.sheet-circle, div.sheet-circle {
+        background-color: #7d3a2a;
+        border: 0.2em solid #5b1110;
+        border-radius: 100%;
+        text-align: center;
+        overflow: hidden;
+        height: 25px;
+        color: white;
+      width: 40px; }
+      
+      div.sheet-circle {
+        font-weight: bold; }
+        div.sheet-circle label span:first-child {
+          display: block;
+          padding-top: 5px;
+          background: #5b1110;
+          color: white;
+          text-align: center;
+          width: 100%;
+          font-size: 1em; }
+        div.sheet-circle label span:last-child {
+          display: block;
+          color: #fff;
+          margin-top: 0.4em;
+          font-size: 1.5em;
+          text-align: center; }
+
+
+          label.sheet-sublabel {
+            text-align: center; }
+            label.sheet-sublabel select {
+              margin: 0;
+              padding: 0; }
+            label.sheet-sublabel span:last-child {
+              background: #7d3a2a;
+              display: block; }
+              label.sheet-sublabel span:last-child:empty::before {
+                content: "-"; }
+              label.sheet-sublabel span:last-child span.sheet-inline {
+                display: inline;
+                margin-right: 5%; }
+                label.sheet-sublabel span:last-child span.sheet-inline:last-child {
+                  margin-right: 0; }
+
+                  span.sheet-sublabel {
+                    border-top-left-radius: 0.5em;
+                    border-top-right-radius: 0.5em;
+                    display: block;
+                    font-size: 0.6em;
+                    padding: 0em;
+                    text-align: center;
+                    text-transform: uppercase;
+                    width: 100%;
+                    white-space: nowrap; }
+
+                    div.sheet-settings label.sheet-notes {
+                        grid-column: 1 / -1; }
+
+ 
+
+  div.sheet-settings::before {
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: -10px;
+    content: "";
+    padding: 0;
+    margin: 0;
+    margin-left: -5px;
+    border: none;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.3);
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent; }
+
+    div.sheet-settings, span.sheet-collapse {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        height: 0;
+        padding: 0;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        border-left: 5px solid #003180;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: black;
+    }
+
+
+    button {
+        background-color: transparent;
+        background-image: none;
+        border: none;
+        border-color: transparent;
+        box-shadow: none;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 0.8em;
+        margin: 0em;
+        text-shadow: none; }
+        button:before {
+          display: none; }
+        button:hover {
+          background-color: transparent; }
+        button[type="roll"], button[type="action"] {
+          font-size: .75em;
+          margin: 0px;
+          padding: 0; }
+        button[type="roll"] {
+          text-transform: uppercase;
+          font-family: serif;
+          font-weight: bold;
+          border-radius: 3px;
+          background-color: #003180;
+          color: white;
+          border: 1px solid white;
+          box-shadow: 0 0 5px #757575;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+          button[type="roll"]:hover {
+            background: #0044b3; }
+
+h1 {
+    font-size: 25px;
+}
+
+div.sheet-grid {
+    display: grid;
+    grid-column-gap: 1%; }
+
+    div.sheet-offense button.sheet-settings-button {
+        grid-area: 1 / 1 / 1 / 1; }
+
+div.sheet-offense{
+  line-height: 2em;
+}
+
+h1 + div.sheet-offense{
+  margin-bottom: 2px;
+  padding-top: 1%;
+}
+
+div.sheet-offense span.sheet-sublabel{
+  font-size: 0.8em;
+  line-height: 1em;
+  padding: 3px;
+}
+
+div.sheet-offense button.sheet-display-attack {
+  grid-area: 2 / 1 / 2 / 4; }
+
+div.sheet-offense button.sheet-settings-button {
+  grid-area: 1 / 1 / 1 / 1; }
+
+div.sheet-offense button[type="roll"] {
+  min-height: 2em;
+  font-size: 0.8em;
+  max-width: 100%; }
+  div.sheet-offense button[type="roll"]:first-of-type {
+    grid-column: 1 / 3;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 5px; }
+  div.sheet-offense button[type="roll"]:not(:first-of-type) {
+    background-color: #002766;
+    font-weight: normal; }
+    div.sheet-offense button[type="roll"]:not(:first-of-type):hover {
+      background: #0044b3; }
+
+      div.sheet-offense div.sheet-display {
+        grid-row-gap: 3%;
+        margin-top: 1%;
+        grid-template-columns: 1fr 1fr 1.5em; }
+
+        div.sheet-offense div.sheet-settings label.sheet-sublabel input,
+        div.sheet-offense div.sheet-settings div.sheet-ability-select input,
+        div.sheet-offense div.sheet-settings input[name="attr_damage_weapon_specialization"],
+        div.sheet-offense div.sheet-settings input[name="attr_damage_other"] {
+          text-align: center; }
+        
+        div.sheet-offense div.sheet-settings span.sheet-sublabel {
+          font-size: 0.6em; }
+        
+        div.sheet-offense div.sheet-settings div.sheet-attack-grid {
+          grid-template-columns: 1fr 0.5fr 1fr 1fr 1fr 1fr; }
+          div.sheet-offense div.sheet-settings div.sheet-attack-grid h2,
+          div.sheet-offense div.sheet-settings div.sheet-attack-grid label[data-i18n-title*="weapon_name"],
+          div.sheet-offense div.sheet-settings div.sheet-attack-grid label[data-i18n-title*="weapon_traits"] {
+            grid-column: 1 / -1;
+            margin-bottom: 5px; }
+        
+        div.sheet-offense div.sheet-settings div.sheet-damage-grid {
+          grid-template-columns: 1fr 1fr 0.25fr 1.5fr 0.25fr 0.25fr 0.25fr;
+          grid-row-gap: 2%; }
+          div.sheet-offense div.sheet-settings div.sheet-damage-grid h2,
+          div.sheet-offense div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="damage_supplementary_effects"],
+          div.sheet-offense div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="attack_damage_additional"] {
+            grid-column: 1 / -1; }
+          div.sheet-offense div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="weapon_specialization_damage"] {
+            grid-column: 1 / 3; }
+          div.sheet-offense div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="weapon_temporary_damage"] {
+            grid-column: 3 / 5; }
+          div.sheet-offense div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="weapon_other_damage"] {
+            grid-column: 5 / -1; }
+          div.sheet-offense div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="bludgeoning_damage"], div.sheet-strikes div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="piercing_damage"], div.sheet-strikes div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="slashing_damage"] {
+            font-size: 8pt;
+            text-align: center;
+            height: 1em; }
+        
+        div.sheet-offense .repcontainer .repitem:nth-child(even) {
+          background: rgba(255, 255, 255, 0.1); }
+        
+        div.sheet-offense div.sheet-circle {
+          color: white;
+          font-size: 1.4em;
+          font-weight: bold;
+          height: 25px;
+          padding: 10% 0px;
+          width: 40px; }
+          div.sheet-offensive div.sheet-circle label span {
+            margin-top: 0 !important;
+            line-height: 1.5em; }
+
+div.sheet-offense div.sheet-settings div.sheet-attack-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+div.sheet-skills{
+  line-height: 2em;
+}
+
+h1 + div.sheet-skills{
+  margin-bottom: 2px;
+  padding-top: 1%;
+}
+
+div.sheet-skills span.sheet-sublabel{
+  font-size: 0.8em;
+  line-height: 1em;
+  padding: 3px;
+}
+
+div.sheet-skills button.sheet-display-attack {
+  grid-area: 2 / 1 / 2 / 4; }
+
+div.sheet-skills button.sheet-settings-button {
+  grid-area: 1 / 1 / 1 / 1; }
+
+div.sheet-skills button[type="roll"] {
+  min-height: 2em;
+  font-size: 0.8em;
+  max-width: 100%; }
+  div.sheet-skills button[type="roll"]:first-of-type {
+    grid-column: 1 / 3;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 5px; }
+  div.sheet-skills button[type="roll"]:not(:first-of-type) {
+    background-color: #002766;
+    font-weight: normal; }
+    div.sheet-skills button[type="roll"]:not(:first-of-type):hover {
+      background: #0044b3; }
+
+      div.sheet-skills div.sheet-display {
+        grid-row-gap: 3%;
+        margin-top: 1%;
+        grid-template-columns: 1fr 1fr 1.5em; }
+
+        div.sheet-skills div.sheet-settings label.sheet-sublabel input,
+        div.sheet-skills div.sheet-settings div.sheet-ability-select input,
+        div.sheet-skills div.sheet-settings input[name="attr_damage_weapon_specialization"],
+        div.sheet-skills div.sheet-settings input[name="attr_damage_other"] {
+          text-align: center; }
+        
+        div.sheet-skills div.sheet-settings span.sheet-sublabel {
+          font-size: 0.6em; }
+        
+        div.sheet-skills div.sheet-settings div.sheet-attack-grid {
+          grid-template-columns: 1fr 0.5fr 1fr 1fr 1fr 1fr; }
+          div.sheet-skills div.sheet-settings div.sheet-attack-grid h2,
+          div.sheet-skills div.sheet-settings div.sheet-attack-grid label[data-i18n-title*="weapon_name"],
+          div.sheet-skills div.sheet-settings div.sheet-attack-grid label[data-i18n-title*="weapon_traits"] {
+            grid-column: 1 / -1;
+            margin-bottom: 5px; }
+        
+        div.sheet-skills div.sheet-settings div.sheet-damage-grid {
+          grid-template-columns: 1fr 1fr 0.25fr 1.5fr 0.25fr 0.25fr 0.25fr;
+          grid-row-gap: 2%; }
+          div.sheet-skills div.sheet-settings div.sheet-damage-grid h2,
+          div.sheet-skills div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="damage_supplementary_effects"],
+          div.sheet-skills div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="attack_damage_additional"] {
+            grid-column: 1 / -1; }
+          div.sheet-skills div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="weapon_specialization_damage"] {
+            grid-column: 1 / 3; }
+          div.sheet-skills div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="weapon_temporary_damage"] {
+            grid-column: 3 / 5; }
+          div.sheet-skills div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="weapon_other_damage"] {
+            grid-column: 5 / -1; }
+          div.sheet-skills div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="bludgeoning_damage"], div.sheet-strikes div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="piercing_damage"], div.sheet-strikes div.sheet-settings div.sheet-damage-grid label[data-i18n-title*="slashing_damage"] {
+            font-size: 8pt;
+            text-align: center;
+            height: 1em; }
+        
+       
+        
+        div.sheet-skills div.sheet-circle {
+          color: white;
+          font-size: 1.4em;
+          font-weight: bold;
+          height: 25px;
+          padding: 10% 0px;
+          width: 40px; }
+          div.sheet-offensive div.sheet-circle label span {
+            margin-top: 0 !important;
+            line-height: 1.5em; }
+
+div.sheet-skills div.sheet-settings div.sheet-attack-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/***************************     REPEATING SECTIONS       *********************/
+.repcontrol {
+  /* This will make the Add & Modify words transparent so that only our symbols below show up */ }
+  .repcontrol .btn {
+    background: #003180;
+    border-radius: 2px;
+    border: 1px solid white;
+    display: inline-block;
+    font-size: 0;
+    height: 20px;
+    line-height: 1;
+    margin: 5px;
+    padding: 0;
+    width: 20px; }
+  .repcontrol .repcontrol_add, .repcontrol .repcontrol_edit {
+    color: transparent;
+    /* This will put icons next to the buttons. A `+` for Add and a lock for edit */ }
+    .repcontrol .repcontrol_add:after, .repcontrol .repcontrol_edit:after {
+      color: white;
+      font-family: "pictos";
+      font-size: 12pt;
+      opacity: 1; }
+  .repcontrol .repcontrol_edit:after {
+    content: '('; }
+  .repcontrol .repcontrol_add:after {
+    content: '&'; }
+
+.repcontainer .repitem .repitem.repitembroken {
+  border: none; }
+
+.editmode ~ .repcontrol .repcontrol_edit:after {
+  content: ')'; }
+
+/* These are the buttons that appear after the repcontrol_edit is clicked*/
+.itemcontrol {
+  z-index: 10; }
+  .itemcontrol .repcontrol_del, .itemcontrol .repcontrol_move {
+    font-size: 18px;
+    margin-top: 0px;
+    padding: 0px;
+    width: 15px; }
+  .itemcontrol .repcontrol_del {
+    background-color: darkred;
+    font-family: "pictos"; }
+    .sheet-rolltemplate-rolls {
+      /* Remove some fo the built in styles around rolls */
+      /* Change the colors of Full Fails & Full Crits from their built in defaults */ }
+      .sheet-rolltemplate-rolls .sheet-charactername {
+        color: #fdf6ec;
+        text-shadow: 1px 1px 0 #5b1110, -1px -1px 0 #5b1110, 1px -1px 0 #5b1110, -1px 1px 0 #5b1110, 1px 1px 0 #5b1110;
+        font-size: 1.2em;
+        letter-spacing: 0.05em; }
+      .sheet-rolltemplate-rolls .sheet-template-body {
+        border: 1px solid #9f7f03;
+        text-align: center;
+        background-color: #9f7f03; }
+      .sheet-rolltemplate-rolls .sheet-template-header {
+        background-color: rgb(24, 24, 24);
+        color: white;
+        font-size: 1.35em;
+        font-variant: small-caps;
+        padding: 4px 0px 3px 0px;
+        text-align: center;
+        text-transform: capitalize; }
+      .sheet-rolltemplate-rolls .sheet-template-subheader {
+        color: #fdf6ec;
+        font-size: 0.7em;
+        font-style: italic;
+        margin-top: 0.2em;
+        font-weight: normal;
+        letter-spacing: 0.05em; }
+      .sheet-rolltemplate-rolls .sheet-template-row {
+        background-color: #9f7f03;
+        color: #fdf6ec;
+        margin: 0;
+        padding: 0.1em 0.05em 0.3em 0.05em;
+        /* Use this to alternate the background colors for each row */ }
+        .sheet-rolltemplate-rolls .sheet-template-row:nth-child(2n+0) {
+          background-color: #e6bb81;
+          color: #5b1110; }
+      .sheet-rolltemplate-rolls .sheet-template-roll-name {
+        text-transform: uppercase; }
+      .sheet-rolltemplate-rolls .sheet-bold {
+        font-weight: bold; }
+      .sheet-rolltemplate-rolls .sheet-left {
+        text-align: left;
+        padding: 1%; }
+      .sheet-rolltemplate-rolls span.sheet-template-roll-name.sheet-attack::before,
+      .sheet-rolltemplate-rolls span.sheet-template-roll-name.sheet-damage::before,
+      .sheet-rolltemplate-rolls span.sheet-template-roll-name.sheet-critical-damage::before {
+        font-weight: bold;
+        text-transform: none;
+        margin-right: 0.3em;
+        color: #5b1110; }
+      .sheet-rolltemplate-rolls span.sheet-template-roll-name.sheet-attack::before {
+        content: "⚔";
+        /* \2694 */
+        font-size: 1.5em; }
+      .sheet-rolltemplate-rolls span.sheet-template-roll-name.sheet-damage::before,
+      .sheet-rolltemplate-rolls span.sheet-template-roll-name.sheet-critical-damage::before {
+        content: "t";
+        font-family: "Pictos Custom";
+        font-size: 1.4em; }
+      .sheet-rolltemplate-rolls span.sheet-template-roll-name.sheet-critical-damage::before,
+      .sheet-rolltemplate-rolls .sheet-success {
+        color: green; }
+      .sheet-rolltemplate-rolls .sheet-desc,
+      .sheet-rolltemplate-rolls .sheet-notes {
+        border-top: 1px solid #98503e;
+        background: #fdf6ec;
+        color: #5b1110;
+        text-align: left;
+        padding: 1%;
+        display: block; }
+      .sheet-rolltemplate-rolls .sheet-notes {
+        font-style: italic; }
+      .sheet-rolltemplate-rolls .sheet-desc.sheet-limit-height,
+      .sheet-rolltemplate-rolls .sheet-notes.sheet-limit-height {
+        max-height: 10em;
+        overflow-y: auto; }
+      .sheet-rolltemplate-rolls .inlinerollresult {
+        background-color: transparent;
+        border: none;
+        color: #000000;
+        display: inline-block;
+        font-size: 1.7em;
+        padding: 5px;
+        letter-spacing: 0.1em;
+        text-shadow: 1px 1px 0 #fdf6ec, -1px -1px 0 #fdf6ec, 1px -1px 0 #fdf6ec, -1px 1px 0 #fdf6ec, 1px 1px 0 #fdf6ec; }
+      .sheet-rolltemplate-rolls .inlinerollresult.fullfail,
+      .sheet-rolltemplate-rolls .inlinerollresult.fullcrit,
+      .sheet-rolltemplate-rolls .inlinerollresult.importantroll {
+        border: none; }
+      .sheet-rolltemplate-rolls .inlinerollresult.fullfail {
+        color: red; }
+      .sheet-rolltemplate-rolls .inlinerollresult.fullcrit {
+        color: green; }
+      .sheet-rolltemplate-rolls a[href^="!"],
+      .sheet-rolltemplate-rolls a[href^="~"] {
+        font-size: 1em;
+        margin: 3px;
+        padding: 2px;
+        text-transform: uppercase;
+        font-family: serif;
+        font-weight: bold;
+        border-radius: 3px;
+        background-color: #003180;
+        color: white;
+        border: 1px solid white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .sheet-rolltemplate-rolls a[href^="!"]:hover,
+      .sheet-rolltemplate-rolls a[href^="~"]:hover {
+        background: #0044b3; }
+
+
+input.sheet-attr {
+  width: 111px;
+  cursor: pointer;
+  position: relative;
+  opacity: 0;
+  z-index: 9999;
+}
+
+span.sheet-attr {
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  margin-left: -91px;
+}
+
+div * input.sheet-attr:checked + span.sheet-attr,
+span > input.sheet-attr:checked + span.sheet-attr {
+    color: #B21800;
+    text-shadow: 0px 0px 10px black;
+}

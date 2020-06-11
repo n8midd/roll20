@@ -1,0 +1,1868 @@
+<div class="sheet-image-div">
+    <div class="sheet-border-div">
+
+        <input type="radio" class="attr2 sheetoptions pages page1" name="attr_pagenumber" title="Page1" value="1" checked="checked" />
+        <span class="sheet-attr2" >Avatar Interface</span>
+
+        <input type="radio" class="attr2 sheetoptions pages page2" name="attr_pagenumber" title="Page2" value="2" />
+        <span class="sheet-attr2" >COG</span>
+
+        <input type="radio" class="attr2 sheetoptions gametype extraHealth0Input" name="attr_extraHealth" title="ExtraHealth0" value="0" style="width: 140px;"/>
+        <span class="sheet-attr2 extraHealth0Input" style="margin-left: -144px;" >No Extra Health</span>
+        <input type="radio" class="attr2 sheetoptions gametype extraHealth1Input" name="attr_extraHealth" title="ExtraHealth1" value="1" style="width: 140px;"/>
+        <span class="sheet-attr2 extraHealth0Input" style="margin-left: -144px;" >Extra Health 1</span>
+        <input type="radio" class="attr2 sheetoptions gametype extraHealth2Input" name="attr_extraHealth" title="ExtraHealth2" value="2" style="width: 140px;"/>
+        <span class="sheet-attr2 extraHealth0Input" style="margin-left: -144px;" >Extra Health 2</span>
+        <input type="radio" class="attr2 sheetoptions gametype extraHealth3Input" name="attr_extraHealth" title="ExtraHealth3" value="3" style="width: 140px;"/>
+        <span class="sheet-attr2 extraHealth0Input" style="margin-left: -144px;" >Extra Health 3</span>
+        <input type="radio" class="attr2 sheetoptions gametype extraHealth4Input" name="attr_extraHealth" title="ExtraHealth4" value="4" style="width: 140px;"/>
+        <span class="sheet-attr2 extraHealth0Input" style="margin-left: -144px;" >Extra Health 4</span>
+        <input type="radio" class="attr2 sheetoptions gametype extraHealth5Input" name="attr_extraHealth" title="ExtraHealth5" value="5" style="width: 140px;"/>
+        <span class="sheet-attr2 extraHealth0Input" style="margin-left: -144px;" >Extra Health 5</span>
+
+        <!-- DICE ROLLER -->
+        <div class="diceroller">
+            <table>
+                <tbody>
+                    <tr>
+                        <th colspan="2" class="sheet-bottom">DICE ROLLER</th>
+                    </tr>
+                    <tr class="rollstyle">
+                        <td class="rollcontainer" style="height: 50px;" ><button type="roll" name="roll_check" value="&{template:sf_generic} {{name=@{character_name}}} {{title=@{rolldisplay}}} {{result=[[{(@{numberOfDice}+?{Modifier|0})d8>7}]]}} {{autoSuccesses=[[@{autoSuccess}]]}}"></button></td>
+                    </tr>
+                    <tr>
+                        <td  class="rolldisplay"><textarea type="text" name="attr_rolldisplay" ></textarea></td>
+                        <td>
+                            <div class="sheet-2column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >Bonus:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_bonusDie">
+                            </div>
+                            <div class="sheet-2column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >Penalty:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_penaltieDie">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br>
+        <br>
+        <div class="spacer page1Area">
+
+        </div>  
+
+        <!-- <img class="header deviant" src=""> -->
+
+
+        <div class="page1Area" >
+
+            <div class="sheet-divTable sheet-greyGridTable"  >
+                <div class="sheet-divTableHeading">
+                    <div class="sheet-divTableRow">
+                        <div class="divTableHead">Info</div>
+                        <div class="divTableHead">Aptitudes</div>
+                    </div>
+                </div>
+                <div class="sheet-divTableBody">
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Player:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_player_name">
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Brains_flag" value="1" />
+                                <span class="sheet-attr">Brains</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Brains" value="0" /><span></span><input type="radio" class="sheet-normal" name="attr_Brains" value="1" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Brains" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Brains" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Brains" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Brains" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_GutFeeling_flag" value="1" />
+                                <span class="sheet-attr">Gut Feeling</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_GutFeeling" value="0" /><span></span><input type="radio" class="sheet-normal" name="attr_GutFeeling" value="1" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_GutFeeling" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_GutFeeling" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_GutFeeling" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_GutFeeling" value="5" /><span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Avatar:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_character_name">
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Brawns_flag" value="1" />
+                                <span class="sheet-attr">Brawn</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Brawns" value="0" /><span></span><input type="radio" class="sheet-normal" name="attr_Brawns" value="1" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Brawns" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Brawns" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Brawns" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Brawns" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Quickness_flag" value="1" />
+                                <span class="sheet-attr">Quickness</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Quickness" value="0" /><span></span><input type="radio" class="sheet-normal" name="attr_Quickness" value="1" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Quickness" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Quickness" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Quickness" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Quickness" value="5" /><span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Package:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_package">
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Clout_flag" value="1" />
+                                <span class="sheet-attr">Clout</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Clout" value="0" /><span></span><input type="radio" class="sheet-normal" name="attr_Clout" value="1" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Clout" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Clout" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Clout" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Clout" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Reaction_flag" value="1" />
+                                <span class="sheet-attr">Reaction</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Reaction" value="0" /><span></span><input type="radio" class="sheet-normal" name="attr_Reaction" value="1" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Reaction" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Reaction" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Reaction" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Reaction" value="5" /><span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Variation:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_variation">
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Cool_flag" value="1" />
+                                <span class="sheet-attr">Cool</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Cool" value="0" /><span></span><input type="radio" class="sheet-normal" name="attr_Cool" value="1" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Cool" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Cool" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Cool" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Cool" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Attention_flag" value="1" />
+                                <span class="sheet-attr">Attention</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Attention" value="0" /><span></span><input type="radio" class="sheet-normal" name="attr_Attention" value="1" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Attention" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Attention" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Attention" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Attention" value="5" /><span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >DoB:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_dob">
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_SavePoints_flag" value="1" />
+                                <span class="sheet-attr">Save Points</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_SavePoints" value="0" /><span></span><input type="radio" class="sheet-normal" name="attr_SavePoints" value="1" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_SavePoints" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_SavePoints" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_SavePoints" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_SavePoints" value="5" /><span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Age:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_age">
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Run/Sprint:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_runsprint">
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Carry Capacity:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_carrycapacity">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Stasis:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_stasis">
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Defense:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_Defense">
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Credibility:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_Credibility">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="new2"> 
+            <div class="sheet-divTable sheet-greyGridTable">
+                <div class="sheet-divTableHeading">
+                    <div class="sheet-divTableRow">
+                        <div class="divTableHead" style="color: white;">blank</div>
+                        <div class="divTableHead">Bruised</div>
+                        <div class="divTableHead">Beaten</div>
+                        <div class="divTableHead">Broken</div>
+                        <div class="divTableHead">Inc</div>
+                    </div>
+                </div>
+                <div class="sheet-divTableBody">
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <span class="sheet-attr">Bruised</span>
+                        </div>
+                        <div class="divTableCell">
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_Bruised" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Bruised" value="1"/><span></span><input type="radio" class="sheet-normal" name="attr_Bruised" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Bruised" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Bruised" value="4" /><span></span><input type="radio" class="sheet-normal extraHealthRadio1" name="attr_Bruised" value="5" /><span class="extraHealthRadio1"></span><input type="radio" class="sheet-normal extraHealthRadio2" name="attr_Bruised" value="6" /><span class="extraHealthRadio2"></span><input type="radio" class="sheet-normal extraHealthRadio3" name="attr_Bruised" value="7" /><span class="extraHealthRadio3"></span><input type="radio" class="sheet-normal extraHealthRadio4" name="attr_Bruised" value="8" /><span class="extraHealthRadio4"></span><input type="radio" class="sheet-normal extraHealthRadio5" name="attr_Bruised" value="9" /><span class="extraHealthRadio5"></span>
+                            <br>
+                            <span class="sheet-attr-none">(-)</span>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_Beaten" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Beaten" value="1" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Beaten" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Beaten" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Beaten" value="4" /><span></span>
+                            <br>
+                            <span class="sheet-attr-none">(-1)</span>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_Broken" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Broken" value="1" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Broken" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Broken" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Broken" value="4" /><span></span>
+                            <br>
+                            <span class="sheet-attr-none">(-2)</span>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_IncBashing" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_IncBashing" value="1" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_IncBashing" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_IncBashing" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_IncBashing" value="4" /><span></span>
+                            <br>
+                            <span class="sheet-attr-none">(-3/Out)</span>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <hr class="new2"> 
+            <div class="sheet-divTable sheet-greyGridTable">
+                <div class="sheet-divTableHeading">
+                    <div class="sheet-divTableRow">
+                        <div class="divTableHead" style="color: white;">blank</div>
+                        <div class="divTableHead">Scratched</div>
+                        <div class="divTableHead">Hurt</div>
+                        <div class="divTableHead">Injured</div>
+                        <div class="divTableHead">Inc</div>
+                    </div>
+                </div>
+                <div class="sheet-divTableBody">
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <span class="sheet-attr">Fatal</span>
+                        </div>
+                        <div class="divTableCell">
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_Scratched" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Scratched" value="1"/><span></span><input type="radio" class="sheet-normal" name="attr_Scratched" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Scratched" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Scratched" value="4" /><span></span><input type="radio" class="sheet-normal extraHealthRadio1" name="attr_Scratched" value="5" /><span class="extraHealthRadio1"></span><input type="radio" class="sheet-normal extraHealthRadio2" name="attr_Scratched" value="6" /><span class="extraHealthRadio2"></span><input type="radio" class="sheet-normal extraHealthRadio3" name="attr_Scratched" value="7" /><span class="extraHealthRadio3"></span><input type="radio" class="sheet-normal extraHealthRadio4" name="attr_Scratched" value="8" /><span class="extraHealthRadio4"></span><input type="radio" class="sheet-normal" name="attr_Scratched" value="9" /><span class="extraHealthRadio5"></span>
+                            <br>
+                            <span class="sheet-attr-none">(-1)</span>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_Hurt" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Hurt" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Hurt" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Hurt" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Hurt" value="4" /><span></span>
+                            <br>
+                            <span class="sheet-attr-none">(-2)</span>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_Injured" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Injured" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Injured" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Injured" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Injured" value="4" /><span></span>
+                            <br>
+                            <span class="sheet-attr-none">(-4)</span>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_IncFatal" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_IncFatal" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_IncFatal" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_IncFatal" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_IncFatal" value="4" /><span></span>
+                            <br>
+                            <span class="sheet-attr-none">(Disabled)</span>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <hr class="new2">
+            <div class="sheet-divTable sheet-greyGridTable">
+                <div class="sheet-divTableHeading">
+                    <div class="sheet-divTableRow">
+                        <div class="divTableHead">Cold</div>
+                        <div class="divTableHead">Dark</div>
+                    </div>
+                </div>
+                <div class="sheet-divTableBody">
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_Cold" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Cold" value="1"/><span></span><input type="radio" class="sheet-normal" name="attr_Cold" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Cold" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Cold" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Cold" value="5" /><span></span><input type="radio" class="sheet-normal" name="attr_Cold" value="6" /><span></span>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_Dark" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Dark" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Dark" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Dark" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Dark" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Dark" value="5" /><span></span><input type="radio" class="sheet-normal" name="attr_Dark" value="6" /><span></span><input type="radio" class="sheet-normal" name="attr_Dark" value="7" /><span></span><input type="radio" class="sheet-normal" name="attr_Dark" value="8" /><span></span><input type="radio" class="sheet-normal" name="attr_Dark" value="9" /><span></span>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <hr class="new2">  
+            <div class="sheet-divTable sheet-greyGridTable">
+                <div class="sheet-divTableHeading">
+                    <div class="sheet-divTableRow">
+                        <div class="divTableHead" style="color: white;">blank</div>
+                        <div class="divTableHead">ABILITIES</div>
+                        <div class="divTableHead" style="color: white;">blank</div>
+                        <div class="divTableHead">BONUS SPEC</div>
+                    </div>
+                </div>
+                <div class="sheet-divTableBody">
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Administration_flag" value="1" />
+                                <span class="sheet-attr" >Administration</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Administration" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Administration" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Administration" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Administration" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Administration" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Administration" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_GLC_flag" value="1" />
+                                <span class="sheet-attr" >GLC</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_GLC" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_GLC" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_GLC" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_GLC" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_GLC" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_GLC" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Search_flag" value="1" />
+                                <span class="sheet-attr" >Search</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Search" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Search" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Search" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Search" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Search" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Search" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <input type="text" class="sheet-inputSpecialization" name="attr_bonusSpec1Name">
+                        </div>
+                    </div>  
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Athletics_flag" value="1" />
+                                <span class="sheet-attr" >Athletics</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Athletics" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Athletics" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Athletics" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Athletics" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Athletics" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Athletics" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Interrogation_flag" value="1" />
+                                <span class="sheet-attr" >Interrogation</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Interrogation" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Interrogation" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Interrogation" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Interrogation" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Interrogation" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Interrogation" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Security_flag" value="1" />
+                                <span class="sheet-attr" >Security</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Security" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Security" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Security" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Security" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Security" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Security" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <input type="text" class="sheet-inputSpecialization" name="attr_bonusSpec2Name">
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_CloseCombat_flag" value="1" />
+                                <span class="sheet-attr" >Close Combat</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_CloseCombat" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_CloseCombat" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_CloseCombat" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_CloseCombat" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_CloseCombat" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_CloseCombat" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_KnowHow_flag" value="1" />
+                                <span class="sheet-attr" >Know-How</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_KnowHow" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_KnowHow" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_KnowHow" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_KnowHow" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_KnowHow" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_KnowHow" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Shooting_flag" value="1" />
+                                <span class="sheet-attr" >Shooting</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Shooting" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Shooting" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Shooting" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Shooting" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Shooting" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Shooting" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <input type="text" class="sheet-inputSpecialization" name="attr_bonusSpec3Name">
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Computers_flag" value="1" />
+                                <span class="sheet-attr" >Computers</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Computers" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Computers" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Computers" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Computers" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Computers" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Computers" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Navigation_flag" value="1" />
+                                <span class="sheet-attr" >Navigation</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Navigation" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Navigation" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Navigation" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Navigation" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Navigation" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Navigation" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Stealth_flag" value="1" />
+                                <span class="sheet-attr" >Stealth</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Stealth" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Stealth" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Stealth" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Stealth" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Stealth" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Stealth" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <input type="text" class="sheet-inputSpecialization" name="attr_bonusSpec4Name">
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Drive_flag" value="1" />
+                                <span class="sheet-attr" >Drive</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Drive" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Drive" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Drive" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Drive" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Drive" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Drive" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Politics_flag" value="1" />
+                                <span class="sheet-attr" >Politics</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Politics" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Politics" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Politics" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Politics" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Politics" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Politics" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Strategy_flag" value="1" />
+                                <span class="sheet-attr" >Strategy</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Strategy" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Strategy" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Strategy" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Strategy" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Strategy" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Strategy" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <input type="text" class="sheet-inputSpecialization" name="attr_bonusSpec5Name">
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Explosives_flag" value="1" />
+                                <span class="sheet-attr" >Explosives</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Explosives" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Explosives" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Explosives" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Explosives" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Explosives" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Explosives" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Piloting_flag" value="1" />
+                                <span class="sheet-attr" >Piloting</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Piloting" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Piloting" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Piloting" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Piloting" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Piloting" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Piloting" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_VoidLore_flag" value="1" />
+                                <span class="sheet-attr" >Void Lore</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_VoidLore" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_VoidLore" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_VoidLore" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_VoidLore" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_VoidLore" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_VoidLore" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <input type="text" class="sheet-inputSpecialization" name="attr_bonusSpec6Name">
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_FastTalk_flag" value="1" />
+                                <span class="sheet-attr" >Fast Talk</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_FastTalk" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_FastTalk" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_FastTalk" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_FastTalk" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_FastTalk" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_FastTalk" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Repairs_flag" value="1" />
+                                <span class="sheet-attr" >Repairs</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Repairs" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Repairs" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Repairs" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Repairs" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Repairs" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Repairs" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Xarcheology_flag" value="1" />
+                                <span class="sheet-attr" >Xarcheology</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Xarcheology" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Xarcheology" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Xarcheology" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Xarcheology" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Xarcheology" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Xarcheology" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <input type="text" class="sheet-inputSpecialization" name="attr_bonusSpec7Name">
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Fringewise_flag" value="1" />
+                                <span class="sheet-attr" >Fringewise</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Fringewise" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Fringewise" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Fringewise" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Fringewise" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Fringewise" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Fringewise" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Rhetoric_flag" value="1" />
+                                <span class="sheet-attr" >Rhetoric</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Rhetoric" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Rhetoric" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Rhetoric" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Rhetoric" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Rhetoric" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Rhetoric" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Xmorphology_flag" value="1" />
+                                <span class="sheet-attr" >Xmorphology</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Xmorphology" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Xmorphology" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Xmorphology" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Xmorphology" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Xmorphology" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Xmorphology" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <input type="text" class="sheet-inputSpecialization" name="attr_bonusSpec8Name">
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_FirstAid_flag" value="1" />
+                                <span class="sheet-attr" >First Aid</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_FirstAid" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_FirstAid" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_FirstAid" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_FirstAid" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_FirstAid" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_FirstAid" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Scanners_flag" value="1" />
+                                <span class="sheet-attr" >Scanners</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Scanners" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Scanners" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Scanners" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Scanners" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Scanners" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Scanners" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_extra1Name">
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Extra1" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Extra1" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Extra1" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Extra1" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Extra1" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Extra1" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <input type="text" class="sheet-inputSpecialization" name="attr_bonusSpec9Name">
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="sheet-divTableCell sheet-row">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Forensics_flag" value="1" />
+                                <span class="sheet-attr" >Forensics</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Forensics" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Forensics" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Forensics" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Forensics" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Forensics" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Forensics" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="checkbox" class="sheet-attr" name="attr_Science_flag" value="1" />
+                                <span class="sheet-attr" >Science</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Science" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Science" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Science" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Science" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Science" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Science" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_extra2Name">
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="radio" class="sheet-normal sheet-zero" name="attr_Extra2" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Extra2" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Extra2" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Extra2" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Extra2" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Extra2" value="5" /><span></span>
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <input type="text" class="sheet-inputSpecialization" name="attr_bonusSpec10Name">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="new2">  
+
+            <div class="sheet-divTable sheet-greyGridTable" style="width: 45%; float:left">
+                <div><h1 style="text-align: center;">Weapons</h1></div>
+                <table style="float:left">
+                    <tr>
+                        <th style="width:40%">Name</th>
+                        <th>Damage</th>
+                        <th>PSD</th>
+                        <th>Range</th>
+                        <th>ROF</th>
+                        <th>Clip</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponName1" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponDamage1" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponPSD1" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponRange1" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponROF1" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponClip1" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponName2" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponDamage2" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponPSD2" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponRange2" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponROF2" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponClip2" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponName3" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponDamage3" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponPSD3" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponRange3" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponROF3" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponClip3" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponName4" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponDamage4" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponPSD4" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponRange4" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponROF4" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponClip4" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponName5" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponDamage5" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponPSD5" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponRange5" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponROF5" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_weaponClip5" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="sheet-divTable sheet-greyGridTable" style="width: 45%; float:right">
+                <div><h1 style="text-align: center;">Resources</h1></div>
+                <div>
+                    <textarea name="attr_ebxknotes" style="width:100%; height:100px"></textarea>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="page2Area" style="width:100%"e>
+            <table>
+                <tr>
+                    <th style="width:30%">NAP Device</th>
+                    <th>NAP Location</th>
+                    <th>Lvl</th>
+                    <th>Capacity</th>
+                    <th>Special</th>
+                    <th>Lvl</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice1" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation1" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel1" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel1" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel1" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel1" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel1" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel1" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity1" />
+                    </td>
+                    <td>
+                        <span>Stealth Module</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Level1" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Level1" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Level1" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Level1" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Level1" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Level1" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice1" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation1" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel2" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel2" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel2" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel2" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel2" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel2" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity2" />
+                    </td>
+                    <td>
+                        <span>Forensics Filter</span>
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Level2" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Level2" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Level2" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Level2" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Level2" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Level2" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice3" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation3" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel3" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel3" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel3" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel3" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel3" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel3" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity3" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Special3" />
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice4" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation4" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel4" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel4" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel4" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel4" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel4" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel4" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity4" />
+                    </td>
+                    <td>
+                        <span>TCI NAPs</span>
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice5" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation5" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel5" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel5" value="1"/><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel5" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel5" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel5" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel5" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity5" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Special5" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Level5" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Level5" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Level5" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Level5" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Level5" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Level5" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice6" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation6" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel6" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel6" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel6" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel6" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel6" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel6" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity6" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Special6" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Level6" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Level6" value="1"  /><span></span><input type="radio" class="sheet-normal" name="attr_Level6" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Level6" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Level6" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Level6" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice7" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation7" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel7" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel7" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel7" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel7" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel7" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel7" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity7" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Special7" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Level7" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Level7" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Level7" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Level7" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Level7" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Level7" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice8" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation8" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel8" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel8" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel8" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel8" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel8" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel8" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity8" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Special8" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Level8" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Level8" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Level8" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Level8" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Level8" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Level8" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice9" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation9" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel9" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel9" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel9" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel9" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel9" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel9" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity9" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Special9" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Level9" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Level9" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Level9" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Level9" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Level9" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Level9" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice10" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation10" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel10" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel10" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel10" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel10" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel10" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel10" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity10" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Special10" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Level10" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Level10" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Level10" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Level10" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Level10" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Level10" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice11" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation11" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel11" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel11" value="1"/><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel11" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel11" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel11" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel11" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity11" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Special11" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Level11" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Level11" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Level11" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Level11" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Level11" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Level11" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice12" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation12" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel12" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel12" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel12" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel12" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel12" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel12" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity12" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Special12" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Level12" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Level12" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Level12" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Level12" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Level12" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Level12" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice13" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation13" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel13" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel13" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel13" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel13" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel13" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel13" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity13" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Special13" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Level13" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Level13" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Level13" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Level13" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Level13" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Level13" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice14" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation14" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel14" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel14" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel14" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel14" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel14" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel14" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity14" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Special14" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Level14" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Level14" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Level14" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Level14" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Level14" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Level14" value="5" /><span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPDevice15" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_NAPLocation15" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_NPCLevel15" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel15" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel15" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel15" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel15" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_NPCLevel15" value="5" /><span></span>
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Capacity15" />
+                    </td>
+                    <td>
+                        <input type="text" class="sheet-inputSpecialization" name="attr_Special15" />
+                    </td>
+                    <td>
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Level15" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_Level15" value="1" /><span></span><input type="radio" class="sheet-normal" name="attr_Level15" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_Level15" value="3" /><span></span><input type="radio" class="sheet-normal" name="attr_Level15" value="4" /><span></span><input type="radio" class="sheet-normal" name="attr_Level15" value="5" /><span></span>
+                    </td>
+                </tr>
+            </table>
+            <hr class="new2">  
+            <div>
+                <h2 style="text-align: center;">
+                    Gear
+                </h2>
+                <textarea name="attr_gear" style="width:90%; height:100px"></textarea>
+            </div>
+            <hr class="new2"> 
+            <div>
+                <h2 style="text-align: center;">
+                    Ship
+                </h2>
+            </div>
+            <div class="sheet-divTable sheet-greyGridTable" style="width: 90% !important;">
+                <div class="sheet-divTableBody">
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Ship Name:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_ship_name">
+                            </div>
+                            <br>
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Ship Class and Model:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_ship_class">
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Color/markings:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_ship_color">
+                            </div>
+                            <br>
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Length, Width, Height:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_ship_lwh">
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Reactor:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_ship_reactor">
+                            </div>
+                            <br>
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Type:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_ship_type">
+                            </div>
+                            <br>
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" >Percentage:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_ship_precentage">
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <hr class="new2"> 
+            <div class="sheet-divTable sheet-greyGridTable" style="width: 90% !important;">
+                <div class="sheet-divTableRow">
+                    <div class="divTableHead">Facilities/Units</div>
+                    <div class="divTableHead" style="float: right;">Section</div>
+                    <div class="divTableHead">Damage</div>
+                </div>
+                <div class="sheet-divTableBody">
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <div class="sheet-6column">
+                                <span class="sheet-attr" style="font-size: 12px !important; font-weight:normal !important;" >Stasis Unit #:</span>
+                            </div>
+                            <div class="sheet-6column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_stasis_units">
+                            </div>
+                            <div class="sheet-6column">
+                                <span class="sheet-attr" style="font-size: 12px !important; font-weight:normal !important;">Total Cyc:</span>
+                            </div>
+                            <div class="sheet-6column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_TotalCyc">
+                            </div>
+                            <div class="sheet-6column">
+                                <span class="sheet-attr" style="font-size: 12px !important; font-weight:normal !important;">Spent Cyc:</span>
+                            </div>
+                            <div class="sheet-6column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_spentsyc">
+                            </div>
+                        </div>
+                        <div class="divTableCell" style="float: right;">
+                            <div class="sheet-3column" style="width: 25px !important;">
+                                <input type="checkbox" class="sheet-attr" name="attr_A_flag" value="1" />
+                                <span class="sheet-attr" style="float: none !important;" >A</span>
+                            </div>
+                            <div class="sheet-3column" style="width: 25px !important;">
+                                <input type="checkbox" class="sheet-attr" name="attr_B_flag" value="1" />
+                                <span class="sheet-attr" style="float: none !important;"  >B</span>
+                            </div>
+                            <div class="sheet-3column" style="width: 25px !important;">
+                                <input type="checkbox" class="sheet-attr" name="attr_C_flag" value="1" />
+                                <span class="sheet-attr" style="float: none !important;"  >C</span>
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="checkbox" class="sheet-attr" name="attr_shipdamage" value="1" />
+                            <span class="sheet-attr" style="float: none !important;" >Scraped</span>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" style="font-size: 12px !important; font-weight:normal !important;">Life Support/Nutrition:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_lsNutrition">
+                            </div>
+                        </div>
+                        <div class="divTableCell" style="float: right;">
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_SectionDot1" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot1" value="1"/><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot1" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot1" value="3" /><span></span>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="checkbox" class="sheet-attr" name="attr_shipdamage" value="2" />
+                            <span class="sheet-attr" style="float: none !important;" >Dinged</span>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >Medbay:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_medbay">
+                            </div>
+                        </div>
+                        <div class="divTableCell" style="float: right;">
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_SectionDot2" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot2" value="1"/><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot2" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot2" value="3" /><span></span>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="checkbox" class="sheet-attr" name="attr_shipdamage" value="3" />
+                            <span class="sheet-attr" style="float: none !important;" >Banged up</span>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr" style="font-size: 12px !important; font-weight:normal !important;">Engineering Bay:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_engineeringbay">
+                            </div>
+                        </div>
+                        <div class="divTableCell" style="float: right;">
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_SectionDot3" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot3" value="1"/><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot3" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot3" value="3" /><span></span>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="checkbox" class="sheet-attr" name="attr_shipdamage" value="4" />
+                            <span class="sheet-attr" style="float: none !important;" >Battered (-1)</span>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_otherName1" label="Other">
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_Othervalue1">
+                            </div>
+                        </div>
+                        <div class="divTableCell" style="float: right;">
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_SectionDot4" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot4" value="1"/><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot4" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot4" value="3" /><span></span>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="checkbox" class="sheet-attr" name="attr_shipdamage" value="5" />
+                            <span class="sheet-attr" style="float: none !important;" >Torn (-2)</span>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_otherName2" label="Other">
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_Othervalue2">
+                            </div>
+                        </div>
+                        <div class="divTableCell" style="float: right;">
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_SectionDot5" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot5" value="1"/><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot5" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot5" value="3" /><span></span>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="checkbox" class="sheet-attr" name="attr_shipdamage" value="6" />
+                            <span class="sheet-attr" style="float: none !important;" >Breached (-3)</span>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_otherName3" label="Other">
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" name="attr_Othervalue3">
+                            </div>
+                        </div>
+                        <div class="divTableCell" style="float: right;">
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_SectionDot6" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot6" value="1"/><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot6" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot6" value="3" /><span></span>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="checkbox" class="sheet-attr" name="attr_shipdamage" value="7" />
+                            <span class="sheet-attr" style="float: none !important;" >Smashed (-4)</span>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <span style="font-weight:bold; font-size:20px;">Main Stats</span>
+                        </div>
+                        <div class="divTableCell" style="float: right;">
+                            <input type="radio" class="sheet-normal sheet-zero" name="attr_SectionDot7" value="0" checked="checked" /><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot7" value="1"/><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot7" value="2" /><span></span><input type="radio" class="sheet-normal" name="attr_SectionDot7" value="3" /><span></span>
+                        </div>
+                        <div class="divTableCell" >
+                            <input type="checkbox" class="sheet-attr" name="attr_shipdamage" value="8" />
+                            <span class="sheet-attr" style="float: none !important;" >Demolished</span>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <div class="sheet-4column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >Speed:</span>
+                            </div>
+                            <div class="sheet-4column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_shipspeed">
+                            </div>
+                            <div class="sheet-4column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >Acceleration:</span>
+                            </div>
+                            <div class="sheet-4column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_shipacceleration">
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-2column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >Ghost Drive:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_shipghostdrive">
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-2column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >Handling:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_shiphandling">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <span style="font-weight:bold; font-size:20px;">Scanners & Targeting</span>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <div class="sheet-4column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >Bio:</span>
+                            </div>
+                            <div class="sheet-4column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_shipbio">
+                            </div>
+                            <div class="sheet-4column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >Energy:</span>
+                            </div>
+                            <div class="sheet-4column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_shipenergy">
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-4column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >Environmental:</span>
+                            </div>
+                            <div class="sheet-4column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_shipenvironmental">
+                            </div>
+                            <div class="sheet-4column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >LIDAR:</span>
+                            </div>
+                            <div class="sheet-4column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_shiplidar">
+                            </div>
+                        </div>
+                        <div class="divTableCell" >
+                            <div class="sheet-4column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >LSA:</span>
+                            </div>
+                            <div class="sheet-4column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_shiplsa">
+                            </div>
+                            <div class="sheet-4column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >Signal:</span>
+                            </div>
+                            <div class="sheet-4column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_shipsignal">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >Targeting:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization" style="width: 50px !important; float:left !important;" name="attr_shiptargeting">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <span style="font-weight:bold; font-size:20px;">DHL</span>
+                        </div>
+                    </div>
+                    <div class="sheet-divTableRow">
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >Immune:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization"name="attr_shipimmune">
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >Vulnerable:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization"name="attr_shipvulnerable">
+                            </div>
+                        </div>
+                        <div class="divTableCell">
+                            <div class="sheet-2column">
+                                <span class="sheet-attr"style="font-size: 12px !important; font-weight:normal !important;" >At Risk:</span>
+                            </div>
+                            <div class="sheet-2column">
+                                <input type="text" class="sheet-inputSpecialization"name="attr_shipatrisk">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="new2"> 
+            <div class="sheet-divTable sheet-greyGridTable" style="width: 45%; float:left">
+                <div><h1 style="text-align: center;">Ship Weapons</h1></div>
+                <table style="float:left">
+                    <tr>
+                        <th style="width:40%">Type</th>
+                        <th>DMG</th>
+                        <th>PSD</th>
+                        <th>Clip</th>
+                        <th>Range</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponName1" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponDmg1" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponpsd1" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponclip1" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponRange1" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponName2" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponDmg2" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponpsd2" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponclip2" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponRange2" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponName3" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponDmg3" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponpsd3" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponclip3" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponRange3" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponName4" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponDmg4" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponpsd4" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponclip4" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponRange4" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponName5" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponDmg5" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponpsd5" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponclip5" />
+                        </td>
+                        <td>
+                            <input type="text" class="sheet-inputSpecialization" name="attr_shipweaponRange5" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="sheet-divTable sheet-greyGridTable" style="width: 45%; float:right">
+                <div><h1 style="text-align: center;">Ship Notes</h1></div>
+                <div>
+                    <textarea name="attr_shipebxknotes" style="width:100%; height:100px"></textarea>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <script type="text/worker">
+            var health = ["IncBashing", "Broken", "Beaten", "Bruised","IncFatal", "Injured", "Hurt", "Scratched"];
+            health.forEach((attr) => {
+                on(`change:${attr}`, (eventInfo) => {
+                    var local = 0;
+                    getAttrs(["IncBashing", "Broken", "Beaten", "Bruised","IncFatal", "Injured", "Hurt", "Scratched"], function(health){
+                        if(health["IncFatal"] == 4){
+                            local = -99;
+                        } else if (health["Injured"] == 4) {
+                            local = -4;
+                        } else if (health["IncBashing"] == 4) {
+                            local = -3;
+                        } else if (health["Hurt"] == 4 || health["Broken"] == 4) {
+                            local = -2;
+                        }
+                        else if (health["Beaten"] == 4 || health["Hurt"] > 0) {
+                            local = -1;
+                        }
+                        else {
+                            local = 0;
+                        }
+                        setAttrs({
+                            woundPenalties: local
+                        });
+                        setDice();
+                    });
+                });
+            });
+
+            var stats = ["brains", "gutfeeling", "brawns", "quickness", "clout", "reaction", 
+            "cool", "attention", "savepoints", "administration", "glc", "seach",
+            "athletics", "interrogation", "security", "closecombat", "knowhow", "shooting",
+            "computers", "navigation", "stealth", "drive", "politics", "strategy",
+            "explosives", "piloting", "voidlore", "fasttalk", "repairs", "xarcheology",
+            "fringewise", "rhetoric", "xmorphology", "firstaid", "scanners", "forensics",
+            "science", "bonusdie", "penaltiedie"];
+            var attributeflags = ["Brains_flag", "GutFeeling_flag", "Brawns_flag", "Quickness_flag", "Clout_flag", "Reaction_flag", 
+            "Cool_flag", "Attention_flag", "SavePoints_flag"];
+            var abilityflags = ["Administration_flag", "GLC_flag", "Search_flag",
+            "Athletics_flag", "Interrogation_flag", "Security_flag", "CloseCombat_flag", "KnowHow_flag", "Shooting_flag",
+            "Computers_flag", "Navigation_flag", "Stealth_flag", "Drive_flag", "Politics_flag", "Strategy_flag",
+            "Explosives_flag", "Piloting_flag", "VoidLore_flag", "FastTalk_flag", "Repairs_flag", "Xarcheology_flag",
+            "Fringewise_flag", "Rhetoric_flag", "Xmorphology_flag", "FirstAid_flag", "Scanners_flag", "Forensics_flag",
+            "Science_flag"];
+            stats.forEach((attr) => {
+                on(`change:${attr} change:${attr}_flag`, (eventInfo) => {
+                    const source = eventInfo.sourceAttribute;
+                    const attribute = (attr.includes("flag")) ? attr.split(`_flag`)[0] : attr;
+                    console.log("here");
+                    setDice();
+                    updateHealth();
+                });
+            });
+
+            function setDice(){
+                var numDice = 0;
+                var autoSuccesses = 0;
+                var abilitiesFound = [];
+                var attributesFound = [];
+                var abilityFound = false;
+                var wound = 0;
+                var display = "";
+                getAttrs(["woundPenalties"], function (bonusDots){
+                    wound = parseInt(bonusDots["woundPenalties"], 10)||0;
+                    getAttrs(["bonusDie", "penaltieDie"], function(bonus){
+                        var bonusDie = parseInt(bonus["bonusDie"], 10)||0;
+                        var penaltyDie = parseInt(bonus["penaltieDie"], 10)||0;
+                        getAttrs(abilityflags, function(abilityflag){
+                            abilityflags.forEach(function(flag){
+                                var val = parseInt(abilityflag[flag], 10)||0;
+                                if (val == 1){
+                                    var attr = flag.split(`_flag`)[0];
+                                    
+                                    abilitiesFound.push(attr);
+                                    if (display == ""){
+                                        display = attr;
+                                    } else {
+                                        display = display + " + " + attr;
+                                    }
+                                }
+                            });
+                            getAttrs(abilitiesFound, function(ability){
+                                abilitiesFound.forEach(function(attrAbility){
+                                    var dot = parseInt(ability[attrAbility], 10)||0;
+                                    numDice = numDice + dot;
+                                    abilityFound = true;
+                                });
+                                getAttrs(attributeflags, function(attributeflag){
+                                    attributeflags.forEach(function(flag){
+                                        var val = parseInt(attributeflag[flag], 10)||0;
+                                        if(val == 1){
+                                            var attr = flag.split(`_flag`)[0];
+                                            attributesFound.push(attr);
+                                            if (display == ""){
+                                                display = attr;
+                                            } else {
+                                                display = display + " + " + attr;
+                                            }
+                                        }
+                                    });
+                                    getAttrs(attributesFound, function(attribute){
+                                        attributesFound.forEach(function(attrAttribute){
+                                            var dot = parseInt(attribute[attrAttribute], 10)||0;
+                                            numDice = numDice + dot;
+                                        });
+                                        if(abilityFound == true){
+                                            numDice = numDice + bonusDie - penaltyDie + wound;
+                                            if (numDice > 8){
+                                                autoSuccesses = numDice - 8;
+                                                numDice = numDice - autoSuccesses;
+                                            }
+                                        } else {
+                                            numDice = (numDice * 2) + bonusDie - penaltyDie + wound;
+                                            if (numDice > 8){
+                                                autoSuccesses = numDice - 8;
+                                                numDice = numDice - autoSuccesses;
+                                            }
+                                        }
+                                        setAttrs({
+                                            numberOfDice: numDice,
+                                            autoSuccess: autoSuccesses,
+                                            rolldisplay: display
+                                        });
+                                    })
+                                });
+                            });
+                        });
+                    });
+                });
+            }
+
+            function updateHealth(){
+                getAttrs(["brawns"], function(brawn){
+                    var dots = parseInt(brawn["brawns"], 0) || 0;
+                    setAttrs({
+                        extraHealth: dots
+                    });
+                });
+                
+            }
+        </script>
+        <div>
+            <span class="sheet-attr" style="bottom:5px;" >Sheet created by N8Midd</span>
+        </div>
+    </div>
+</div>
+
+
+<rolltemplate class="sheet-rolltemplate-sf_generic">
+    {{#title}}
+    <div class='generic-header'>
+        <div>
+            {{title}}
+        </div>
+    </div>
+    {{/title}} 
+    <div class='side-banner left'>
+        <div>
+            <span>Result</span>
+        </div>
+    </div>
+    
+    <div class='generic-body'>
+        <div class='content-container'>
+            <div class='split-container across'>
+                <div class='highlighted split r1name'>
+                    {{result}}
+                </div>
+                <div class='highlighted split roll'>
+                    {{autoSuccesses}}
+                </div>
+            </div>
+            {{#r2}}
+            <div class='split-container across'>
+                <div class='highlighted split r1name'>
+                    {{#r2name}} {{r2name}} {{/r2name}} {{^r2name}}
+                    <span data-i18n='check'>CHECK</span> {{/r2name}}
+                </div>
+                <div class='highlighted split roll'>
+                    {{r2}}
+                </div>
+            </div>
+            {{/r2}}{{#r3}}
+            <div class='split-container across'>
+                <div class='highlighted split r1name'>
+                    {{#r3name}} {{r3name}} {{/r3name}} {{^r3name}}
+                    <span data-i18n='check'>CHECK</span> {{/r3name}}
+                </div>
+                <div class='highlighted split roll'>
+                    {{r3}}
+                </div>
+            </div>
+            {{/r3}}{{#r4}}
+            <div class='split-container across'>
+                <div class='highlighted split r1name'>
+                    {{#r4name}} {{r4name}} {{/r4name}} {{^r4name}}
+                    <span data-i18n='check'>CHECK</span> {{/r4name}}
+                </div>
+                <div class='highlighted split roll'>
+                    {{r4}}
+                </div>
+            </div>
+            {{/r4}}{{#r5}}
+            <div class='split-container across'>
+                <div class='highlighted split r1name'>
+                    {{#r5name}} {{r5name}} {{/r5name}} {{^r5name}}
+                    <span data-i18n='check'>CHECK</span> {{/r5name}}
+                </div>
+                <div class='highlighted split roll'>
+                    {{r5}}
+                </div>
+            </div>
+            {{/r5}}{{#r6}}
+            <div class='split-container across'>
+                <div class='highlighted split r1name'>
+                    {{#r6name}} {{r6name}} {{/r6name}} {{^r6name}}
+                    <span data-i18n='check'>CHECK</span> {{/r6name}}
+                </div>
+                <div class='highlighted split roll'>
+                    {{r6}}
+                </div>
+            </div>
+            {{/r6}}{{#notes}}
+            <div class='highlighted across notes-row'>
+                <span class='notes' data-i18n='notes:'>NOTES:</span><span> {{notes}}</span>
+            </div>
+            {{/notes}}{{#buttons0}}
+            <div class='highlighted across notes-row'>
+                <span>{{buttons0}}</span>
+            </div>
+            {{/buttons0}}{{#buttons1}}
+            <div class='highlighted across notes-row'>
+                <span>{{buttons1}}</span>
+            </div>
+            {{/buttons1}}{{#buttons2}}
+            <div class='highlighted across notes-row'>
+                <span>{{buttons2}}</span>
+            </div>
+            {{/buttons2}}{{#buttons3}}
+            <div class='highlighted across notes-row'>
+                <span>{{buttons3}}</span>
+            </div>
+            {{/buttons3}}{{#buttons4}}
+            <div class='highlighted across notes-row'>
+                <span>{{buttons4}}</span>
+            </div>
+            {{/buttons4}}{{#buttons5}}
+            <div class='highlighted across notes-row'>
+                <span>{{buttons5}}</span>
+            </div>
+            {{/buttons5}}{{#buttons6}}
+            <div class='highlighted across notes-row'>
+                <span>{{buttons6}}</span>
+            </div>
+            {{/buttons6}}{{#buttons7}}
+            <div class='highlighted across notes-row'>
+                <span>{{buttons7}}</span>
+            </div>
+            {{/buttons7}}{{#buttons8}}
+            <div class='highlighted across notes-row'>
+                <span>{{buttons8}}</span>
+            </div>
+            {{/buttons8}}{{#buttons9}}
+            <div class='highlighted across notes-row'>
+                <span>{{buttons9}}</span>
+            </div>
+            {{/buttons9}}</div>
+    </div>
+    <div class='side-banner right'>
+        <div>
+            <span>Auto</span>
+        </div>
+    </div>
+    {{#name}}
+    <div class='generic-footer'>
+        <div>
+            {{#characterid}} {{#name}} [{{name}}](https://journal.roll20.net/character/{{characterid}}) {{/name}} {{/characterid}} {{^characterid}} {{name}} {{/characterid}}
+        </div>
+    </div>
+    {{/name}}
+</rolltemplate>

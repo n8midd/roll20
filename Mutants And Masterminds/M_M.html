@@ -1,0 +1,2295 @@
+<div class="image-div" style="height:200px;">
+    <div class="border-div"> 
+        <input class="toggles" name="attr_toggles" type="hidden" value="color:default,innate,focus,cantrips,normalspells,"/>
+        <div class="fullBorder" style="width:500px; float:right; padding-right: 25px;">
+            <div style="width: 55%; float:left; padding-top:5px; padding-left:10px;">
+                <div style="float: left;">
+                    <span class="attrHeader" >Hero:</span>
+                </div>
+                <div style="float: left;">
+                    <input type="text" class="inputSpecialization" style="width: 230px;" name="attr_character_name">
+                </div>
+            </div>
+            <div style="width: 43%; float:left; padding-top:5px">
+                <div style="float: left;">
+                    <span class="attrHeader" >Player:</span>
+                </div>
+                <div style="float: left;">
+                    <input type="text" class="inputSpecialization" style="width: 162px;" name="attr_player">
+                </div>
+            </div>
+            <div style="width: 55%; float:left; padding-top:5px; padding-left:10px;">
+                <div style="float: left;">
+                    <span class="attrHeader" >Identity:</span>
+                </div>
+                <div style="float: left;">
+                    <input type="text" class="inputSpecialization" style="width: 210px;" name="attr_identity">
+                </div>
+            </div>
+            <div style="width: 21%; float:left; padding-top:5px">
+                <div style="float: left;">
+                    <span class="attrHeader" >Secret:</span>
+                </div>
+                <div style="float: left;">
+                    <input type="checkbox" name="attr_secret_checkbox" style="margin-left:10px;" value="1">
+                </div>
+            </div>
+            <div style="width: 21%; float:left; padding-top:5px">
+                <div style="float: left;">
+                    <span class="attrHeader" >Public:</span>
+                </div>
+                <div style="float: left;">
+                    <input type="checkbox" name="attr_public_checkbox" style="margin-left:10px;" value="1">
+                </div>
+            </div>
+
+            <div style="width: 70%; float:left; padding-top:5px; padding-left:10px;">
+                <div style="float: left;">
+                    <span class="attrHeader" >Base of Operation:</span>
+                </div>
+                <div style="float: left;">
+                    <input type="text" class="inputSpecialization" style="width: 186px;" name="attr_base_of_operation">
+                </div>
+            </div>
+            <div style="width: 27%; float:left; padding-top:5px">
+                <div style="float: left;">
+                    <span class="attrHeader" >Power Level:</span>
+                </div>
+                <div style="float: left;">
+                    <input type="text" class="inputSpecialization" style="width: 36px;" name="attr_power_level">
+                </div>
+            </div>
+            <div style="width: 98%; float:left; padding-top:5px; padding-left:10px;">
+                <div style="float: left;">
+                    <span class="attrHeader" >Group Affiliations:</span>
+                </div>
+                <div style="float: left;">
+                    <input type="text" class="inputSpecialization" style="width: 348px;" name="attr_group_affiliations">
+                </div>
+            </div>
+            <div style="width: 33%; float:left; padding-top:5px; padding-left:10px;">
+                <div style="float: left;">
+                    <span class="attrHeader" >Power Point Totals:</span>
+                </div>
+            </div>
+            <div style="width: 64%; float:left; padding-top:5px">
+                <div style="float: left;">
+                    <span class="attrHeader" >Abilities:</span>
+                </div>
+                <div style="float: left;">
+                    <input type="text" class="inputSpecialization" style="width: 70px;" name="attr_abilitytotal">
+                </div>
+                <div style="float: left;">
+                    <span class="attrHeader" >+Powers:</span>
+                </div>
+                <div style="float: left;">
+                    <input type="text" class="inputSpecialization" style="width: 70px;" name="attr_powertotal">
+                </div>
+                <div style="float: left;">
+                    <span class="attrHeader" >+</span>
+                </div>
+            </div>
+            <div style="width: 33%; float:left; padding-top:5px; padding-left:10px;">
+                
+            </div>
+            <div style="width: 64%; float:left; padding-top:5px">
+                <div style="float: left;">
+                    <span class="attrHeader" >Advantages:</span>
+                </div>
+                <div style="float: left;">
+                    <input type="text" class="inputSpecialization" style="width: 70px;" name="attr_advantagestotal">
+                </div>
+                <div style="float: left;">
+                    <span class="attrHeader" >+Skills:</span>
+                </div>
+                <div style="float: left;">
+                    <input type="text" class="inputSpecialization" style="width: 70px;" name="attr_skillstotal">
+                </div>
+                <div style="float: left;">
+                    <span class="attrHeader" >+</span>
+                </div>
+            </div>
+            <div style="width: 33%; float:left; padding-top:5px; padding-left:10px;">
+                
+            </div>
+            <div style="width: 64%; float:left; padding-top:5px">
+                <div style="float: left;">
+                    <span class="attrHeader" >Defense:</span>
+                </div>
+                <div style="float: left;">
+                    <input type="text" class="inputSpecialization" style="width: 70px;" name="attr_defensetotal">
+                </div>
+                <div style="float: left;">
+                    <span class="attrHeader" >=</span>
+                </div>
+                <div style="float: left;">
+                    <input type="text" class="inputSpecialization" style="width: 70px;" name="attr_grandtotal">
+                </div>
+            </div>
+        </div>
+        <div style="width:950px; overflow:auto; padding-top:10px;" >
+            <div class="fullBorder ability-scores" style="width:300px; float:left;">
+                <h1>ABILITIES</h1>
+                <div class="display strength-row">
+                    <button class="pictos settings-button" name="act_toggle_strength" title="strength settings" style="margin-top: 10px;" type="action">y</button> 
+                    <div>
+                        <div style="display: none;">
+                            <button name="roll_STR_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Strength w/ Hero Point}} {{subheader=Ability}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{strength_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{strength_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                        </div>
+                        <button name="roll_STR" type="roll" value=" &{template:rolls} {{charactername=@{character_name}}} {{header=Strength}} {{subheader=Ability}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{strength_modifier} + @{Disabled} + @{Impaired} + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5} ]]}} {{notes=@{strength_notes}}} {{button=[Hero Point](~@{character_name}|STR_HERO)}}" style="margin-left: 35px; margin-top: 10px;" class="btn ui-draggable">Strength</button>
+                    </div>
+                    <div class="circle">
+                        <span name="attr_strength_modifier" title="@{strength_modifier}"></span>
+                    </div>
+                </div>
+                <div class="settings strength-settings">
+                    <label class="sublabel" title="strength score">
+                        <span class="sublabel">Base</span>
+                        <input name="attr_strength_score" placeholder="0" title="@{strength_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="sublabel" title="strength misc">
+                        <span class="sublabel">Misc</span>
+                        <input name="attr_strength_misc_score" placeholder="0" title="@{strength_misc_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="notes" title="strength notes">
+                        <span>Notes</span>
+                        <textarea class="notes" name="attr_strength_notes" title="@{strength_notes"}></textarea>
+                    </label>
+                </div>
+                <div class="display stamina-row">
+                    <button class="pictos settings-button" name="act_toggle_stamina" title="stamina settings" style="margin-top: 10px;" type="action">y</button> 
+                    <div>
+                        <div style="display: none;">
+                            <button name="roll_STA_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Stamina w/ Hero Point}} {{subheader=Ability}} {{modifier=@{stamina_modifier}}} {{roll01=[[1d10 + 10 + @{stamina_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{stamina_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                        </div>
+                        <button name="roll_STA" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Stamina}} {{subheader=Ability}} {{modifier=@{stamina_modifier}}} {{roll01=[[1d20 + @{stamina_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5} ]]}} {{notes=@{stamina_notes}}} {{button=[Hero Point](~@{character_name}|STA_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Stamina</button>
+                    </div>
+                    <div class="circle">
+                        <span name="attr_stamina_modifier" title="@{stamina_modifier}"></span>
+                    </div>
+                </div>
+                <div class="settings stamina-settings">
+                    <label class="sublabel" title="stamina score">
+                        <span class="sublabel">Base</span>
+                        <input name="attr_stamina_score" placeholder="0" title="@{stamina_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="sublabel" title="stamina misc">
+                        <span class="sublabel">Misc</span>
+                        <input name="attr_stamina_misc_score" placeholder="0" title="@{stamina_misc_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="notes" title="stamina notes">
+                        <span>Notes</span>
+                        <textarea class="notes" name="attr_stamina_notes" title="@{stamina_notes"}></textarea>
+                    </label>
+                </div>
+                <div class="display agility-row">
+                    <button class="pictos settings-button" name="act_toggle_agility" title="agility settings" style="margin-top: 10px;" type="action">y</button> 
+                    <div>
+                        <div style="display: none;">
+                            <button name="roll_AGL_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Agility w/ Hero Point}} {{subheader=Ability}} {{modifier=@{agility_modifier}}} {{roll01=[[1d10 + 10 + @{agility_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{agility_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                        </div>
+                        <button name="roll_AGL" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Agility}} {{subheader=Ability}} {{modifier=@{agility_modifier}}} {{roll01=[[1d20 + @{agility_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{agility_notes}}} {{button=[Hero Point](~@{character_name}|AGL_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Agility</button>
+                    </div>
+                    <div class="circle">
+                        <span name="attr_agility_modifier" title="@{agility_modifier}"></span>
+                    </div>
+                </div>
+                <div class="settings agility-settings">
+                    <label class="sublabel" title="agility score">
+                        <span class="sublabel">Base</span>
+                        <input name="attr_agility_score" placeholder="0" title="@{agility_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="sublabel" title="agility misc">
+                        <span class="sublabel">Misc</span>
+                        <input name="attr_agility_misc_score" placeholder="0" title="@{agility_misc_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="notes" title="agility notes">
+                        <span>Notes</span>
+                        <textarea class="notes" name="attr_agility_notes" title="@{agility_notes"}></textarea>
+                    </label>
+                </div>
+                <div class="display dexterity-row">
+                    <button class="pictos settings-button" name="act_toggle_dexterity" title="dexterity settings" style="margin-top: 10px;" type="action">y</button> 
+                    <div>
+                        <div style="display: none;">
+                            <button name="roll_DEX_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Dexterity w/ Hero Point}} {{subheader=Ability}} {{modifier=@{dexterity_modifier}}} {{roll01=[[1d10 + 10 + @{dexterity_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{dexterity_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                        </div>
+                        <button name="roll_DEX" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Dexterity}} {{subheader=Ability}} {{modifier=@{dexterity_modifier}}} {{roll01=[[1d20 + @{dexterity_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{dexterity_notes}}} {{button=[Hero Point](~@{character_name}|DEX_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Dexterity</button>
+                    </div>
+                    <div class="circle">
+                        <span name="attr_dexterity_modifier" title="@{dexterity_modifier}"></span>
+                    </div>
+                </div>
+                <div class="settings dexterity-settings">
+                    <label class="sublabel" title="dexterity score">
+                        <span class="sublabel">Base</span>
+                        <input name="attr_dexterity_score" placeholder="0" title="@{dexterity_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="sublabel" title="dexterity misc">
+                        <span class="sublabel">Misc</span>
+                        <input name="attr_dexterity_misc_score" placeholder="0" title="@{dexterity_misc_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="notes" title="dexterity notes">
+                        <span>Notes</span>
+                        <textarea class="notes" name="attr_dexterity_notes" title="@{dexterity_notes"}></textarea>
+                    </label>
+                </div>
+                <div class="display fighting-row">
+                    <button class="pictos settings-button" name="act_toggle_fighting" title="fighting settings" style="margin-top: 10px;" type="action">y</button> 
+                    <div>
+                        <div style="display: none;">
+                            <button name="roll_FGT_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Fighting w/ Hero Point}} {{subheader=Ability}} {{modifier=@{fighting_modifier}}} {{roll01=[[1d10 + 10 + @{fighting_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{fighting_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                        </div>
+                        <button name="roll_FGT" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Fighting}} {{subheader=Ability}} {{modifier=@{fighting_modifier}}} {{roll01=[[1d20 + @{fighting_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{fighting_notes}}} {{button=[Hero Point](~@{character_name}|FGT_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Fighting</button>
+                    </div>
+                    <div class="circle">
+                        <span name="attr_fighting_modifier" title="@{fighting_modifier}"></span>
+                    </div>
+                </div>
+                <div class="settings fighting-settings">
+                    <label class="sublabel" title="fighting score">
+                        <span class="sublabel">Base</span>
+                        <input name="attr_fighting_score" placeholder="0" title="@{fighting_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="sublabel" title="fighting misc">
+                        <span class="sublabel">Misc</span>
+                        <input name="attr_fighting_misc_score" placeholder="0" title="@{fighting_misc_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="notes" title="fighting notes">
+                        <span>Notes</span>
+                        <textarea class="notes" name="attr_fighting_notes" title="@{fighting_notes"}></textarea>
+                    </label>
+                </div>
+                <div class="display intellect-row">
+                    <button class="pictos settings-button" name="act_toggle_intellect" title="intellect settings" style="margin-top: 10px;" type="action">y</button> 
+                    <div>
+                        <div style="display: none;">
+                            <button name="roll_INT_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Intellect w/ Hero Point}} {{subheader=Ability}} {{modifier=@{intellect_modifier}}} {{roll01=[[1d10 + 10 + @{intellect_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{intellect_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                        </div>
+                        <button name="roll_INT" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Intellect}} {{subheader=Ability}} {{modifier=@{intellect_modifier}}} {{roll01=[[1d20 + @{intellect_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{intellect_notes}}} {{button=[Hero Point](~@{character_name}|INT_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Intellect</button>
+                    </div>
+                    <div class="circle">
+                        <span name="attr_intellect_modifier" title="@{intellect_modifier}"></span>
+                    </div>
+                </div>
+                <div class="settings intellect-settings">
+                    <label class="sublabel" title="intellect score">
+                        <span class="sublabel">Base</span>
+                        <input name="attr_intellect_score" placeholder="0" title="@{intellect_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="sublabel" title="intellect misc">
+                        <span class="sublabel">Misc</span>
+                        <input name="attr_intellect_misc_score" placeholder="0" title="@{intellect_misc_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="notes" title="intellect notes">
+                        <span>Notes</span>
+                        <textarea class="notes" name="attr_intellect_notes" title="@{intellect_notes"}></textarea>
+                    </label>
+                </div>
+                <div class="display awareness-row">
+                    <button class="pictos settings-button" name="act_toggle_awareness" title="awareness settings" style="margin-top: 10px;" type="action">y</button> 
+                    <div>
+                        <div style="display: none;">
+                            <button name="roll_AWE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Awareness w/ Hero Point}} {{subheader=Ability}} {{modifier=@{awareness_modifier}}} {{roll01=[[1d10 + 10 + @{awareness_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{awareness_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                        </div>
+                        <button name="roll_AWE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Awareness}} {{subheader=Ability}} {{modifier=@{awareness_modifier}}} {{roll01=[[1d20 + @{awareness_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{awareness_notes}}} {{button=[Hero Point](~@{character_name}|AWE_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Awareness</button>
+                    </div>
+                    <div class="circle">
+                        <span name="attr_awareness_modifier" title="@{awareness_modifier}"></span>
+                    </div>
+                </div>
+                <div class="settings awareness-settings">
+                    <label class="sublabel" title="awareness score">
+                        <span class="sublabel">Base</span>
+                        <input name="attr_awareness_score" placeholder="0" title="@{awareness_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="sublabel" title="awareness misc">
+                        <span class="sublabel">Misc</span>
+                        <input name="attr_awareness_misc_score" placeholder="0" title="@{awareness_misc_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="notes" title="awareness notes">
+                        <span>Notes</span>
+                        <textarea class="notes" name="attr_awareness_notes" title="@{awareness_notes"}></textarea>
+                    </label>
+                </div>
+                <div class="display presence-row">
+                    <button class="pictos settings-button" name="act_toggle_presence" title="presence settings" style="margin-top: 10px;" type="action">y</button> 
+                    <div>
+                        <div style="display: none;">
+                            <button name="roll_PRE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Presence w/ Hero Point}} {{subheader=Ability}} {{modifier=@{presence_modifier}}} {{roll01=[[1d10 + 10 + @{presence_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{presence_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                        </div>
+                        <button name="roll_PRE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Presence}} {{subheader=Ability}} {{modifier=@{presence_modifier}}} {{roll01=[[1d20 + @{presence_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{presence_notes}}} {{button=[Hero Point](~@{character_name}|PRE_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Presence</button>
+                    </div>
+                    <div class="circle">
+                        <span name="attr_presence_modifier" title="@{presence_modifier}"></span>
+                    </div>
+                </div>
+                <div class="settings presence-settings">
+                    <label class="sublabel" title="presence score">
+                        <span class="sublabel">Base</span>
+                        <input name="attr_presence_score" placeholder="0" title="@{presence_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="sublabel" title="presence misc">
+                        <span class="sublabel">Misc</span>
+                        <input name="attr_presence_misc_score" placeholder="0" title="@{presence_misc_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                    <label class="notes" title="presence notes">
+                        <span>Notes</span>
+                        <textarea class="notes" name="attr_presence_notes" title="@{presence_notes"}></textarea>
+                    </label>
+                </div>
+            </div>
+            <div class="fullBorder defense-offense" style="width:639px; float:left;">
+                <div class="defense" style="width:50%;float:left;">
+                    <h1>DEFENSE</h1>
+                    <div>
+                        <div class="display" style="width:45%; float: left; font-size: 16px; padding-bottom:5px; font-weight:bold;">
+                            <div style="margin-top:10px;">
+                                <span>Dodge DC:</span>
+                            </div>
+                            <div class="circle">
+                                <span name="attr_dodge_dc" title="@{dodge_dc}"></span>
+                            </div>
+                        </div>
+                        <div class="display" style="width: 45%; float:left; font-size: 16px; padding-bottom:5px; font-weight:bold; padding-left:5px; padding-right:22px;">
+                            <div style="margin-top:10px;">
+                                <span>Parry DC:</span>
+                            </div>
+                            <div class="circle">
+                                <span name="attr_parry_dc" title="@{parry_dc}"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display dodge-row">
+                        <button class="pictos settings-button" name="act_toggle_dodge" title="dodge settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_DOD_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Dodge w/ Hero Point}} {{subheader=Defense}} {{modifier=@{dodge_modifier}}} {{roll01=[[1d10 + 10 + @{dodge_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{dodge_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_DOD" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Dodge}} {{subheader=Defense}} {{modifier=@{dodge_modifier}}} {{roll01=[[1d20 + @{dodge_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{dodge_notes}}} {{button=[Hero Point](~@{character_name}|DOD_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Dodge</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_dodge_modifier" title="@{dodge_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings dodge-settings">
+                        <label class="sublabel" title="dodge score">
+                            <span class="sublabel">Points</span>
+                            <input name="attr_dodge_score" placeholder="0" title="@{dodge_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="dodge misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_dodge_misc_score" placeholder="0" title="@{dodge_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="dodge notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_dodge_notes" title="@{dodge_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="display parry-row">
+                        <button class="pictos settings-button" name="act_toggle_parry" title="parry settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_PAR_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Parry w/ Hero Point}} {{subheader=Defense}} {{modifier=@{parry_modifier}}} {{roll01=[[1d10 + 10 + @{parry_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{parry_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_PAR" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Parry}} {{subheader=Defense}} {{modifier=@{parry_modifier}}} {{roll01=[[1d20 + @{parry_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{parry_notes}}} {{button=[Hero Point](~@{character_name}|PAR_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Parry</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_parry_modifier" title="@{parry_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings parry-settings">
+                        <label class="sublabel" title="parry score">
+                            <span class="sublabel">Points</span>
+                            <input name="attr_parry_score" placeholder="0" title="@{parry_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="parry misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_parry_misc_score" placeholder="0" title="@{parry_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="parry notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_parry_notes" title="@{parry_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="display fortitude-row">
+                        <button class="pictos settings-button" name="act_toggle_fortitude" title="fortitude settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_FORT_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Fortitude w/ Hero Point}} {{subheader=Defense}} {{modifier=@{fortitude_modifier}}} {{roll01=[[1d10 + 10 + @{fortitude_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{fortitude_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_FORT" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Fortitude}} {{subheader=Defense}} {{modifier=@{fortitude_modifier}}} {{roll01=[[1d20 + @{fortitude_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{fortitude_notes}}} {{button=[Hero Point](~@{character_name}|FORT_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Fortitude</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_fortitude_modifier" title="@{fortitude_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings fortitude-settings">
+                        <label class="sublabel" title="fortitude score">
+                            <span class="sublabel">Points</span>
+                            <input name="attr_fortitude_score" placeholder="0" title="@{fortitude_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="fortitude misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_fortitude_misc_score" placeholder="0" title="@{fortitude_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="fortitude notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_fortitude_notes" title="@{fortitude_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="display toughness-row">
+                        <button class="pictos settings-button" name="act_toggle_toughness" title="toughness settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_TOU_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Toughness w/ Hero Point}} {{subheader=Defense}} {{modifier=@{toughness_modifier}}} {{roll01=[[1d10 + 10 + @{toughness_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{toughness_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_TOU" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Toughness}} {{subheader=Defense}} {{modifier=@{toughness_modifier}}} {{roll01=[[1d20 + @{toughness_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{toughness_notes}}} {{button=[Hero Point](~@{character_name}|TOU_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Toughness</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_toughness_modifier" title="@{toughness_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings toughness-settings">
+                        <label class="sublabel" title="toughness score">
+                            <span class="sublabel">Points</span>
+                            <input name="attr_toughness_score" placeholder="0" title="@{toughness_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="toughness misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_toughness_misc_score" placeholder="0" title="@{toughness_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="toughness notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_toughness_notes" title="@{toughness_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="display will-row">
+                        <button class="pictos settings-button" name="act_toggle_will" title="will settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_WILL_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Will w/ Hero Point}} {{subheader=Defense}} {{modifier=@{will_modifier}}} {{roll01=[[1d10 + 10 + @{will_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{will_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_WILL" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Will}} {{subheader=Defense}} {{modifier=@{will_modifier}}} {{roll01=[[1d20 + @{will_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{will_notes}}} {{button=[Hero Point](~@{character_name}|WILL_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Will</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_will_modifier" title="@{will_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings will-settings">
+                        <label class="sublabel" title="will score">
+                            <span class="sublabel">Points</span>
+                            <input name="attr_will_score" placeholder="0" title="@{will_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="will misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_will_misc_score" placeholder="0" title="@{will_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="will notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_will_notes" title="@{will_notes"}></textarea>
+                        </label>
+                    </div>
+                </div>
+                <div class="offense" style="width:50%;float:left;">
+                    <h1>OFFENSE</h1>
+                    <fieldset class="repeating_offensive-attacks">
+                        <input class='toggles' name='attr_toggles' type='hidden' value='display,settings,' />
+                        <div class="grid display">
+                            <button class="pictos settings-button" name="act_settings" title="offense settings" type="action">y</button> 
+                            <div style="display: none;">
+                                <button name="roll_ATTACK_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack} w/ Hero Point}} {{modifier=@{offensive-attacks_toHit}}} {{roll01_name=To Hit}} {{roll01=[[@{offensive-attacks_toHit}+1d10cs>@{offensive-attacks_crit} + 10 + @{Disabled}  + @{Impaired} +@{Prone} + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{roll02_name=@{offensive-attacks_save_type} Save DC}} {{roll02=@{offensive-attacks_dc}}} {{roll03_name=Damage}} {{roll03=@{offensive-attacks_damage}}} {{notes=@{offensive-attacks_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="width:80%; margin-left:25px;" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack}}} {{modifier=@{offensive-attacks_toHit}}} {{roll01_name=To Hit}} {{roll01=[[@{offensive-attacks_toHit}+1d20cs>@{offensive-attacks_crit} + @{Disabled}  + @{Impaired} +@{Prone} + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{roll02_name=@{offensive-attacks_save_type} Save DC}} {{roll02=@{offensive-attacks_dc}}} {{roll03_name=Damage}} {{roll03=@{offensive-attacks_damage}}} {{notes=@{offensive-attacks_notes}}} {{button=[Hero Point](~@{character_name}|repeating_offensive-attacks_@{offensive-attacks_rid}_ATTACK_HERO)}}">
+                                <span name="attr_attack"></span>
+                            </button>
+                        </div>
+                        <div class="settings" style="display: inline-block; vertical-align: top; width: 90%;">
+                            <div class="grid attack-grid">
+                                <label title="attack name">
+                                    <span class="sublabel darkred">Attack Name</span>
+                                    <input name="attr_attack" title="@{attack}" style="width:280px;" type="text" value=""/>
+                                </label>
+                            </div>
+                            <div class="grid attack-grid">
+                                <label class='sublabel' title='attack strike toHit'>
+                                    <span class='sublabel darkred' >Attack</span>
+                                    <input name='attr_offensive-attacks_toHit' spellcheck='false' title='@{offensive-attacks_toHit}' style="width:75px;" type='text' value='' />
+                                </label>
+                                <label class='sublabel' title='attack strike dc'>
+                                    <span class='sublabel darkred'>DC</span>
+                                    <input name='attr_offensive-attacks_dc' spellcheck='false' title='@{offensive-attacks_dc}' style="width:75px;" type='text' value='' />
+                                </label>
+                                <label class='sublabel' title='attack strike damage'>
+                                    <span class='sublabel darkred'>Damage</span>
+                                    <input name='attr_offensive-attacks_damage' spellcheck='false' title='@{offensive-attacks_damage}' style="width:75px;" type='text' value='' />
+                                </label>
+                            </div>
+                            <div class="grid attack-grid">
+                                <label class='sublabel' title='attack strike toHit'>
+                                    <span class='sublabel darkred' >Crit Range</span>
+                                    <input name='attr_offensive-attacks_crit' spellcheck='false' title='@{offensive-attacks_crit}' style="width:75px;" type='text' value='20' />
+                                </label>
+                                <label class='sublabel' title='attack strike dc'>
+                                    <span class='sublabel darkred'>Save Type</span>
+                                    <input name='attr_offensive-attacks_save_type' spellcheck='false' title='@{offensive-attacks_save_type}' style="width:75px;" type='text' value='' />
+                                </label>
+                            </div>
+                            <h2>Notes</h2>
+                            <label title='attack notes'>
+                                <textarea name='attr_offensive-attacks_notes' spellcheck='false' style="width:267px;" title='@{offensive-attacks_notes}' value=''></textarea>
+                            </label>
+                            <div style="display: none;">
+                                <input name='attr_offensive-attacks_rid' title='@{offensive-attacks_rid}' />
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div style="width:950px; overflow:auto; padding-top:10px;">
+            <div class="fullBorder ability-scores" style="width:800px; float:left;">
+                <div style="width:350px; padding-left:10px; float:left">
+                    <h1>SKILLS</h1>
+                    <div class="display acrobatics-row">
+                        <button class="pictos settings-button" name="act_toggle_acrobatics" title="acrobatics settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_ACR_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Acrobatics w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{acrobatics_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{acrobatics_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_ACR" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Acrobatics}} {{subheader=Skill}} {{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{acrobatics_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{acrobatics_notes}}} {{button=[Hero Point](~@{character_name}|ACR_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Acrobatics</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_acrobatics_modifier" title="@{acrobatics_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings acrobatics-settings">
+                        <label class="sublabel" title="acrobatics score">
+                            <span class="sublabel">Ranks</span>
+                            <input name="attr_acrobatics_score" placeholder="0" title="@{acrobatics_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="acrobatics misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_acrobatics_misc_score" placeholder="0" title="@{acrobatics_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="acrobatics notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_acrobatics_notes" title="@{acrobatics_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="display athletics-row">
+                        <button class="pictos settings-button" name="act_toggle_athletics" title="athletics settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_ATH_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Athletics w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{athletics_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{athletics_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_ATH" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Athletics}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{athletics_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{athletics_notes}}} {{button=[Hero Point](~@{character_name}|ATH_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Athletics</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_athletics_modifier" title="@{athletics_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings athletics-settings">
+                        <label class="sublabel" title="athletics score">
+                            <span class="sublabel">Base</span>
+                            <input name="attr_athletics_score" placeholder="0" title="@{athletics_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="athletics misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_athletics_misc_score" placeholder="0" title="@{athletics_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="athletics notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_athletics_notes" title="@{athletics_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="skills" >
+                        <h3>Close Combat</h3>
+                        <fieldset class="repeating_closecombat-attacks">
+                            <input class='toggles' name='attr_toggles' type='hidden' value='display,settings,' />
+                            <div class="grid display">
+                                <button class="pictos settings-button" name="act_settings" title="offense settings" style="margin-top:10px;" type="action">y</button> 
+                                <div style="display: none;">
+                                    <button name="roll_ATTACK_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack} w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{closecombat-attacks_score} + @{closecombat-attacks_misc_score} + @{fighting_modifier} + @{Disabled}  + @{Impaired} + @{Prone} + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{closecombat-attacks_notes}}} " style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                </div>
+                                <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="margin-top:10px;width:200px; height:20px; margin-left:25px;" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack}}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{closecombat-attacks_score} + @{closecombat-attacks_misc_score} + @{fighting_modifier} + @{Disabled}  + @{Impaired} + @{Prone} + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{closecombat-attacks_notes}}} {{button=[Hero Point](~@{character_name}|repeating_closecombat-attacks_@{closecombat-attacks_rid}_ATTACK_HERO)}}">
+                                    <span name="attr_attack"></span>
+                                </button>
+
+                                <div class="circle" style="margin-left:37px;" >
+                                    <span name="attr_closecombat-attacks_modifier" title="@{closecombat-attacks_modifier}"></span>
+                                </div>
+                            </div>
+                            <div class="settings" style="display: inline-block; vertical-align: top; width: 90%;">
+                                <div class="grid attack-grid">
+                                    <label title="attack name">
+                                        <span class="sublabel darkred">Close Combat Name</span>
+                                        <input name="attr_attack" title="@{attack}" style="width:240px;" type="text" value=""/>
+                                    </label>
+                                </div>
+                                <div class="grid attack-grid">
+                                    <label class='sublabel' title='attack strike toHit'>
+                                        <span class='sublabel darkred' >Ranks</span>
+                                        <input name='attr_closecombat-attacks_score' spellcheck='false' title='@{closecombat-attacks_score}' style="width:75px;" type='text' value='0' />
+                                    </label>
+                                    <label class='sublabel' title='attack strike dc'>
+                                        <span class='sublabel darkred'>Other</span>
+                                        <input name='attr_closecombat-attacks_misc_score' spellcheck='false' title='@{closecombat-attacks_misc_score}' style="width:75px;" type='text' value='0' />
+                                    </label>
+                                    <label class="notes" title="closecombat notes">
+                                        <span>Notes</span>
+                                        <textarea class="notes" name="attr_closecombat-attacks_notes" title="@{closecombat-attacks_notes"}></textarea>
+                                    </label>
+                                    <div style="display: none;">
+                                        <input name='attr_closecombat-attacks_rid' title='@{closecombat-attacks_rid}' />
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="display deception-row">
+                        <button class="pictos settings-button" name="act_toggle_deception" title="deception settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_DEC_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Deception w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{deception_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{deception_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_DEC" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Deception}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{deception_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{deception_notes}}} {{button=[Hero Point](~@{character_name}|DEC_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Deception</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_deception_modifier" title="@{deception_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings deception-settings">
+                        <label class="sublabel" title="deception score">
+                            <span class="sublabel">Base</span>
+                            <input name="attr_deception_score" placeholder="0" title="@{deception_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="deception misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_deception_misc_score" placeholder="0" title="@{deception_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="deception notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_deception_notes" title="@{deception_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="skills" >
+                        <h3>Expertise</h3>
+                        <fieldset class="repeating_expertise">
+                            <input class='toggles' name='attr_toggles' type='hidden' value='display,settings,' />
+                            <div class="grid display">
+                                <button class="pictos settings-button" name="act_settings" title="offense settings" style="margin-top:10px;" type="action">y</button> 
+                                <div style="display: none;">
+                                    <button name="roll_ATTACK_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack} w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{expertise_score} + @{expertise_misc_score} + @{intellect_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{expertise_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                </div>
+                                <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="margin-top:10px;width:200px; height:20px; margin-left:25px;" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack}}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{expertise_score} + @{expertise_misc_score} + @{intellect_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{expertise_notes}}} {{button=[Hero Point](~@{character_name}|repeating_expertise_@{expertise_rid}_ATTACK_HERO)}}">
+                                    <span name="attr_attack"></span>
+                                </button>
+
+                                <div class="circle" style="margin-left:37px;" >
+                                    <span name="attr_expertise_modifier" title="@{expertise_modifier}"></span>
+                                </div>
+                            </div>
+                            <div class="settings" style="display: inline-block; vertical-align: top; width: 90%;">
+                                <div class="grid attack-grid">
+                                    <label title="attack name">
+                                        <span class="sublabel darkred">Expertise Name</span>
+                                        <input name="attr_attack" title="@{attack}" style="width:240px;" type="text" value=""/>
+                                    </label>
+                                </div>
+                                <div class="grid attack-grid">
+                                    <label class='sublabel' title='attack strike toHit'>
+                                        <span class='sublabel darkred' >Ranks</span>
+                                        <input name='attr_expertise_score' spellcheck='false' title='@{expertise_score}' style="width:75px;" type='text' value='0' />
+                                    </label>
+                                    <label class='sublabel' title='attack strike dc'>
+                                        <span class='sublabel darkred'>Other</span>
+                                        <input name='attr_expertise_misc_score' spellcheck='false' title='@{expertise_misc_score}' style="width:75px;" type='text' value='0' />
+                                    </label>
+                                    <label class="notes" title="expertise notes">
+                                        <span>Notes</span>
+                                        <textarea class="notes" name="attr_expertise_notes" title="@{expertise_notes"}></textarea>
+                                    </label>
+                                    <div style="display: none;">
+                                        <input name='attr_expertise_rid' title='@{expertise_rid}' />
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="display insight-row">
+                        <button class="pictos settings-button" name="act_toggle_insight" title="insight settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_INS_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Insight w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{insight_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{insight_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_INS" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Insight}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{insight_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{insight_notes}}} {{button=[Hero Point](~@{character_name}|INS_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Insight</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_insight_modifier" title="@{insight_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings insight-settings">
+                        <label class="sublabel" title="insight score">
+                            <span class="sublabel">Base</span>
+                            <input name="attr_insight_score" placeholder="0" title="@{insight_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="insight misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_insight_misc_score" placeholder="0" title="@{insight_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="insight notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_insight_notes" title="@{insight_notes"}></textarea>
+                        </label>
+                    </div>
+                </div>
+                <div style="width:350px; padding-left:75px; float:left;">
+                    <div class="display intimidation-row">
+                        <button class="pictos settings-button" name="act_toggle_intimidation" title="intimidation settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_INTI_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Intimidation w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{intimidation_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{intimidation_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_INTI" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Intimidation}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{intimidation_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{intimidation_notes}}} {{button=[Hero Point](~@{character_name}|INTI_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Intimidation</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_intimidation_modifier" title="@{intimidation_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings intimidation-settings">
+                        <label class="sublabel" title="intimidation score">
+                            <span class="sublabel">Base</span>
+                            <input name="attr_intimidation_score" placeholder="0" title="@{intimidation_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="intimidation misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_intimidation_misc_score" placeholder="0" title="@{intimidation_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="intimidation notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_intimidation_notes" title="@{intimidation_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="display investigation-row">
+                        <button class="pictos settings-button" name="act_toggle_investigation" title="investigation settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_INV_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Investigation w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{investigation_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{investigation_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_INV" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Investigation}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{investigation_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{investigation_notes}}} {{button=[Hero Point](~@{character_name}|INV_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Investigation</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_investigation_modifier" title="@{investigation_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings investigation-settings">
+                        <label class="sublabel" title="investigation score">
+                            <span class="sublabel">Base</span>
+                            <input name="attr_investigation_score" placeholder="0" title="@{investigation_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="investigation misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_investigation_misc_score" placeholder="0" title="@{investigation_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="investigation notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_investigation_notes" title="@{investigation_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="display perception-row">
+                        <button class="pictos settings-button" name="act_toggle_perception" title="perception settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_PERC_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Perception w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{perception_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{perception_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_PERC" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Perception}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{perception_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{perception_notes}}} {{button=[Hero Point](~@{character_name}|PERC_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Perception</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_perception_modifier" title="@{perception_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings perception-settings">
+                        <label class="sublabel" title="perception score">
+                            <span class="sublabel">Base</span>
+                            <input name="attr_perception_score" placeholder="0" title="@{perception_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="perception misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_perception_misc_score" placeholder="0" title="@{perception_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="perception notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_perception_notes" title="@{perception_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="display persuasion-row">
+                        <button class="pictos settings-button" name="act_toggle_persuasion" title="persuasion settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_PERS_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Persuasion w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{persuasion_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{persuasion_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_PERS" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Persuasion}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{persuasion_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{persuasion_notes}}} {{button=[Hero Point](~@{character_name}|PERS_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Persuasion</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_persuasion_modifier" title="@{persuasion_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings persuasion-settings">
+                        <label class="sublabel" title="persuasion score">
+                            <span class="sublabel">Base</span>
+                            <input name="attr_persuasion_score" placeholder="0" title="@{persuasion_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="persuasion misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_persuasion_misc_score" placeholder="0" title="@{persuasion_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="persuasion notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_persuasion_notes" title="@{persuasion_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="skills" >
+                        <h3>Ranged Combat</h3>
+                        <fieldset class="repeating_rangedcombat-attacks">
+                            <input class='toggles' name='attr_toggles' type='hidden' value='display,settings,' />
+                            <div class="grid display">
+                                <button class="pictos settings-button" name="act_settings" title="offense settings" style="margin-top:10px;" type="action">y</button> 
+                                <div style="display: none;">
+                                    <button name="roll_ATTACK_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack} w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{rangedcombat-attacks_score} + @{rangedcombat-attacks_misc_score} + @{dexterity_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{rangedcombat-attacks_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                </div>
+                                <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="margin-top:10px;width:200px; height:20px; margin-left:25px;" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack}}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{rangedcombat-attacks_score} + @{rangedcombat-attacks_misc_score} + @{dexterity_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{rangedcombat-attacks_notes}}} {{button=[Hero Point](~@{character_name}|repeating_rangedcombat-attacks_@{rangedcombat-attacks_rid}_ATTACK_HERO)}}">
+                                    <span name="attr_attack"></span>
+                                </button>
+
+                                <div class="circle" style="margin-left:37px;" >
+                                    <span name="attr_rangedcombat-attacks_modifier" title="@{rangedcombat-attacks_modifier}"></span>
+                                </div>
+                            </div>
+                            <div class="settings" style="display: inline-block; vertical-align: top; width: 90%;">
+                                <div class="grid attack-grid">
+                                    <label title="attack name">
+                                        <span class="sublabel darkred">Ranged Combat Name</span>
+                                        <input name="attr_attack" title="@{attack}" style="width:240px;" type="text" value=""/>
+                                    </label>
+                                </div>
+                                <div class="grid attack-grid">
+                                    <label class='sublabel' title='attack strike toHit'>
+                                        <span class='sublabel darkred' >Ranks</span>
+                                        <input name='attr_rangedcombat-attacks_score' spellcheck='false' title='@{rangedcombat-attacks_score}' style="width:75px;" type='text' value='0' />
+                                    </label>
+                                    <label class='sublabel' title='attack strike dc'>
+                                        <span class='sublabel darkred'>Other</span>
+                                        <input name='attr_rangedcombat-attacks_misc_score' spellcheck='false' title='@{rangedcombat-attacks_misc_score}' style="width:75px;" type='text' value='0' />
+                                    </label>
+                                    <label class="notes" title="rangedcombat notes">
+                                        <span>Notes</span>
+                                        <textarea class="notes" name="attr_rangedcombat-attacks_notes" title="@{rangedcombat-attacks_notes"}></textarea>
+                                    </label>
+                                    <div style="display: none;">
+                                        <input name='attr_rangedcombat-attacks_rid' title='@{rangedcombat-attacks_rid}' />
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="display sleightofhand-row">
+                        <button class="pictos settings-button" name="act_toggle_sleightofhand" title="sleightofhand settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_SLE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Sleight Of Hand w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{sleightofhand_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{sleightofhand_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_SLE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Sleight Of Hand}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{sleightofhand_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{sleightofhand_notes}}} {{button=[Hero Point](~@{character_name}|SLE_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Sleight of hand</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_sleightofhand_modifier" title="@{sleightofhand_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings sleightofhand-settings">
+                        <label class="sublabel" title="sleightofhand score">
+                            <span class="sublabel">Base</span>
+                            <input name="attr_sleightofhand_score" placeholder="0" title="@{sleightofhand_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="sleightofhand misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_sleightofhand_misc_score" placeholder="0" title="@{sleightofhand_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="sleightofhand notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_sleightofhand_notes" title="@{sleightofhand_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="display stealth-row">
+                        <button class="pictos settings-button" name="act_toggle_stealth" title="stealth settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_STE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Stealth w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{stealth_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{stealth_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_STE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Stealth}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{stealth_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{stealth_notes}}} {{button=[Hero Point](~@{character_name}|STE_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Stealth</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_stealth_modifier" title="@{stealth_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings stealth-settings">
+                        <label class="sublabel" title="stealth score">
+                            <span class="sublabel">Base</span>
+                            <input name="attr_stealth_score" placeholder="0" title="@{stealth_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="stealth misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_stealth_misc_score" placeholder="0" title="@{stealth_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="stealth notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_stealth_notes" title="@{stealth_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="display technology-row">
+                        <button class="pictos settings-button" name="act_toggle_technology" title="technology settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_TEC_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Technology w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{technology_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{technology_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_TEC" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Technology}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{technology_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{technology_notes}}} {{button=[Hero Point](~@{character_name}|TEC_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Technology</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_technology_modifier" title="@{technology_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings technology-settings">
+                        <label class="sublabel" title="technology score">
+                            <span class="sublabel">Base</span>
+                            <input name="attr_technology_score" placeholder="0" title="@{technology_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="technology misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_technology_misc_score" placeholder="0" title="@{technology_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="technology notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_technology_notes" title="@{technology_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="display treatment-row">
+                        <button class="pictos settings-button" name="act_toggle_treatment" title="treatment settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_TRE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Treatment w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{treatment_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{treatment_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_TRE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Treatment}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{treatment_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{treatment_notes}}} {{button=[Hero Point](~@{character_name}|TRE_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Treatment</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_treatment_modifier" title="@{treatment_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings treatment-settings">
+                        <label class="sublabel" title="treatment score">
+                            <span class="sublabel">Base</span>
+                            <input name="attr_treatment_score" placeholder="0" title="@{treatment_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="treatment misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_treatment_misc_score" placeholder="0" title="@{treatment_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="treatment notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_treatment_notes" title="@{treatment_notes"}></textarea>
+                        </label>
+                    </div>
+                    <div class="display vehicles-row">
+                        <button class="pictos settings-button" name="act_toggle_vehicles" title="vehicles settings" style="margin-top:10px;" type="action">y</button> 
+                        <div>
+                            <div style="display: none;">
+                                <button name="roll_VEH_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Vehicles w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{vehicles_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{vehicles_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            </div>
+                            <button name="roll_VEH" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Vehicles}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{vehicles_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{vehicles_notes}}} {{button=[Hero Point](~@{character_name}|VEH_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Vehicles</button>
+                        </div>
+                        <div class="circle">
+                            <span name="attr_vehicles_modifier" title="@{vehicles_modifier}"></span>
+                        </div>
+                    </div>
+                    <div class="settings vehicles-settings">
+                        <label class="sublabel" title="vehicles score">
+                            <span class="sublabel">Base</span>
+                            <input name="attr_vehicles_score" placeholder="0" title="@{vehicles_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="sublabel" title="vehicles misc">
+                            <span class="sublabel">Misc</span>
+                            <input name="attr_vehicles_misc_score" placeholder="0" title="@{vehicles_misc_score}" style="width:75px;" type="text" value="0">
+                        </label>
+                        <label class="notes" title="vehicles notes">
+                            <span>Notes</span>
+                            <textarea class="notes" name="attr_vehicles_notes" title="@{vehicles_notes"}></textarea>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="fullBorder ability-scores" style="width:139px; float:left;">
+                <div class="display initiative-row">
+                    <button class="pictos settings-button" name="act_toggle_initiative" title="initiative settings" style="margin-top:10px;" type="action">y</button> 
+                    <div>
+                        <div style="display: none;">
+                            <button name="roll_INIT_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Initiative w/ Hero Point}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{initiative_modifier}]]}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                        </div>
+                        <button name="roll_INIT" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Initiative}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{initiative_modifier}]]}} {{button=[Hero Point](~@{character_name}|INIT_HERO)}}" style="margin-left: 25px;margin-top:10px;" class="btn ui-draggable">Initiative</button>
+                    </div>
+                    <div class="circle">
+                        <span name="attr_initiative_modifier" title="@{initiative_modifier}"></span>
+                    </div>
+                </div>
+                <div class="settings initiative-settings">
+                    <label class="sublabel" title="vehicles score">
+                        <span class="sublabel">Modifier</span>
+                        <input name="attr_initiative_score" placeholder="0" title="@{initiative_score}" style="width:75px;" type="text" value="0">
+                    </label>
+                </div>
+                <div style="width: 100%; text-align:center">
+                    <h3>Hero Points</h3>
+                    <input type="text" style="width: 100px;" name="attr_HeroPoints" />
+                </div>
+                <div style="width: 100%; padding-top:10px; text-align:center">
+                    <h3>Power Points Earned</h3>
+                    <input type="text" style="width: 100px;" name="attr_PowerPointsEarned" />
+                </div>
+                <div style="width: 100%; padding-top:10px; text-align:center">
+                    <h3>Power Points Spent</h3>
+                    <input type="text" style="width: 100px;" name="attr_PowerPointsSpent" />
+                </div>
+                <div style="width: 100%; padding-top:10px; padding-bottom:10px; text-align:center">
+                    <h3>Injuries</h3>
+                    <input type="number" style="width: 100px;" name="attr_injuries" />
+                </div>
+                <div>
+                    <input type="checkbox" class="attr" name="attr_Defenseless_flag" value="1" />
+                    <span class="attr" >Defenseless</span>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="attr" name="attr_Disabled" value="?{Disabled|False, 0|True, -5}" />
+                    <span class="attr" >Disabled</span>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="attr" name="attr_Impaired" value="?{Impaired|False, 0|True, -2}" />
+                    <span class="attr" >Impaired</span>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="attr" name="attr_Vulnerable_flag" value="1" />
+                    <span class="attr" >Vulnerable</span>
+                </div>
+                <div>
+                    <input type="checkbox" class="attr" name="attr_Prone" value="?{Prone|Ranged Attack, 0|Close Combat, -5}" />
+                    <span class="attr" >Prone</span>
+                </div>
+            </div>
+        </div>
+        <div style="width:950px; overflow:auto; padding-top:10px;">
+            <div class="ability-scores fullBorder" style="width:98%;float:left;">
+                <div class="skills" >
+                    <h1>POWERS & DEVICES</h1>
+                    <fieldset class="repeating_powers-devices">
+                        <input class='toggles' name='attr_toggles' type='hidden' value='display,settings,' />
+                        <div class="grid display">
+                            <button class="pictos settings-button" name="act_settings" title="offense settings" type="action">y</button> 
+                            <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="width:750px; margin-top:10px; height: 20px; margin-left:25px;" type="roll" value="&{template:rolls} {{limit_height=5}} {{header=@{attack}}} {{notes=@{powers_notes}}}">
+                                <span name="attr_attack"></span>
+                            </button>
+
+                            <div class="circle" style="margin-left:37px;" >
+                                <span name="attr_powers-devices_total" title="@{powers-devices_total}"></span>
+                            </div>
+                        </div>
+                        <div class="settings" style="display: inline-block; vertical-align: top; width: 90%;">
+                            <div class="grid attack-grid">
+                                <label title="attack name">
+                                    <span class="sublabel darkred">Powers & Devices Name</span>
+                                    <input name="attr_attack" title="@{attack}" style="width:820px;" type="text" value=""/>
+                                </label>
+                            </div>
+                            <div class="grid attack-grid">
+                                <label class='sublabel' title='attack strike toHit'>
+                                    <span class='sublabel darkred' >Ranks</span>
+                                    <input name='attr_powers-devices_ranks' spellcheck='false' title='@{power_ranks}' style="width:65px;" type='text' value='0' />
+                                </label>
+                                <label class='sublabel' title='attack strike dc'>
+                                    <span class='sublabel darkred'>Points Per Rank</span>
+                                    <input name='attr_powers-devices_points_per_rank' spellcheck='false' title='@{points_per_rank}' style="width:65px;" type='text' value='1' />
+                                </label>
+                                <label class='sublabel' title='attack strike dc'>
+                                    <span class='sublabel darkred'>Misc</span>
+                                    <input name='attr_powers-devices_misc' spellcheck='false' title='@{powers_misc}' style="width:65px;" type='text' value='0' />
+                                </label>
+                            </div>
+                            <label class="notes" title="strength notes">
+                                <span>Notes</span>
+                                <textarea class="notes" name="attr_powers_notes" style="width:820px" title="@{powers_notes"}></textarea>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="ability-scores fullBorder" style="width:49%;float:left;">
+                <div class="skills" >
+                    <h1>Advantages</h1>
+                    <fieldset class="repeating_advantages">
+                        <input class='toggles' name='attr_toggles' type='hidden' value='display,settings,' />
+                        <div class="grid display">
+                            <button class="pictos settings-button" name="act_settings" title="offense settings" type="action">y</button> 
+                            <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="width:300px; margin-top:10px; height: 20px; margin-left:25px;" type="roll" value="&{template:rolls} {{limit_height=5}} {{header=@{attack}}} {{notes=@{advantage_notes}}}">
+                                <span name="attr_attack"></span>
+                            </button>
+
+                            <div class="circle" style="margin-left:37px;" >
+                                <span name="attr_advantages_total" title="@{advantage_total}"></span>
+                            </div>
+                        </div>
+                        <div class="settings" style="display: inline-block; vertical-align: top; width: 90%;">
+                            <div class="grid attack-grid">
+                                <label title="attack name">
+                                    <span class="sublabel darkred">Advantage Name</span>
+                                    <input name="attr_attack" title="@{attack}" style="width:400px;" type="text" value=""/>
+                                </label>
+                            </div>
+                            <div class="grid attack-grid">
+                                <label class='sublabel' title='attack strike toHit'>
+                                    <span class='sublabel darkred' >Ranks</span>
+                                    <input name='attr_advantages_ranks' spellcheck='false' title='@{power_ranks}' style="width:65px;" type='text' value='0' />
+                                </label>
+                            </div>
+                            <label class="notes" title="strength notes">
+                                <span>Notes</span>
+                                <textarea class="notes" name="attr_advantage_notes" style="width:400px" title="@{advantage_notes"}></textarea>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="ability-scores fullBorder" style="width:49%;float:left;">
+                <div class="skills" >
+                    <h1>EQUIPMENT</h1>
+                    <fieldset class="repeating_equipment">
+                        <input class='toggles' name='attr_toggles' type='hidden' value='display,settings,' />
+                        <div class="grid display">
+                            <button class="pictos settings-button" name="act_settings" title="offense settings" type="action">y</button> 
+                            <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="width:300px; margin-top:10px; height: 20px; margin-left:25px;" type="roll" value="&{template:rolls} {{limit_height=5}} {{header=@{attack}}} {{notes=@{equipment_notes}}}">
+                                <span name="attr_attack"></span>
+                            </button>
+
+                            <div class="circle" style="margin-left:37px;" >
+                                <span name="attr_equipment_total" title="@{equipment_total}"></span>
+                            </div>
+                        </div>
+                        <div class="settings" style="display: inline-block; vertical-align: top; width: 90%;">
+                            <div class="grid attack-grid">
+                                <label title="attack name">
+                                    <span class="sublabel darkred">Equipment Name</span>
+                                    <input name="attr_attack" title="@{attack}" style="width:400px;" type="text" value=""/>
+                                </label>
+                            </div>
+                            <div class="grid attack-grid">
+                                <label class='sublabel' title='attack strike toHit'>
+                                    <span class='sublabel darkred' >Ranks</span>
+                                    <input name='attr_equipment_ranks' spellcheck='false' title='@{power_ranks}' style="width:65px;" type='text' value='0' />
+                                </label>
+                            </div>
+                            <label class="notes" title="strength notes">
+                                <span>Notes</span>
+                                <textarea class="notes" name="attr_equipment_notes" style="width:400px" title="@{eqipment_notes"}></textarea>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div style="width:950px; overflow:auto; padding-top:10px;">
+            <div style="width:49%; float:left;">
+                <div class="ability-scores fullBorder">
+                    <div class="skills" >
+                        <h1>MOTIVATIONS & COMPLICATIONS</h1>
+                        <fieldset class="repeating_motivations">
+                            <input class='toggles' name='attr_toggles' type='hidden' value='display,settings,' />
+                            <div class="grid display">
+                                <button class="pictos settings-button" name="act_settings" title="offense settings" type="action">y</button> 
+                                <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="width:350px; margin-left:25px;" type="roll" value="&{template:rolls} {{limit_height=5}} {{header=@{motiviationName}}} {{notes=@{motivations_notes}}}">
+                                    <span name="attr_motiviationName"></span>
+                                </button>
+                            </div>
+                            <div class="settings" style="display: inline-block; vertical-align: top; width: 90%;">
+                                <div class="grid attack-grid">
+                                    <label title="attack name">
+                                        <span class="sublabel darkred">Motivations & Complications</span>
+                                        <input name="attr_motiviationName" title="@{motiviationName}" style="width:400px;" type="text" value=""/>
+                                    </label>
+                                </div>
+                                <label class="notes" title="strength notes">
+                                    <span>Notes</span>
+                                    <textarea class="notes" name="attr_motivations_notes" style="width:400px" title="@{motivations_notes"}></textarea>
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div style="width:49%; float:left;" class="fullBorder">
+                <h1>NOTES & CONDITIONS</h1>
+                <textarea class="notes" name="attr_notes" style="width:400px" title="@{notes"}></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+
+<input name="attr_strength_modifier" type="hidden" value="0" />
+<input name="attr_stamina_modifier" type="hidden" value="0" />
+<input name="attr_agility_modifier" type="hidden" value="0" />
+<input name="attr_dexterity_modifier" type="hidden" value="0" />
+<input name="attr_fighting_modifier" type="hidden" value="0" />
+<input name="attr_intellect_modifier" type="hidden" value="0" />
+<input name="attr_awareness_modifier" type="hidden" value="0" />
+<input name="attr_presence_modifier" type="hidden" value="0" />
+<input name="attr_dodge_dc" type="hidden" value="0" />
+<input name="attr_parry_dc" type="hidden" value="0" />
+<input name="attr_dodge_modifier" type="hidden" value="0" />
+<input name="attr_parry_modifier" type="hidden" value="0" />
+<input name="attr_fortitude_modifier" type="hidden" value="0" />
+<input name="attr_toughness_modifier" type="hidden" value="0" />
+<input name="attr_will_modifier" type="hidden" value="0" />
+<input name="attr_acrobatics_modifier" type="hidden" value="0" />
+<input name="attr_athletics_modifier" type="hidden" value="0" />
+<input name="attr_deception_modifier" type="hidden" value="0" />
+<input name="attr_insight_modifier" type="hidden" value="0" />
+<input name="attr_intimidation_modifier" type="hidden" value="0" />
+<input name="attr_investigation_modifier" type="hidden" value="0" />
+<input name="attr_perception_modifier" type="hidden" value="0" />
+<input name="attr_persuasion_modifier" type="hidden" value="0" />
+<input name="attr_sleightofhand_modifier" type="hidden" value="0" />
+<input name="attr_stealth_modifier" type="hidden" value="0" />
+<input name="attr_technology_modifier" type="hidden" value="0" />
+<input name="attr_treatment_modifier" type="hidden" value="0" />
+<input name="attr_vehicles_modifier" type="hidden" value="0" />
+<input name="attr_intimidation_modifier" type="hidden" value="0" />
+<input name="attr_initiative_modifier" type="hidden" value="0" />
+
+
+
+
+<script type="text/worker">
+    var modPf2 = (function () {
+    
+        const global_attributes_by_category = {
+            "abilities": ["strength", "stamina", "agility", "dexterity", "fighting", "intellect", "awareness", "presence"]
+            , "skills": ["acrobatics", "athletics", "deception", "insight", "intimidation", "investigation", "perception", "persuasion", "sleightofhand", "stealth", "technology", "treatment","vehicles"]
+            , "setting_toggles": ["strength", "stamina", "agility", "dexterity", "fighting", "intellect", "awareness", "presence", "dodge", "parry", "fortitude", "toughness", "will", "acrobatics", "athletics", "deception", "insight", "intimidation", "investigation", "perception", "persuasion", "sleightofhand", "stealth", "technology", "treatment", "vehicles", "initiative" ]
+            , "repeating_toggles": ["repeating_offensive-attacks", "repeating_closecombat-attacks", "repeating_rangedcombat-attacks", "repeating_expertise", "repeating_powers-devices", "repeating_advantages", "repeating_equipment", "repeating_motivations"]
+            , "repeating_skills": ["closecombat-attacks", "expertise", "rangedcombat-attacks"]
+            , "repeating_powers": ["powers-devices"]
+            , "power_fields": ["ranks", "points_per_rank", "misc"]
+            , "repeating_advantages": ["advantages"]
+            , "advantage_fields": ["ranks"]
+            , "repeating_equipments": ["equipment"]
+            , "equipment_fields": ["ranks"]
+            , "defenses": ["dodge", "parry", "fortitude", "toughness", "will"]
+            , "skills_fields": ["score", "misc_score"]
+            , "initiative": ["initiative"]
+            , "injury": ["injuries"]
+            , "conditions": ["Defenseless_flag", "Disabled_flag", "Impaired_flag", "Vulnerable_flag", "Prone_flag"]
+            , "attack_fields": ["toHit", "dc", "damage", "save_type" ]
+            , "repeating_attack": ["offensive-attacks"]
+        };
+        
+        
+        // -- Constant attribute names
+        const getAttrNames = function(categories) {
+            let names = [];
+            categories.forEach((category) => {
+                if(category in global_attributes_by_category) {
+                    names = names.concat(global_attributes_by_category[category]);
+                }
+            });
+            return names;
+        };
+    
+        const updateInitiative = function(attr) {
+            let fields = [`${attr}_score`, 'agility_modifier'];
+            getAttrs(fields, (values) => {
+                setAttrs(calcInitiative(attr,values), {silent:true}, () => {
+    
+                });
+            });
+        };
+    
+        const calcInitiative = function(attr, values){
+            let update = {}, mod = 0;
+            mod = (parseInt(values[`${attr}_score`]) || 0) + (parseInt(values[`agility_modifier`]) || 0);
+            update[`${attr}_modifier`] = mod;
+            return update;
+        };
+    
+        const updateAbility = function(attr) {
+            console.log("here");
+            let fields = [`${attr}_score`,`${attr}_misc_score`];
+            getAttrs(fields, (values) => {
+                setAttrs(calcAbility(attr,values), {silent: true}, () => {
+                    if(attr === "strength"){ updateStrengthFields(); }
+                    if(attr === "stamina"){ updateStaminaFields(); }
+                    if(attr === "agility"){ updateAgilityFields(); }
+                    if(attr === "dexterity"){ updateDexterityFields(); }
+                    if(attr === "fighting"){ updateFightingFields(); }
+                    if(attr === "intellect"){ updateIntellectFields(); }
+                    if(attr === "awareness"){ updateAwarenessFields(); }
+                    if(attr === "presence"){ updatePresenceFields(); }
+                    updateAbilityCountTotal();
+                });
+            });
+        };
+    
+        const calcAbility = function (attr, values) {
+            let update = {}, mod = 0;
+            mod = (parseInt(values[`${attr}_score`]) || 0) + (parseInt(values[`${attr}_misc_score`]) || 0);
+            update[`${attr}_modifier`] = mod;
+            return update;
+        };
+    
+        const updateAbilityCountTotal = function() {
+            let fields = ["strength_score", "stamina_score", "agility_score",
+                "dexterity_score", "fighting_score", "intellect_score",
+                "awareness_score", "presence_score"];
+            getAttrs(fields, (values) => {
+                setAttrs(calcAbilityTotal(values), {silent: true}, () => {
+                    updateGrandTotal();
+                });
+            });
+        };
+    
+        const calcAbilityTotal = function(values) {
+            let update = {}, mod = 0;
+            mod = (parseInt(values[`strength_score`]) || 0) + (parseInt(values[`stamina_score`]) || 0)
+            + (parseInt(values[`dexterity_score`]) || 0) + (parseInt(values[`fighting_score`]) || 0)
+            + (parseInt(values[`intellect_score`]) || 0) + (parseInt(values[`awareness_score`]) || 0)
+            + (parseInt(values[`presence_score`]) || 0) + (parseInt(values[`agility_score`]) || 0);
+            update[`abilitytotal`] = (mod * 2);
+            return update;
+        };
+    
+        const updateStrengthFields = function(){
+            updateSkill("athletics");
+        };
+    
+        const updateStaminaFields = function(){
+            updateDefense("fortitude");
+            updateDefense("toughness");
+        };
+    
+        const updateAgilityFields = function(){
+            updateSkill("acrobatics");
+            updateSkill("stealth");
+            updateDefense("dodge");
+        };
+    
+        const updateDexterityFields = function(){
+            updateSkill("sleightofhand");
+            updateSkill("vehicles");
+            getSectionIDs("rangedcombat-attacks", function(idarray){
+                for(var i = 0; i < idarray.length; i++){
+                    updateSkill("repeating_rangedcombat-attacks_" + idarray[i] + "_rangedcombat-attacks");
+                }
+            });
+        };
+    
+        const updateFightingFields = function(){
+            getSectionIDs("closecombat-attacks", function(idarray){
+                for(var i = 0; i < idarray.length; i++){
+                    updateSkill("repeating_closecombat-attacks_" + idarray[i] + "_closecombat-attacks");
+                }
+            });
+            updateDefense("parry");
+        }
+    
+        const updateIntellectFields = function (){
+            getSectionIDs("expertise", function(idarray){
+                for(var i = 0; i < idarray.length; i++){
+                    updateSkill("repeating_expertise_" + idarray[i] + "_expertise");
+                }
+            });
+            updateSkill("investigation");
+            updateSkill("technology");
+            updateSkill("treatment");
+        }
+    
+        const updateAwarenessFields = function (){
+            updateSkill("insight");
+            updateSkill("perception");
+            updateDefense("will");
+        }
+    
+        const updatePresenceFields = function (){
+            updateSkill("deception");
+            updateSkill("intimidation");
+            updateSkill("persuasion");
+        }
+    
+        const updateDefense = function(attr){
+            let fields = [`${attr}_score`, `${attr}_misc_score`, `Defenseless_flag`, `Vulnerable_flag`, `power_level`];
+            if(attr === "dodge"){
+                fields.push("agility_modifier");
+                fields.push("toughness_modifier");
+            }
+            if(attr === "parry"){
+                fields.push("fighting_modifier");
+                fields.push("toughness_modifier");
+            }
+            if(attr === "toughness"){
+                fields.push("stamina_modifier");
+                fields.push("Injuries");
+                fields.push("dodge_modifier");
+                fields.push("parry_modifier");
+            }
+            if(attr === "fortitude"){
+                fields.push("stamina_modifier");
+                fields.push("Injuries");
+                fields.push("will_modifier");
+            }
+            if(attr === "will"){
+                fields.push("awareness_modifier");
+                fields.push("fortitude_modifier");
+            }
+            getAttrs(fields, (values) => {
+                setAttrs(calcDefenses(attr,values), {silent: true}, () => {
+                    if(attr === "dodge" || attr == "parry") {
+                        updateDefenceDC(attr, values);
+                    }
+                    updateDefenseTotal();
+                });
+            });
+        };
+
+        const updateDefenseTotal = function(){
+            let fields = ['dodge_score', 'parry_score', 'fortitude_score',
+                'toughness_score', 'will_score'];
+            getAttrs(fields, (values) => {
+                setAttrs(calcDefenseTotal(values), {silent:true}, () => {
+                    updateGrandTotal();
+                });
+            });
+        }
+
+        const calcDefenseTotal = function(values){
+            let update = {}, mod = 0;
+            for(var val in values){
+                mod = mod + (parseInt(values[val]) || 0);
+            }
+            update[`defensetotal`] = mod;
+            return update;
+        }
+    
+        const updateDefenceDC = function(attr, values){
+            
+            let update = {}, mod = 0;
+            mod = (parseInt(values[`${attr}_score`]) || 0) + (parseInt(values[`${attr}_misc_score`]) || 0)
+            + (parseInt(values[`agility_modifier`]) || 0) + (parseInt(values[`fighting_modifier`]) || 0) + 10;
+            if(parseInt(values[`Defenseless_flag`]) || 0 === 1 ){
+                mod = 0;
+            }
+            if(parseInt(values[`Vulnerable_flag`]) || 0 === 1 ){
+                mod = Math.ceil(mod / 2);
+            }
+            update[`${attr}_dc`] = mod;
+            setAttrs(update, {silent: true}, () => {
+            });
+            
+        }
+    
+        const calcDefenses = function(attr, values){
+            let update = {}, mod = 0, maxValue = (parseInt(values[`power_level`]) || 0) * 2;
+            mod = (parseInt(values[`${attr}_score`]) || 0) + (parseInt(values[`${attr}_misc_score`]) || 0)
+            + (parseInt(values[`agility_modifier`]) || 0) + (parseInt(values[`awareness_modifier`]) || 0)
+            + (parseInt(values[`fighting_modifier`]) || 0) + (parseInt(values[`stamina_modifier`]) || 0);
+            if(attr === "dodge"){
+                if((mod + parseInt(values[`toughness_modifier`]) || 0) > maxValue){
+                    if((maxValue - mod) < 0){
+                        update[`toughness_modifier`] = 0;    
+                    } else {
+                        update[`toughness_modifier`] = maxValue - mod;
+                    }
+                }
+            }
+            if(attr === "parry"){
+                if((mod + parseInt(values[`toughness_modifier`]) || 0) > maxValue){
+                    if((maxValue - mod) < 0){
+                        update[`toughness_modifier`] = 0;    
+                    } else {
+                        update[`toughness_modifier`] = maxValue - mod;
+                    }
+                }
+            }
+            if(attr === "fortitude"){
+                if((mod + parseInt(values[`will_modifier`]) || 0) > maxValue){
+                    if((maxValue - mod) < 0){
+                        update[`will_modifier`] = 0;    
+                    }else {
+                        update[`will_modifier`] = maxValue - mod;
+                    }
+                }
+            }
+            if(attr === "will"){
+                if((mod + parseInt(values[`fortitude_modifier`]) || 0) > maxValue){
+                    if((maxValue - mod) < 0){
+                        update[`fortitude_modifier`] = 0;    
+                    }else {
+                        update[`fortitude_modifier`] = maxValue - mod;
+                    }
+                }
+            }
+            if(attr === "toughness"){
+                if((mod + parseInt(values[`dodge_modifier`]) || 0) > maxValue){
+                    if((maxValue - mod) < 0){
+                        update[`dodge_modifier`] = 0;    
+                    }else {
+                        update[`dodge_modifier`] = maxValue - mod;
+                    }
+                }
+                if((mod + parseInt(values[`parry_modifier`]) || 0) > maxValue){
+                    if((maxValue - mod) < 0){
+                        update[`parry_modifier`] = 0;    
+                    }else {
+                        update[`parry_modifier`] = maxValue - mod;
+                    }
+                }
+                mod = mod - (parseInt(values[`Injuries`]) || 0)
+            }
+            if(parseInt(values[`Defenseless_flag`]) || 0 === 1 ){
+                mod = 0;
+            }
+            if(parseInt(values[`Vulnerable_flag`]) || 0 === 1 ){
+                mod = Math.ceil(mod / 2);
+            }
+            if(mod > maxValue){
+                mod = maxValue;
+            }
+            update[`${attr}_modifier`] = mod;
+            return update;
+        }
+    
+    
+        const updatePower = function(attr){
+            let fields = [`${attr}_ranks`, `${attr}_points_per_rank`, `${attr}_misc`]
+            getAttrs(fields, (values) => {
+                setAttrs(calcPower(attr, values), {silent:true}, ()=>{
+                    updatePowersTotal();
+                });
+            });
+        }
+        
+        const calcPower = function(attr, values){
+            let update = {}, mod = 0;
+            let rank = 0, perRank = 0, misc = 0;
+            for(var val in values){
+                if(val.endsWith("_per_rank")){
+                    perRank = (parseInt(values[val]) || 0);
+                } else if (val.endsWith("misc")){
+                    misc = (parseInt(values[val]) || 0);
+                } else{
+                    rank = (parseInt(values[val]) || 0);
+                }
+            }
+            mod = (rank * perRank) + misc;
+            update[`${attr}_total`] = mod;
+            return update;
+        }
+    
+        const updatePowersTotal = function(){
+            let fields = [];
+            getSectionIDs("powers-devices", function(idarray){
+                for(var i = 0; i < idarray.length; i++){
+                    fields.push("repeating_powers-devices_" + idarray[i] + "_powers-devices_total");
+                }
+                getAttrs(fields, (values) => {
+                    setAttrs(calcPowerTotal(values), {silent: true}, () => {
+                        updateGrandTotal();
+                    });
+                });
+            });
+        }
+    
+        const calcPowerTotal = function(values){
+            
+            let update = {}, mod = 0;
+            for(var val in values){
+                mod= mod + (parseInt(values[val]) || 0);
+            }
+            
+            update[`powertotal`] = mod;
+            return update;
+        }
+    
+        const updateAdvantage = function(attr){
+            let fields = [`${attr}_ranks`]
+            getAttrs(fields, (values) => {
+                setAttrs(calcAdvantage(attr, values), {silent:true}, ()=>{
+                    updateAdvantageTotal();
+                });
+            });
+        }
+
+        const updateInjury = function(attr){
+            let fields = [`${attr}`, 'toughness_score', 'toughness_misc_score', 'stamina_modifier']
+            getAttrs(fields, (values) => {
+                setAttrs(calcInjury(values), {silent:true}, ()=>{
+                    
+                });
+            });
+        }
+
+        const calcInjury = function(values){
+            let update = {}, mod = 0;
+            for(var val in values){
+                if(val.startsWith("toughness") || val.startsWith("stamina")){
+                    mod = mod + (parseInt(values[val]) || 0);
+                } else {
+                    mod = mod - (parseInt(values[val]) || 0);
+                }
+            }
+            update[`toughness_modifier`] = mod;
+            return update;
+        }
+        
+        const calcAdvantage = function(attr, values){
+            let update = {}, mod = 0;
+            for(var val in values){
+                mod = mod + (parseInt(values[val]) || 0);
+            }
+            update[`${attr}_total`] = mod;
+            return update;
+        }
+    
+        const updateAdvantageTotal = function(){
+            let fields = [];
+            getSectionIDs("advantages", function(idarray){
+                for(var i = 0; i < idarray.length; i++){
+                    fields.push("repeating_advantages_" + idarray[i] + "_advantages_total");
+                }
+                getAttrs(fields, (values) => {
+                    setAttrs(calcAdvantageTotal(values), {silent: true}, () => {
+                        updateGrandTotal();
+                    });
+                });
+            });
+        }
+    
+        const calcAdvantageTotal = function(values){
+            
+            let update = {}, mod = 0;
+            for(var val in values){
+                mod= mod + (parseInt(values[val]) || 0);
+            }
+            
+            update[`advantagestotal`] = mod;
+            return update;
+        }
+
+        const updateAttacksTotals = function(attr){
+            let fields = [`${attr}_dc`, `${attr}_toHit`, `${attr}_damage`, `${attr}_save_type`, `power_level` ];
+            getAttrs(fields, (values) => {
+                setAttrs(calcMaxAttacks(attr, values), {silent:true}, () => {
+
+                });
+            });
+        }
+
+        const calcMaxAttacks = function(attr,values) {
+            let maxValue = (parseInt(values['power_level']) || 0) * 2;
+            let attack = parseInt(values[`${attr}_toHit`]) || 0;
+            let dc = parseInt(values[`${attr}_dc`]) || 0;
+            let damage = parseInt(values[`${attr}_damage`]) || 0;
+            let saveType = values[`${attr}_save_type`];
+            let update = {};
+            if (attack > 0){
+                update[`${attr}_dc`] = '';
+                if(damage > (maxValue - attack)){
+                    update[`${attr}_damage`] = (maxValue - attack);
+                }
+            }
+            if(attack == 0 && dc > 0){
+                if (saveType.startsWith("tough") || saveType.startsWith("Tough")){
+                    if(dc < 15){
+                        update[`${attr}_dc`] = 15 + dc;
+                        update[`${attr}_damage`] = (maxValue - (dc + 15));
+                    } else {
+                        if(damage > (maxValue - (dc - 15))){
+                            update[`${attr}_damage`] = (maxValue - (dc - 15));
+                        }
+                    }
+                }else{
+                    if(dc < 10){
+                        update[`${attr}_dc`] = 10 + dc;
+                        update[`${attr}_damage`] = (maxValue - (dc + 10));
+                    } else {
+                        if(damage > (maxValue - (dc - 10))){
+                            update[`${attr}_damage`] = (maxValue - (dc - 10));
+                        }
+                    }
+                }
+            }
+            if(attack == 0 && dc == 0){
+                if(damage > maxValue){
+                    update[`${attr}_damage`] = maxValue;
+                }
+            }
+            return update;
+        }
+
+        const updateEquipment = function(attr){
+            let fields = [`${attr}_ranks`]
+            getAttrs(fields, (values) => {
+                setAttrs(calcEquipment(attr, values), {silent:true}, ()=>{
+                    
+                });
+            });
+        }
+        
+        const calcEquipment = function(attr, values){
+            let update = {}, mod = 0;
+            for(var val in values){
+                mod = mod + (parseInt(values[val]) || 0);
+            }
+            update[`${attr}_total`] = mod;
+            return update;
+        }
+        
+        const updateRID = function(attr, RID){
+            let update = {};
+            update[`${attr}_rid`] = RID;
+            setAttrs(update, {silent:true}, () => {
+
+            });
+        }
+
+        const updateSkill = function(attr){
+            console.log("update skill");
+            let fields = [`${attr}_score`,`${attr}_misc_score`, `power_level`];
+            if(attr === "acrobatics" || attr === "stealth"){
+                fields.push("agility_modifier");
+            }
+            if(attr === "athletics"){
+                fields.push("strength_modifier");
+            }
+            if(attr === "deception" || attr === "intimidation" || attr === "persuasion"){
+                fields.push("presence_modifier");
+            }
+            if(attr === "insight" || attr === "perception"){
+                fields.push("awareness_modifier");
+            }
+            if(attr === "investigation" || attr === "technology" || attr === "treatment"){
+                fields.push("intellect_modifier");
+            }
+            if(attr === "sleightofhand" || attr === "vehicles"){
+                fields.push("dexterity_modifier");
+            }
+            if(attr.startsWith("repeating_closecombat-attacks")){
+                fields.push("fighting_modifier");
+            }
+            if(attr.startsWith("repeating_rangedcombat-attacks")){
+                fields.push("dexterity_modifier");
+            }
+            if(attr.startsWith("repeating_expertise")){
+                fields.push("intellect_modifier");
+            }
+            getAttrs(fields, (values) => {
+                setAttrs(calcSkill(attr,values), {silent: true}, () => {
+                    updateSkillCountTotal()
+                });
+            });
+            
+        }
+    
+        const updateSkillCountTotal = function() {
+            let fields = ["acrobatics_score", "athletics_score", "deception_score",
+                "insight_score", "intimidation_score", "investigation_score",
+                "perception_score", "persuasion_score", "sleightofhand_score",
+                "stealth_score", "technology_score", "treatment_score",
+                "vehicles_score"];
+            getSectionIDs("expertise", function(idarray){
+                for(var i = 0; i < idarray.length; i++){
+                    fields.push("repeating_expertise_" + idarray[i] + "_expertise_score");
+                }
+                getSectionIDs("closecombat-attacks", function(idarray){
+                    for(var i = 0; i < idarray.length; i++){
+                        fields.push("repeating_closecombat-attacks_" + idarray[i] + "_closecombat-attacks_score");
+                    }
+                    getSectionIDs("rangedcombat-attacks", function(idarray){
+                        for(var i = 0; i < idarray.length; i++){
+                            fields.push("repeating_rangedcombat-attacks_" + idarray[i] + "_rangedcombat-attacks_score");
+                        }
+                        getAttrs(fields, (values) => {
+                            setAttrs(calcSkillTotal(values), {silent: true}, () => {
+                                updateGrandTotal();
+                            });
+                        });
+                    });
+                });
+            });
+        };
+    
+        const calcSkillTotal = function(values) {
+            let update = {}, mod = 0;
+            for(var val in values){
+                mod = mod + (parseInt(values[val]) || 0);
+            }
+            update[`skillstotal`] = (mod / 2);
+            return update;
+        };
+    
+    
+        const calcSkill = function (attr, values) {
+            let update = {}, mod = 0, power_level = 0;
+            mod = (parseInt(values[`${attr}_score`]) || 0) + (parseInt(values[`${attr}_misc_score`]) || 0)
+            + (parseInt(values[`agility_modifier`]) || 0) + (parseInt(values[`strength_modifier`]) || 0)
+            + (parseInt(values[`presence_modifier`]) || 0) + (parseInt(values[`awareness_modifier`]) || 0)
+            + (parseInt(values[`intellect_modifier`]) || 0) + (parseInt(values[`dexterity_modifier`]) || 0)
+            + (parseInt(values[`fighting_modifier`]) || 0);
+            power_level = parseInt(values[`power_level`] || 0) + 10;
+            if(mod > power_level){
+                mod = power_level;
+            }
+            update[`${attr}_modifier`] = mod;
+            return update;
+        };
+    
+        const updateGrandTotal = function(){
+            let fields = ["abilitytotal", "powertotal", "advantagestotal",
+                "skillstotal", "defensetotal"];
+            getAttrs(fields, (values) => {
+                setAttrs(calcGrandTotal(values), {silent: true}, () => {
+                    
+                });
+            })
+        }
+
+        const calcGrandTotal = function(values) {
+            let update = {}, mod = 0;
+            for(var val in values){
+                mod = mod + (parseInt(values[val]) || 0);
+            }
+            update[`grandtotal`] = mod;
+            return update;
+        };
+
+        const updateConditions = function(){
+            let fields = ["Defenseless_flag", "Vulnerable_flag"];
+            getAttrs(fields, (values) => {
+                updateDefense("dodge");
+                updateDefense("parry");
+                updateDefense("fortitude");
+                updateDefense("toughness");
+                updateDefense("will");
+            });
+        };
+        
+    
+    // == Collecting repeating sections IDs
+    const getRepSecIds = function(repsec_array,callback,repsec_agr) {
+        // Returns an array of objects, aggregating ids and attributes for various repeating sections items
+        // Parameters: Source (like global_repsecs["lore"]), callback function, Aggregate ([{section:string, ids:[ids], attrs:[attribute]}])
+        // Courtesy of Scott C. :)
+        let currsection = repsec_array.shift();
+        if(currsection.section) {
+            repsec_agr = repsec_agr || [];
+            getSectionIDs(`repeating_${currsection.section}`, (itemsids)=>{
+                repsec_agr.push({
+                    section:currsection.section,
+                    ids:itemsids,
+                    attrs:currsection.attrs
+                });
+                if (_.isEmpty(repsec_array)) {
+                    callback(repsec_agr);
+                } else {
+                    getRepSecIds(repsec_array,callback,repsec_agr);
+                }
+            });
+        } else {
+            if (_.isEmpty(repsec_array)) {
+                callback(repsec_agr);
+            } else {
+                getRepSecIds(repsec_array,callback,repsec_agr);
+            }
+        }
+    };
+    // == Collecting repeating sections attributes
+    const getRepSecFields = function(repsec_agr, other_attrs = []) {
+        // Returns an array of attribute names from several repeating sections and optional other standard attributes
+        // Parameters: Repeating section Aggregate ([{section:string, ids:[ids], attrs:[attributes]}]), [other attributes names]
+        let repsecfields = [];
+        _.each(repsec_agr, (current_section)=>{
+            // console.log("*** DEBUG getRepsecFields section: " + current_section.section);
+            _.each(current_section.ids, (id)=>{
+                // console.log("*** DEBUG getRepsecFields ids: " + id);
+                _.each(current_section.attrs, (attr)=>{
+                    // console.log("*** DEBUG getRepsecFields attrs: " + attr);
+                    repsecfields.push(`repeating_${current_section.section}_${id}_${attr}`);
+                });
+            });
+        });
+        return repsecfields.concat(other_attrs);
+    };
+    // == Collecting one repeating section and attributes in an array of objects
+    const getRepSecObjectArray = function(section = "normalspell", attributesArray, callback) {
+        // Gather all spells from a spell section and constitute a array of objets with [{id: ID, attribute: value}]
+        let items = [];
+        getSectionIDs(`repeating_${section}`, (ids) => {
+            let fields = [];
+            ids.forEach(id => {
+                fields.push(...attributesArray.map(attribute => `repeating_${section}_${id}_${attribute}`));
+            });
+            getAttrs(fields, (values) => {
+                ids.forEach(id => {
+                    let item = {};
+                    item["id"] = id;
+                    attributesArray.forEach(attribute => {
+                        item[attribute] = (values[`repeating_${section}_${id}_${attribute}`] || "");
+                    });
+                    items.push(item);
+                });
+                if(callback) {
+                    callback(items);
+                } else {
+                    return items;
+                }
+            });
+        });
+    };
+    // == Sorting (repeating section, objects ...)
+    const defaultComparison = function(a, b) {
+        // Standard sorting comparison
+        if (a == b) return 0;
+        return a < b ? -1 : 1;
+    };
+    const stringComparison = function(a, b) {
+        // Sorting two strings ignoring casing and punctuation but not accents
+        return String(a).localeCompare(String(b),getTranslationLanguage(),{"ignorePunctuation":true,"caseFirst":false,"sensitivity":"accent"});
+    };
+    const getComparisonFunction = function(primer = String, reverse = false) {
+        // Sorting comparison
+        let comparisonFunction;
+        if(primer == String) {
+            comparisonFunction = (a, b) => {
+                return stringComparison(a, b);
+            };
+        } else {
+            comparisonFunction = (a, b) => {
+                return defaultComparison(primer(a), primer(b));
+            };
+        }
+        if (reverse) {
+            return function(a, b) {
+                return -1 * comparisonFunction(a, b);
+            };
+        }
+        return comparisonFunction;
+    };
+    const sortObjectArrayBy = function(sorting) {
+        /* Sorting an array of objects.
+            The `sorting` parameter is an array of sorting criteria(s), in the form of one or more attribute (key) names, or object(s) like {
+                    name:"attribute name"
+                    , primer: typing function name like parseInt. Defaults to String
+                    , reverse: boolean. Ascending or descending order. Default to false.
+                }
+            Uses:
+            * new array = arrayOfObjetcs.sort(sortObjectArrayBy(["name"]));
+            * (same as) new array = arrayOfObjetcs.sort(sortObjectArrayBy([{name:"name", primer:String, reverse:false}]);
+            * (multiple criterias : descending level and ascending name) new array = arrayOfObjetcs.sort(sortObjectArrayBy([{name:"current_level", primer:parseInt, reverse:true},"name"]);
+        */
+        let fields = [],
+            n_fields = sorting.length, field, name, comparison;
+        // preprocess sorting options
+        for (let i = 0; i < n_fields; i++) {
+            field = sorting[i];
+            if (typeof field === "string") {
+                name = field;
+                comparison = stringComparison;
+            } else {
+                name = field.name;
+                comparison = getComparisonFunction(field.primer, field.reverse);
+            }
+            fields.push({
+                name: name,
+                comparison: comparison
+            });
+        }
+        // final comparison function
+        return function(A, B) {
+            let name, result;
+            for (let i = 0; i < n_fields; i++) {
+                result = 0;
+                field = fields[i];
+                name = field.name;
+                result = field.comparison(A[name], B[name]);
+                if (result !== 0) break;
+            }
+            return result;
+        }
+    };
+    const sortRepeatingSection = function(section, attributes, sorting) {
+        // sorting is an array of one or more attribute names, or object(s). See sortObjectArrayBy()
+        getRepSecObjectArray(section, attributes, (items) => {
+            let newItems = items.sort(sortObjectArrayBy(sorting));
+            let sorted_attributes = newItems.map(item => `repeating_${section}_${item.id}`);
+            setSectionOrder(section, sorted_attributes);
+        });
+    };
+        // === Module Interface
+        return {
+            getAttrNames: getAttrNames
+            , updateAbility: updateAbility
+            , updateSkill: updateSkill
+            , updateDefense: updateDefense
+            , updateInitiative: updateInitiative
+            , updatePower : updatePower
+            , updateAdvantage : updateAdvantage
+            , updateInjury : updateInjury
+            , updateConditions : updateConditions
+            , updateAttacksTotals: updateAttacksTotals
+            , updateRID: updateRID
+        }
+        
+        })();
+        
+        // === SETTINGS TOGGLE
+        modPf2.getAttrNames(['setting_toggles', 'skills']).forEach(attr => {
+        on(`clicked:toggle_${attr}`, (eventinfo) => {
+            console.log("here");
+            toggleStringBuilder(attr);
+        });
+        });
+
+
+        modPf2.getAttrNames(['conditions']).forEach(attr => {
+            on(`change:${attr}`, (eventinfo) => {
+                modPf2.updateConditions(attr);
+            });
+        });
+    
+        // === REPEATING SETTINGS TOGGLES
+        modPf2.getAttrNames(['repeating_toggles']).forEach(attr => {
+        on(`clicked:${attr}:settings`, (eventinfo) => {
+            console.log("click found");
+            const trigger = eventinfo.triggerName.split("clicked:")[1];
+            const id      = trigger.split("_")[2];
+            const keyword = trigger.split("_")[3];
+            getAttrs([`${attr}_${id}_toggles`], (values) => {
+                let string = values[`${attr}_${id}_toggles`];
+                (string.includes(`${keyword}`)) ? string = string.replace(`${keyword},`, "") : string += `${keyword},`;
+                setAttrs({
+                    [`${attr}_${id}_toggles`] : string
+                });
+            });
+        });
+        });
+        
+        
+        const toggleStringBuilder = (toggle, callback) => {
+        getAttrs(["toggles"], (values) => {
+            let toggles_array = [];
+            // Remove duplicates from current toggles, and empty strings, undefined, nulls and other "false" elements
+            toggles_array = [...new Set((values[`toggles`] || "").split(","))].filter(element => {return element != null && String(element).trim().length;});
+            // For each toggle passed as parameter, add it if absent, or remove it if present
+            (toggle || "").split(",").forEach(toggle_uniq => {
+                if(toggles_array.includes(toggle_uniq)) {
+                    // Alreay present: remove
+                    toggles_array.splice(toggles_array.indexOf(toggle_uniq), 1);
+                } else {
+                    // Absent: add it
+                    toggles_array.push(toggle_uniq);
+                }
+            });
+            setAttrs({"toggles" : toggles_array.join()},{silent: true}, () => {
+                if(callback) {
+                    callback();
+                }
+            });
+        });
+        };
+    
+        modPf2.getAttrNames(['abilities']).forEach(attr => {
+            on(`change:${attr}_score change:${attr}_misc_score`, (eventinfo) => {
+                console.log("abilitiesFound");
+                modPf2.updateAbility(attr);
+            });
+            });
+    
+        modPf2.getAttrNames(['initiative']).forEach(attr=>{
+            on(`change:${attr}_score`, (eventinfo) => {
+                modPf2.updateInitiative(attr);
+            });
+        });
+    
+        modPf2.getAttrNames(['defenses']).forEach(attr => {
+            on(`change:${attr}_score change:${attr}_misc_score`, (eventinfo) => {
+                modPf2.updateDefense(attr);
+            });
+        });
+    
+            // === SKILLS
+            // Fixed skills
+            modPf2.getAttrNames(["skills"]).forEach(attr => {
+                on(`change:${attr}_score change:${attr}_misc_score`, (eventinfo) => {
+                    modPf2.updateSkill(attr);
+                });
+            });
+            // Repeating skills
+            modPf2.getAttrNames(['repeating_skills']).forEach(attr => {
+            on(modPf2.getAttrNames(["skills_fields"]).map(field => `change:repeating_${attr}:${attr}_${field}`).join(' '), (eventinfo) => {
+                modPf2.updateSkill(`repeating_${attr}_${eventinfo.sourceAttribute.split(`${attr}_`)[1]}${attr}`);
+                let RID = "";
+                if(eventinfo.sourceAttribute.startsWith("repeating_rangedcombat-attacks_")){
+                    RID = eventinfo.sourceAttribute.slice(31,51);
+                } else if(eventinfo.sourceAttribute.startsWith("repeating_closecombat-attacks_")){
+                    RID = eventinfo.sourceAttribute.slice(30,50);
+                }else if(eventinfo.sourceAttribute.startsWith("repeating_expertise_")){
+                    RID = eventinfo.sourceAttribute.slice(20,40);
+                } 
+                modPf2.updateRID(`repeating_${attr}_${eventinfo.sourceAttribute.split(`${attr}_`)[1]}${attr}`, RID);
+            });
+            });
+    
+            modPf2.getAttrNames(['repeating_powers']).forEach(attr => {
+                on(modPf2.getAttrNames(["power_fields"]).map(field => `change:repeating_${attr}:${attr}_${field}`).join(' '), (eventinfo) => {
+                    modPf2.updatePower(`repeating_${attr}_${eventinfo.sourceAttribute.split(`${attr}_`)[1]}${attr}`);
+                });
+            });
+
+            modPf2.getAttrNames(['repeating_advantages']).forEach(attr => {
+                on(modPf2.getAttrNames(["advantage_fields"]).map(field => `change:repeating_${attr}:${attr}_${field}`).join(' '), (eventinfo) => {
+                    modPf2.updateAdvantage(`repeating_${attr}_${eventinfo.sourceAttribute.split(`${attr}_`)[1]}${attr}`);
+                });
+            });
+
+            modPf2.getAttrNames(['repeating_equipments']).forEach(attr => {
+                on(modPf2.getAttrNames(["equipment_fields"]).map(field => `change:repeating_${attr}:${attr}_${field}`).join(' '), (eventinfo) => {
+                    modPf2.updateAdvantage(`repeating_${attr}_${eventinfo.sourceAttribute.split(`${attr}_`)[1]}${attr}`);
+                });
+            });
+
+            modPf2.getAttrNames(['repeating_attack']).forEach(attr => {
+                on(modPf2.getAttrNames(["attack_fields"]).map(field => `change:repeating_${attr}:${attr}_${field}`).join(' '), (eventinfo) => {
+                    modPf2.updateAttacksTotals(`repeating_${attr}_${eventinfo.sourceAttribute.split(`${attr}_`)[1]}${attr}`);
+                    let RID = eventinfo.sourceAttribute.slice(28,48);
+                    
+                    modPf2.updateRID(`repeating_${attr}_${eventinfo.sourceAttribute.split(`${attr}_`)[1]}${attr}`, RID);
+                });
+            });
+
+            modPf2.getAttrNames(['injury']).forEach(attr=>{
+                on(`change:${attr}`, (eventinfo) => {
+                    modPf2.updateInjury(attr);
+                });
+            });
+</script>
+
+<div class="rolltemplates">
+    <rolltemplate class="sheet-rolltemplate-rolls">
+{{#charactername}}
+
+        <span class="charactername">
+{{charactername}}
+</span>
+{{/charactername}}
+
+        <div class="template-header">
+{{#header}}{{header}}{{/header}}
+{{#subheader}}
+
+            <div class="template-subheader">{{subheader}}</div>
+{{/subheader}}
+
+        </div>
+        <div class="template-body">
+            <!-- Generic rolls -->
+            {{#modifier}}
+{{#roll01}}
+
+            <div class="template-row {{roll01_type}}">
+    {{#roll01_name}}
+        
+                <span class="template-roll-name {{roll01_type}}">{{roll01_name}}</span>
+    {{/roll01_name}}
+    {{roll01}}
+    {{#roll01_info}}
+        
+                <span class="template-roll-info {{roll01_type}}">{{roll01_info}}</span>
+    {{/roll01_info}}
+
+            </div>
+{{#roll01_critical}}
+    {{#rollWasCrit() roll01}}
+        
+            <div class="template-row">
+                <span class="success" data-i18n="critical!">Critical!</span>
+            </div>
+    {{/rollWasCrit() roll01}}
+{{/roll01_critical}}
+{{/roll01}}
+{{/modifier}}
+   <!-- Generic rolls -->
+   {{#roll02}}
+
+   <div class="template-row {{roll02_type}}">
+{{#roll02_name}}
+
+       <span class="template-roll-name {{roll02_type}}">{{roll02_name}}</span>
+{{/roll02_name}}
+{{roll02}}
+{{#roll02_info}}
+
+       <span class="template-roll-info {{roll02_type}}">{{roll02_info}}</span>
+{{/roll02_info}}
+
+   </div>
+{{#roll02_critical}}
+{{#rollWasCrit() roll02}}
+
+   <div class="template-row">
+       <span class="success" data-i18n="critical!">Critical!</span>
+   </div>
+{{/rollWasCrit() roll02}}
+{{/roll02_critical}}
+{{/roll02}}
+<!-- Generic rolls -->
+{{#roll03}}
+
+<div class="template-row {{roll03_type}}">
+{{#roll03_name}}
+
+    <span class="template-roll-name {{roll03_type}}">{{roll03_name}}</span>
+{{/roll03_name}}
+{{roll03}}
+{{#roll03_info}}
+
+    <span class="template-roll-info {{roll03_type}}">{{roll03_info}}</span>
+{{/roll03_info}}
+
+</div>
+{{#roll03_critical}}
+{{#rollWasCrit() roll03}}
+
+<div class="template-row">
+    <span class="success" data-i18n="critical!">Critical!</span>
+</div>
+{{/rollWasCrit() roll03}}
+{{/roll03_critical}}
+{{/roll03}}
+            {{#notes}}
+                <div class="notes {{limit_height}}">
+                    {{notes}}
+                </div>
+            {{/notes}}
+        </div>
+        {{#button}}
+            <div class="template-row">
+                <div style="margin-left: 78px;">
+                {{button}}
+            </div>
+            </div>
+        {{/button}}
+    </rolltemplate>
+</div>
