@@ -134,9 +134,9 @@
                     <button class="pictos settings-button" name="act_toggle_strength" title="strength settings" style="margin-top: 10px;" type="action">y</button> 
                     <div>
                         <div style="display: none;">
-                            <button name="roll_STR_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Strength w/ Hero Point}} {{subheader=Ability}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{strength_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{strength_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            <button name="roll_STR_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Strength w/ Hero Point}} {{subheader=Ability}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{strength_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{strength_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                         </div>
-                        <button name="roll_STR" type="roll" value=" &{template:rolls} {{charactername=@{character_name}}} {{header=Strength}} {{subheader=Ability}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{strength_modifier} + @{Disabled} + @{Impaired} + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5} ]]}} {{notes=@{strength_notes}}} {{button=[Hero Point](~@{character_name}|STR_HERO)}}" style="margin-left: 35px; margin-top: 10px;" class="btn ui-draggable">Strength</button>
+                        <button name="roll_STR" type="roll" value=" &{template:rolls} {{charactername=@{character_name}}} {{header=Strength}} {{subheader=Ability}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{strength_modifier} + @{Disabled} + @{Impaired} + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5} ]]}} {{notes=@{strength_notes}}} {{button=[Hero Point](~@{character_name}|STR_HERO)}}" style="margin-left: 35px; margin-top: 10px;" class="btn ui-draggable">Strength</button>
                     </div>
                     <div class="circle">
                         <span name="attr_strength_modifier" title="@{strength_modifier}"></span>
@@ -160,9 +160,9 @@
                     <button class="pictos settings-button" name="act_toggle_stamina" title="stamina settings" style="margin-top: 10px;" type="action">y</button> 
                     <div>
                         <div style="display: none;">
-                            <button name="roll_STA_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Stamina w/ Hero Point}} {{subheader=Ability}} {{modifier=@{stamina_modifier}}} {{roll01=[[1d10 + 10 + @{stamina_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{stamina_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            <button name="roll_STA_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Stamina w/ Hero Point}} {{subheader=Ability}} {{modifier=@{stamina_modifier}}} {{roll01=[[1d10 + 10 + @{stamina_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{stamina_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                         </div>
-                        <button name="roll_STA" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Stamina}} {{subheader=Ability}} {{modifier=@{stamina_modifier}}} {{roll01=[[1d20 + @{stamina_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5} ]]}} {{notes=@{stamina_notes}}} {{button=[Hero Point](~@{character_name}|STA_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Stamina</button>
+                        <button name="roll_STA" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Stamina}} {{subheader=Ability}} {{modifier=@{stamina_modifier}}} {{roll01=[[1d20 + @{stamina_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5} ]]}} {{notes=@{stamina_notes}}} {{button=[Hero Point](~@{character_name}|STA_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Stamina</button>
                     </div>
                     <div class="circle">
                         <span name="attr_stamina_modifier" title="@{stamina_modifier}"></span>
@@ -186,9 +186,9 @@
                     <button class="pictos settings-button" name="act_toggle_agility" title="agility settings" style="margin-top: 10px;" type="action">y</button> 
                     <div>
                         <div style="display: none;">
-                            <button name="roll_AGL_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Agility w/ Hero Point}} {{subheader=Ability}} {{modifier=@{agility_modifier}}} {{roll01=[[1d10 + 10 + @{agility_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{agility_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            <button name="roll_AGL_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Agility w/ Hero Point}} {{subheader=Ability}} {{modifier=@{agility_modifier}}} {{roll01=[[1d10 + 10 + @{agility_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{agility_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                         </div>
-                        <button name="roll_AGL" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Agility}} {{subheader=Ability}} {{modifier=@{agility_modifier}}} {{roll01=[[1d20 + @{agility_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{agility_notes}}} {{button=[Hero Point](~@{character_name}|AGL_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Agility</button>
+                        <button name="roll_AGL" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Agility}} {{subheader=Ability}} {{modifier=@{agility_modifier}}} {{roll01=[[1d20 + @{agility_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{agility_notes}}} {{button=[Hero Point](~@{character_name}|AGL_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Agility</button>
                     </div>
                     <div class="circle">
                         <span name="attr_agility_modifier" title="@{agility_modifier}"></span>
@@ -212,9 +212,9 @@
                     <button class="pictos settings-button" name="act_toggle_dexterity" title="dexterity settings" style="margin-top: 10px;" type="action">y</button> 
                     <div>
                         <div style="display: none;">
-                            <button name="roll_DEX_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Dexterity w/ Hero Point}} {{subheader=Ability}} {{modifier=@{dexterity_modifier}}} {{roll01=[[1d10 + 10 + @{dexterity_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{dexterity_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            <button name="roll_DEX_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Dexterity w/ Hero Point}} {{subheader=Ability}} {{modifier=@{dexterity_modifier}}} {{roll01=[[1d10 + 10 + @{dexterity_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{dexterity_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                         </div>
-                        <button name="roll_DEX" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Dexterity}} {{subheader=Ability}} {{modifier=@{dexterity_modifier}}} {{roll01=[[1d20 + @{dexterity_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{dexterity_notes}}} {{button=[Hero Point](~@{character_name}|DEX_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Dexterity</button>
+                        <button name="roll_DEX" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Dexterity}} {{subheader=Ability}} {{modifier=@{dexterity_modifier}}} {{roll01=[[1d20 + @{dexterity_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{dexterity_notes}}} {{button=[Hero Point](~@{character_name}|DEX_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Dexterity</button>
                     </div>
                     <div class="circle">
                         <span name="attr_dexterity_modifier" title="@{dexterity_modifier}"></span>
@@ -238,9 +238,9 @@
                     <button class="pictos settings-button" name="act_toggle_fighting" title="fighting settings" style="margin-top: 10px;" type="action">y</button> 
                     <div>
                         <div style="display: none;">
-                            <button name="roll_FGT_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Fighting w/ Hero Point}} {{subheader=Ability}} {{modifier=@{fighting_modifier}}} {{roll01=[[1d10 + 10 + @{fighting_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{fighting_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            <button name="roll_FGT_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Fighting w/ Hero Point}} {{subheader=Ability}} {{modifier=@{fighting_modifier}}} {{roll01=[[1d10 + 10 + @{fighting_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{fighting_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                         </div>
-                        <button name="roll_FGT" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Fighting}} {{subheader=Ability}} {{modifier=@{fighting_modifier}}} {{roll01=[[1d20 + @{fighting_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{fighting_notes}}} {{button=[Hero Point](~@{character_name}|FGT_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Fighting</button>
+                        <button name="roll_FGT" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Fighting}} {{subheader=Ability}} {{modifier=@{fighting_modifier}}} {{roll01=[[1d20 + @{fighting_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{fighting_notes}}} {{button=[Hero Point](~@{character_name}|FGT_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Fighting</button>
                     </div>
                     <div class="circle">
                         <span name="attr_fighting_modifier" title="@{fighting_modifier}"></span>
@@ -264,9 +264,9 @@
                     <button class="pictos settings-button" name="act_toggle_intellect" title="intellect settings" style="margin-top: 10px;" type="action">y</button> 
                     <div>
                         <div style="display: none;">
-                            <button name="roll_INT_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Intellect w/ Hero Point}} {{subheader=Ability}} {{modifier=@{intellect_modifier}}} {{roll01=[[1d10 + 10 + @{intellect_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{intellect_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            <button name="roll_INT_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Intellect w/ Hero Point}} {{subheader=Ability}} {{modifier=@{intellect_modifier}}} {{roll01=[[1d10 + 10 + @{intellect_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{intellect_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                         </div>
-                        <button name="roll_INT" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Intellect}} {{subheader=Ability}} {{modifier=@{intellect_modifier}}} {{roll01=[[1d20 + @{intellect_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{intellect_notes}}} {{button=[Hero Point](~@{character_name}|INT_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Intellect</button>
+                        <button name="roll_INT" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Intellect}} {{subheader=Ability}} {{modifier=@{intellect_modifier}}} {{roll01=[[1d20 + @{intellect_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{intellect_notes}}} {{button=[Hero Point](~@{character_name}|INT_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Intellect</button>
                     </div>
                     <div class="circle">
                         <span name="attr_intellect_modifier" title="@{intellect_modifier}"></span>
@@ -290,9 +290,9 @@
                     <button class="pictos settings-button" name="act_toggle_awareness" title="awareness settings" style="margin-top: 10px;" type="action">y</button> 
                     <div>
                         <div style="display: none;">
-                            <button name="roll_AWE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Awareness w/ Hero Point}} {{subheader=Ability}} {{modifier=@{awareness_modifier}}} {{roll01=[[1d10 + 10 + @{awareness_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{awareness_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            <button name="roll_AWE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Awareness w/ Hero Point}} {{subheader=Ability}} {{modifier=@{awareness_modifier}}} {{roll01=[[1d10 + 10 + @{awareness_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{awareness_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                         </div>
-                        <button name="roll_AWE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Awareness}} {{subheader=Ability}} {{modifier=@{awareness_modifier}}} {{roll01=[[1d20 + @{awareness_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{awareness_notes}}} {{button=[Hero Point](~@{character_name}|AWE_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Awareness</button>
+                        <button name="roll_AWE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Awareness}} {{subheader=Ability}} {{modifier=@{awareness_modifier}}} {{roll01=[[1d20 + @{awareness_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{awareness_notes}}} {{button=[Hero Point](~@{character_name}|AWE_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Awareness</button>
                     </div>
                     <div class="circle">
                         <span name="attr_awareness_modifier" title="@{awareness_modifier}"></span>
@@ -316,9 +316,9 @@
                     <button class="pictos settings-button" name="act_toggle_presence" title="presence settings" style="margin-top: 10px;" type="action">y</button> 
                     <div>
                         <div style="display: none;">
-                            <button name="roll_PRE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Presence w/ Hero Point}} {{subheader=Ability}} {{modifier=@{presence_modifier}}} {{roll01=[[1d10 + 10 + @{presence_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{presence_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            <button name="roll_PRE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Presence w/ Hero Point}} {{subheader=Ability}} {{modifier=@{presence_modifier}}} {{roll01=[[1d10 + 10 + @{presence_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{presence_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                         </div>
-                        <button name="roll_PRE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Presence}} {{subheader=Ability}} {{modifier=@{presence_modifier}}} {{roll01=[[1d20 + @{presence_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{presence_notes}}} {{button=[Hero Point](~@{character_name}|PRE_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Presence</button>
+                        <button name="roll_PRE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Presence}} {{subheader=Ability}} {{modifier=@{presence_modifier}}} {{roll01=[[1d20 + @{presence_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{presence_notes}}} {{button=[Hero Point](~@{character_name}|PRE_HERO)}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable">Presence</button>
                     </div>
                     <div class="circle">
                         <span name="attr_presence_modifier" title="@{presence_modifier}"></span>
@@ -364,9 +364,9 @@
                         <button class="pictos settings-button" name="act_toggle_dodge" title="dodge settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_DOD_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Dodge w/ Hero Point}} {{subheader=Defense}} {{modifier=@{dodge_modifier}}} {{roll01=[[1d10 + 10 + @{dodge_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{dodge_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_DOD_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Dodge w/ Hero Point}} {{subheader=Defense}} {{modifier=@{dodge_modifier}}} {{roll01=[[1d10 + 10 + @{dodge_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{dodge_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_DOD" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Dodge}} {{subheader=Defense}} {{modifier=@{dodge_modifier}}} {{roll01=[[1d20 + @{dodge_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{dodge_notes}}} {{button=[Hero Point](~@{character_name}|DOD_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Dodge</button>
+                            <button name="roll_DOD" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Dodge}} {{subheader=Defense}} {{modifier=@{dodge_modifier}}} {{roll01=[[1d20 + @{dodge_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{dodge_notes}}} {{button=[Hero Point](~@{character_name}|DOD_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Dodge</button>
                         </div>
                         <div class="circle">
                             <span name="attr_dodge_modifier" title="@{dodge_modifier}"></span>
@@ -390,9 +390,9 @@
                         <button class="pictos settings-button" name="act_toggle_parry" title="parry settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_PAR_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Parry w/ Hero Point}} {{subheader=Defense}} {{modifier=@{parry_modifier}}} {{roll01=[[1d10 + 10 + @{parry_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{parry_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_PAR_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Parry w/ Hero Point}} {{subheader=Defense}} {{modifier=@{parry_modifier}}} {{roll01=[[1d10 + 10 + @{parry_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{parry_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_PAR" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Parry}} {{subheader=Defense}} {{modifier=@{parry_modifier}}} {{roll01=[[1d20 + @{parry_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{parry_notes}}} {{button=[Hero Point](~@{character_name}|PAR_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Parry</button>
+                            <button name="roll_PAR" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Parry}} {{subheader=Defense}} {{modifier=@{parry_modifier}}} {{roll01=[[1d20 + @{parry_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{parry_notes}}} {{button=[Hero Point](~@{character_name}|PAR_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Parry</button>
                         </div>
                         <div class="circle">
                             <span name="attr_parry_modifier" title="@{parry_modifier}"></span>
@@ -416,9 +416,9 @@
                         <button class="pictos settings-button" name="act_toggle_fortitude" title="fortitude settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_FORT_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Fortitude w/ Hero Point}} {{subheader=Defense}} {{modifier=@{fortitude_modifier}}} {{roll01=[[1d10 + 10 + @{fortitude_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{fortitude_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_FORT_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Fortitude w/ Hero Point}} {{subheader=Defense}} {{modifier=@{fortitude_modifier}}} {{roll01=[[1d10 + 10 + @{fortitude_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{fortitude_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_FORT" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Fortitude}} {{subheader=Defense}} {{modifier=@{fortitude_modifier}}} {{roll01=[[1d20 + @{fortitude_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{fortitude_notes}}} {{button=[Hero Point](~@{character_name}|FORT_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Fortitude</button>
+                            <button name="roll_FORT" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Fortitude}} {{subheader=Defense}} {{modifier=@{fortitude_modifier}}} {{roll01=[[1d20 + @{fortitude_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{fortitude_notes}}} {{button=[Hero Point](~@{character_name}|FORT_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Fortitude</button>
                         </div>
                         <div class="circle">
                             <span name="attr_fortitude_modifier" title="@{fortitude_modifier}"></span>
@@ -442,9 +442,9 @@
                         <button class="pictos settings-button" name="act_toggle_toughness" title="toughness settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_TOU_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Toughness w/ Hero Point}} {{subheader=Defense}} {{modifier=@{toughness_modifier}}} {{roll01=[[1d10 + 10 + @{toughness_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{toughness_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_TOU_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Toughness w/ Hero Point}} {{subheader=Defense}} {{modifier=@{toughness_modifier}}} {{roll01=[[1d10 + 10 + @{toughness_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{toughness_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_TOU" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Toughness}} {{subheader=Defense}} {{modifier=@{toughness_modifier}}} {{roll01=[[1d20 + @{toughness_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{toughness_notes}}} {{button=[Hero Point](~@{character_name}|TOU_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Toughness</button>
+                            <button name="roll_TOU" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Toughness}} {{subheader=Defense}} {{modifier=@{toughness_modifier}}} {{roll01=[[1d20 + @{toughness_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{toughness_notes}}} {{button=[Hero Point](~@{character_name}|TOU_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Toughness</button>
                         </div>
                         <div class="circle">
                             <span name="attr_toughness_modifier" title="@{toughness_modifier}"></span>
@@ -468,9 +468,9 @@
                         <button class="pictos settings-button" name="act_toggle_will" title="will settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_WILL_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Will w/ Hero Point}} {{subheader=Defense}} {{modifier=@{will_modifier}}} {{roll01=[[1d10 + 10 + @{will_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{will_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_WILL_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Will w/ Hero Point}} {{subheader=Defense}} {{modifier=@{will_modifier}}} {{roll01=[[1d10 + 10 + @{will_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{will_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_WILL" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Will}} {{subheader=Defense}} {{modifier=@{will_modifier}}} {{roll01=[[1d20 + @{will_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{will_notes}}} {{button=[Hero Point](~@{character_name}|WILL_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Will</button>
+                            <button name="roll_WILL" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Will}} {{subheader=Defense}} {{modifier=@{will_modifier}}} {{roll01=[[1d20 + @{will_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{will_notes}}} {{button=[Hero Point](~@{character_name}|WILL_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Will</button>
                         </div>
                         <div class="circle">
                             <span name="attr_will_modifier" title="@{will_modifier}"></span>
@@ -498,9 +498,9 @@
                         <div class="grid display">
                             <button class="pictos settings-button" name="act_settings" title="offense settings" type="action">y</button> 
                             <div style="display: none;">
-                                <button name="roll_ATTACK_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack} w/ Hero Point}} {{modifier=@{offensive-attacks_toHit}}} {{roll01_name=To Hit}} {{roll01=[[@{offensive-attacks_toHit}+1d10cs>@{offensive-attacks_crit} + 10 + @{Disabled}  + @{Impaired} +@{Prone} + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{roll02_name=@{offensive-attacks_save_type} Save DC}} {{roll02=@{offensive-attacks_dc}}} {{roll03_name=Damage}} {{roll03=@{offensive-attacks_damage}}} {{notes=@{offensive-attacks_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_ATTACK_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack} w/ Hero Point}} {{modifier=@{offensive-attacks_toHit}}} {{roll01_name=To Hit}} {{roll01=[[@{offensive-attacks_toHit}+1d10cs>@{offensive-attacks_crit} + 10 + @{Disabled}  + @{Impaired} +@{Prone} + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{roll02_name=@{offensive-attacks_save_type} Save DC}} {{roll02=@{offensive-attacks_dc}}} {{roll03_name=Damage}} {{roll03=@{offensive-attacks_damage}}} {{notes=@{offensive-attacks_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="width:80%; margin-left:25px;" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack}}} {{modifier=@{offensive-attacks_toHit}}} {{roll01_name=To Hit}} {{roll01=[[@{offensive-attacks_toHit}+1d20cs>@{offensive-attacks_crit} + @{Disabled}  + @{Impaired} +@{Prone} + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{roll02_name=@{offensive-attacks_save_type} Save DC}} {{roll02=@{offensive-attacks_dc}}} {{roll03_name=Damage}} {{roll03=@{offensive-attacks_damage}}} {{notes=@{offensive-attacks_notes}}} {{button=[Hero Point](~@{character_name}|repeating_offensive-attacks_@{offensive-attacks_rid}_ATTACK_HERO)}}">
+                            <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="width:80%; margin-left:25px;" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack}}} {{modifier=@{offensive-attacks_toHit}}} {{roll01_name=To Hit}} {{roll01=[[@{offensive-attacks_toHit}+1d20cs>@{offensive-attacks_crit} + @{Disabled}  + @{Impaired} +@{Prone} + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5|}]]}} {{roll02_name=@{offensive-attacks_save_type} Save DC}} {{roll02=@{offensive-attacks_dc}}} {{roll03_name=Damage}} {{roll03=@{offensive-attacks_damage}}} {{notes=@{offensive-attacks_notes}}} {{button=[Hero Point](~@{character_name}|repeating_offensive-attacks_@{offensive-attacks_rid}_ATTACK_HERO)}}">
                                 <span name="attr_attack"></span>
                             </button>
                         </div>
@@ -555,9 +555,9 @@
                         <button class="pictos settings-button" name="act_toggle_acrobatics" title="acrobatics settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_ACR_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Acrobatics w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{acrobatics_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{acrobatics_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_ACR_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Acrobatics w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{acrobatics_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{acrobatics_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_ACR" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Acrobatics}} {{subheader=Skill}} {{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{acrobatics_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{acrobatics_notes}}} {{button=[Hero Point](~@{character_name}|ACR_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Acrobatics</button>
+                            <button name="roll_ACR" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Acrobatics}} {{subheader=Skill}} {{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{acrobatics_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{acrobatics_notes}}} {{button=[Hero Point](~@{character_name}|ACR_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Acrobatics</button>
                         </div>
                         <div class="circle">
                             <span name="attr_acrobatics_modifier" title="@{acrobatics_modifier}"></span>
@@ -581,9 +581,9 @@
                         <button class="pictos settings-button" name="act_toggle_athletics" title="athletics settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_ATH_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Athletics w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{athletics_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{athletics_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_ATH_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Athletics w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{athletics_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{athletics_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_ATH" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Athletics}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{athletics_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{athletics_notes}}} {{button=[Hero Point](~@{character_name}|ATH_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Athletics</button>
+                            <button name="roll_ATH" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Athletics}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{athletics_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{athletics_notes}}} {{button=[Hero Point](~@{character_name}|ATH_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Athletics</button>
                         </div>
                         <div class="circle">
                             <span name="attr_athletics_modifier" title="@{athletics_modifier}"></span>
@@ -610,9 +610,9 @@
                             <div class="grid display">
                                 <button class="pictos settings-button" name="act_settings" title="offense settings" style="margin-top:10px;" type="action">y</button> 
                                 <div style="display: none;">
-                                    <button name="roll_ATTACK_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack} w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{closecombat-attacks_score} + @{closecombat-attacks_misc_score} + @{fighting_modifier} + @{Disabled}  + @{Impaired} + @{Prone} + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{closecombat-attacks_notes}}} " style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                    <button name="roll_ATTACK_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack} w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{closecombat-attacks_score} + @{closecombat-attacks_misc_score} + @{fighting_modifier} + @{Disabled}  + @{Impaired} + @{Prone} + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{closecombat-attacks_notes}}} " style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                                 </div>
-                                <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="margin-top:10px;width:200px; height:20px; margin-left:25px;" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack}}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{closecombat-attacks_score} + @{closecombat-attacks_misc_score} + @{fighting_modifier} + @{Disabled}  + @{Impaired} + @{Prone} + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{closecombat-attacks_notes}}} {{button=[Hero Point](~@{character_name}|repeating_closecombat-attacks_@{closecombat-attacks_rid}_ATTACK_HERO)}}">
+                                <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="margin-top:10px;width:200px; height:20px; margin-left:25px;" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack}}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{closecombat-attacks_score} + @{closecombat-attacks_misc_score} + @{fighting_modifier} + @{Disabled}  + @{Impaired} + @{Prone} + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{closecombat-attacks_notes}}} {{button=[Hero Point](~@{character_name}|repeating_closecombat-attacks_@{closecombat-attacks_rid}_ATTACK_HERO)}}">
                                     <span name="attr_attack"></span>
                                 </button>
 
@@ -651,9 +651,9 @@
                         <button class="pictos settings-button" name="act_toggle_deception" title="deception settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_DEC_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Deception w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{deception_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{deception_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_DEC_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Deception w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{deception_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{deception_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_DEC" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Deception}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{deception_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{deception_notes}}} {{button=[Hero Point](~@{character_name}|DEC_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Deception</button>
+                            <button name="roll_DEC" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Deception}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{deception_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{deception_notes}}} {{button=[Hero Point](~@{character_name}|DEC_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Deception</button>
                         </div>
                         <div class="circle">
                             <span name="attr_deception_modifier" title="@{deception_modifier}"></span>
@@ -680,9 +680,9 @@
                             <div class="grid display">
                                 <button class="pictos settings-button" name="act_settings" title="offense settings" style="margin-top:10px;" type="action">y</button> 
                                 <div style="display: none;">
-                                    <button name="roll_ATTACK_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack} w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{expertise_score} + @{expertise_misc_score} + @{intellect_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{expertise_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                    <button name="roll_ATTACK_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack} w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{expertise_score} + @{expertise_misc_score} + @{intellect_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{expertise_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                                 </div>
-                                <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="margin-top:10px;width:200px; height:20px; margin-left:25px;" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack}}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{expertise_score} + @{expertise_misc_score} + @{intellect_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{expertise_notes}}} {{button=[Hero Point](~@{character_name}|repeating_expertise_@{expertise_rid}_ATTACK_HERO)}}">
+                                <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="margin-top:10px;width:200px; height:20px; margin-left:25px;" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack}}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{expertise_score} + @{expertise_misc_score} + @{intellect_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{expertise_notes}}} {{button=[Hero Point](~@{character_name}|repeating_expertise_@{expertise_rid}_ATTACK_HERO)}}">
                                     <span name="attr_attack"></span>
                                 </button>
 
@@ -721,9 +721,9 @@
                         <button class="pictos settings-button" name="act_toggle_insight" title="insight settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_INS_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Insight w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{insight_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{insight_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_INS_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Insight w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{insight_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{insight_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_INS" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Insight}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{insight_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{insight_notes}}} {{button=[Hero Point](~@{character_name}|INS_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Insight</button>
+                            <button name="roll_INS" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Insight}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{insight_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{insight_notes}}} {{button=[Hero Point](~@{character_name}|INS_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Insight</button>
                         </div>
                         <div class="circle">
                             <span name="attr_insight_modifier" title="@{insight_modifier}"></span>
@@ -749,9 +749,9 @@
                         <button class="pictos settings-button" name="act_toggle_intimidation" title="intimidation settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_INTI_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Intimidation w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{intimidation_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{intimidation_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_INTI_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Intimidation w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{intimidation_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{intimidation_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_INTI" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Intimidation}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{intimidation_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{intimidation_notes}}} {{button=[Hero Point](~@{character_name}|INTI_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Intimidation</button>
+                            <button name="roll_INTI" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Intimidation}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{intimidation_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{intimidation_notes}}} {{button=[Hero Point](~@{character_name}|INTI_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Intimidation</button>
                         </div>
                         <div class="circle">
                             <span name="attr_intimidation_modifier" title="@{intimidation_modifier}"></span>
@@ -775,9 +775,9 @@
                         <button class="pictos settings-button" name="act_toggle_investigation" title="investigation settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_INV_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Investigation w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{investigation_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{investigation_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_INV_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Investigation w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{investigation_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{investigation_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_INV" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Investigation}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{investigation_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{investigation_notes}}} {{button=[Hero Point](~@{character_name}|INV_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Investigation</button>
+                            <button name="roll_INV" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Investigation}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{investigation_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{investigation_notes}}} {{button=[Hero Point](~@{character_name}|INV_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Investigation</button>
                         </div>
                         <div class="circle">
                             <span name="attr_investigation_modifier" title="@{investigation_modifier}"></span>
@@ -801,9 +801,9 @@
                         <button class="pictos settings-button" name="act_toggle_perception" title="perception settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_PERC_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Perception w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{perception_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{perception_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_PERC_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Perception w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{perception_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{perception_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_PERC" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Perception}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{perception_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{perception_notes}}} {{button=[Hero Point](~@{character_name}|PERC_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Perception</button>
+                            <button name="roll_PERC" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Perception}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{perception_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{perception_notes}}} {{button=[Hero Point](~@{character_name}|PERC_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Perception</button>
                         </div>
                         <div class="circle">
                             <span name="attr_perception_modifier" title="@{perception_modifier}"></span>
@@ -827,9 +827,9 @@
                         <button class="pictos settings-button" name="act_toggle_persuasion" title="persuasion settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_PERS_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Persuasion w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{persuasion_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{persuasion_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_PERS_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Persuasion w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{persuasion_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{persuasion_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_PERS" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Persuasion}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{persuasion_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{persuasion_notes}}} {{button=[Hero Point](~@{character_name}|PERS_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Persuasion</button>
+                            <button name="roll_PERS" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Persuasion}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{persuasion_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{persuasion_notes}}} {{button=[Hero Point](~@{character_name}|PERS_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Persuasion</button>
                         </div>
                         <div class="circle">
                             <span name="attr_persuasion_modifier" title="@{persuasion_modifier}"></span>
@@ -856,9 +856,9 @@
                             <div class="grid display">
                                 <button class="pictos settings-button" name="act_settings" title="offense settings" style="margin-top:10px;" type="action">y</button> 
                                 <div style="display: none;">
-                                    <button name="roll_ATTACK_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack} w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{rangedcombat-attacks_score} + @{rangedcombat-attacks_misc_score} + @{dexterity_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{rangedcombat-attacks_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                    <button name="roll_ATTACK_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack} w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{rangedcombat-attacks_score} + @{rangedcombat-attacks_misc_score} + @{dexterity_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{rangedcombat-attacks_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                                 </div>
-                                <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="margin-top:10px;width:200px; height:20px; margin-left:25px;" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack}}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{rangedcombat-attacks_score} + @{rangedcombat-attacks_misc_score} + @{dexterity_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{rangedcombat-attacks_notes}}} {{button=[Hero Point](~@{character_name}|repeating_rangedcombat-attacks_@{rangedcombat-attacks_rid}_ATTACK_HERO)}}">
+                                <button class="diplay-attack" name="roll_ATTACK-DAMAGE" title="weapon name diplay & attack damage roll" style="margin-top:10px;width:200px; height:20px; margin-left:25px;" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=@{attack}}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d20 + @{rangedcombat-attacks_score} + @{rangedcombat-attacks_misc_score} + @{dexterity_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{rangedcombat-attacks_notes}}} {{button=[Hero Point](~@{character_name}|repeating_rangedcombat-attacks_@{rangedcombat-attacks_rid}_ATTACK_HERO)}}">
                                     <span name="attr_attack"></span>
                                 </button>
 
@@ -897,9 +897,9 @@
                         <button class="pictos settings-button" name="act_toggle_sleightofhand" title="sleightofhand settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_SLE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Sleight Of Hand w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{sleightofhand_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{sleightofhand_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_SLE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Sleight Of Hand w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{sleightofhand_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{sleightofhand_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_SLE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Sleight Of Hand}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{sleightofhand_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{sleightofhand_notes}}} {{button=[Hero Point](~@{character_name}|SLE_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Sleight of hand</button>
+                            <button name="roll_SLE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Sleight Of Hand}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{sleightofhand_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{sleightofhand_notes}}} {{button=[Hero Point](~@{character_name}|SLE_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Sleight of hand</button>
                         </div>
                         <div class="circle">
                             <span name="attr_sleightofhand_modifier" title="@{sleightofhand_modifier}"></span>
@@ -923,9 +923,9 @@
                         <button class="pictos settings-button" name="act_toggle_stealth" title="stealth settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_STE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Stealth w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{stealth_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{stealth_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_STE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Stealth w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{stealth_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{stealth_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_STE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Stealth}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{stealth_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{stealth_notes}}} {{button=[Hero Point](~@{character_name}|STE_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Stealth</button>
+                            <button name="roll_STE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Stealth}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{stealth_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{stealth_notes}}} {{button=[Hero Point](~@{character_name}|STE_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Stealth</button>
                         </div>
                         <div class="circle">
                             <span name="attr_stealth_modifier" title="@{stealth_modifier}"></span>
@@ -949,9 +949,9 @@
                         <button class="pictos settings-button" name="act_toggle_technology" title="technology settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_TEC_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Technology w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{technology_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{technology_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_TEC_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Technology w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{technology_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{technology_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_TEC" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Technology}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{technology_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{technology_notes}}} {{button=[Hero Point](~@{character_name}|TEC_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Technology</button>
+                            <button name="roll_TEC" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Technology}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{technology_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{technology_notes}}} {{button=[Hero Point](~@{character_name}|TEC_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Technology</button>
                         </div>
                         <div class="circle">
                             <span name="attr_technology_modifier" title="@{technology_modifier}"></span>
@@ -975,9 +975,9 @@
                         <button class="pictos settings-button" name="act_toggle_treatment" title="treatment settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_TRE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Treatment w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{treatment_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{treatment_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_TRE_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Treatment w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{treatment_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{treatment_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_TRE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Treatment}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{treatment_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{treatment_notes}}} {{button=[Hero Point](~@{character_name}|TRE_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Treatment</button>
+                            <button name="roll_TRE" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Treatment}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{treatment_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{treatment_notes}}} {{button=[Hero Point](~@{character_name}|TRE_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Treatment</button>
                         </div>
                         <div class="circle">
                             <span name="attr_treatment_modifier" title="@{treatment_modifier}"></span>
@@ -1001,9 +1001,9 @@
                         <button class="pictos settings-button" name="act_toggle_vehicles" title="vehicles settings" style="margin-top:10px;" type="action">y</button> 
                         <div>
                             <div style="display: none;">
-                                <button name="roll_VEH_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Vehicles w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{vehicles_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{vehicles_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                                <button name="roll_VEH_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Vehicles w/ Hero Point}} {{subheader=Skill}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{vehicles_modifier} + @{Disabled} + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{vehicles_notes}}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                             </div>
-                            <button name="roll_VEH" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Vehicles}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{vehicles_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, +2|Major Effort, +5}]]}} {{notes=@{vehicles_notes}}} {{button=[Hero Point](~@{character_name}|VEH_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Vehicles</button>
+                            <button name="roll_VEH" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Vehicles}} {{subheader=Skill}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{vehicles_modifier} + @{Disabled}  + @{Impaired}  + ?{Using Extra Effort|No, 0|Minor Effort, 2|Major Effort, 5}]]}} {{notes=@{vehicles_notes}}} {{button=[Hero Point](~@{character_name}|VEH_HERO)}}" style="margin-left: 35px;margin-top:10px;" class="btn ui-draggable">Vehicles</button>
                         </div>
                         <div class="circle">
                             <span name="attr_vehicles_modifier" title="@{vehicles_modifier}"></span>
@@ -1030,9 +1030,9 @@
                     <button class="pictos settings-button" name="act_toggle_initiative" title="initiative settings" style="margin-top:10px;" type="action">y</button> 
                     <div>
                         <div style="display: none;">
-                            <button name="roll_INIT_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Initiative w/ Hero Point}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{initiative_modifier}]]}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
+                            <button name="roll_INIT_HERO" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Initiative w/ Hero Point}} {{modifier=@{strength_modifier}}} {{roll01=[[1d10 + 10 + @{initiative_modifier} &{tracker}]]}}" style="margin-left: 35px;margin-top: 10px;" class="btn ui-draggable" style="display: none;"></button>
                         </div>
-                        <button name="roll_INIT" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Initiative}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{initiative_modifier}]]}} {{button=[Hero Point](~@{character_name}|INIT_HERO)}}" style="margin-left: 25px;margin-top:10px;" class="btn ui-draggable">Initiative</button>
+                        <button name="roll_INIT" type="roll" value="&{template:rolls} {{charactername=@{character_name}}} {{header=Initiative}}{{modifier=@{strength_modifier}}}  {{roll01=[[1d20 + @{initiative_modifier} &{tracker}]]}} {{button=[Hero Point](~@{character_name}|INIT_HERO)}}" style="margin-left: 25px;margin-top:10px;" class="btn ui-draggable">Initiative</button>
                     </div>
                     <div class="circle">
                         <span name="attr_initiative_modifier" title="@{initiative_modifier}"></span>
@@ -1706,27 +1706,36 @@
             let update = {};
             if (attack > 0){
                 update[`${attr}_dc`] = '';
-                if(damage > (maxValue - attack)){
-                    update[`${attr}_damage`] = (maxValue - attack);
+                if(damage > (maxValue + 15 - attack)){
+                    update[`${attr}_damage`] = (maxValue + 15 - attack);
                 }
             }
             if(attack == 0 && dc > 0){
                 if (saveType.startsWith("tough") || saveType.startsWith("Tough")){
                     if(dc < 15){
                         update[`${attr}_dc`] = 15 + dc;
-                        update[`${attr}_damage`] = (maxValue - (dc + 15));
+                        if (damage > (maxValue + 10 - dc + 15)){
+                            update[`${attr}_damage`] = ((maxValue + 10) - (dc + 15));
+                        } else {
+                            update[`${attr}_damage`] = damage;
+                        }
+                        
                     } else {
-                        if(damage > (maxValue - (dc - 15))){
-                            update[`${attr}_damage`] = (maxValue - (dc - 15));
+                        if(damage > (maxValue + 10 - (dc - 15))){
+                            update[`${attr}_damage`] = (maxValue + 10 - (dc - 15));
                         }
                     }
                 }else{
                     if(dc < 10){
                         update[`${attr}_dc`] = 10 + dc;
-                        update[`${attr}_damage`] = (maxValue - (dc + 10));
+                        if (damage > (maxValue + 10 - dc)){
+                            update[`${attr}_damage`] = (maxValue + 10 - (dc + 10));
+                        } else {
+                            update[`${attr}_damage`] = damage;
+                        }
                     } else {
-                        if(damage > (maxValue - (dc - 10))){
-                            update[`${attr}_damage`] = (maxValue - (dc - 10));
+                        if(damage > (maxValue + 10 - (dc - 10))){
+                            update[`${attr}_damage`] = (maxValue + 10 - (dc - 10));
                         }
                     }
                 }
